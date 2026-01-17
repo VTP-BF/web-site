@@ -6,7 +6,7 @@ import LatestServices from "../src/components/slider/LatestServices";
 import Layout from "../src/layout/Layout";
 const Services = () => {
   return (
-    <Layout>
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
       <PageBanner pageName={"Our Services"} />
       <section className="features-section pt-130 pb-100">
         <div className="container">

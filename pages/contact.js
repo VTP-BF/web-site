@@ -3,7 +3,7 @@ import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 const Contact = () => {
   return (
-    <Layout>
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
       <PageBanner pageName={"Contact Us"} />
       <section className="contact-information-section pt-130 pb-80">
         <div className="container">

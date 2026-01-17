@@ -11,7 +11,7 @@ import {
 } from "../src/sliderProps";
 const About = () => {
   return (
-    <Layout>
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
       <PageBanner pageName={"About Us"} />
       {/*====== End Breadcrumb Section ======*/}
       {/*====== Start About Section  ======*/}
