@@ -1,8 +1,14 @@
 export const animation = () => {
   if (typeof window !== "undefined") {
-    window.WOW = require("wowjs");
+    const WOW = require("wowjs");
+    new WOW.WOW({
+      boxClass: "wow",
+      animateClass: "animated",
+      offset: 0,
+      mobile: true,
+      live: true,
+    }).init();
   }
-  new WOW.WOW().init();
 };
 
 // Sticky nav

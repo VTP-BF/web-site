@@ -37,36 +37,33 @@ const Index = () => {
         </div>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div className="hero-content">
                 <h1 className="wow fadeInUp" data-wow-delay=".5s">
-                  Most secure &amp; transparent bank ever
+                  Solutions IT pour votre entreprise
                 </h1>
                 <p className="wow fadeInDown" data-wow-delay=".7s">
-                  Sit amet consectetur adipiscing sed eiusmod temporse
-                  incididunt ut labore et dolore magna aliqua
+                  Nous offrons des services IT de pointe incluant l'IA, la cybersécurité,
+                  le cloud et l'automatisation pour propulser votre business vers l'avenir
                 </p>
                 <div className="hero-button wow fadeInUp" data-wow-delay=".9s">
-                  <a href="#" className="main-btn btn-blue">
-                    14th Days Free Trial
+                  <a href="#services" className="main-btn btn-blue">
+                    Découvrir nos Services
                   </a>
-                  <a href="#" className="main-btn filled-btn filled-white">
-                    Learn More
+                  <a href="/contact" className="main-btn filled-btn filled-white">
+                    Nous Contacter
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div
-                className="hero-img-box wow fadeInRight"
+                className="hero-img-box hero-img-box-wide hero-img-box-bg wow fadeInRight"
                 data-wow-delay=".10s"
-              >
-                <img
-                  src="assets/images/hero/hero-three-one.png"
-                  className="hero-img"
-                  alt=""
-                />
-              </div>
+                style={{ backgroundImage: "url(assets/images/home/home-hero-software-innovation.png)" }}
+                role="img"
+                aria-label="Solutions IT - Software Innovation - Visionary Tech Partners"
+              />
             </div>
           </div>
         </div>
@@ -80,7 +77,7 @@ const Index = () => {
               <div className="author-rating-box-two mb-40 wow fadeInUp">
                 <ul className="rating">
                   <li>
-                    <span>Quality</span>
+                    <span>Expertise</span>
                   </li>
                   <li>
                     <i className="fas fa-star" />
@@ -98,16 +95,16 @@ const Index = () => {
                     <i className="fas fa-star" />
                   </li>
                 </ul>
-                <h5>Manage Your Banking With Fintex Us</h5>
+                <h5>Votre partenaire tech pour la transformation digitale</h5>
                 <div className="author-thumb-title d-flex align-items-center">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-4.jpg"
-                      alt="Author Image"
+                      src="assets/images/home/vtp-fact-thumb.png"
+                      alt="Visionary Tech Partners"
                     />
                   </div>
                   <div className="author-title">
-                    <h5>Ronald B. Griffin</h5>
+                    <h5>Visionary Tech Partners</h5>
                   </div>
                 </div>
               </div>
@@ -119,10 +116,9 @@ const Index = () => {
                     <div className="single-counter-item-three text-center mb-40 wow fadeInDown">
                       <div className="text">
                         <h2 className="number">
-                          <span className="currency">$</span>
-                          <Counter end={963} />k
+                          <Counter end={7} />+
                         </h2>
-                        <h5>Total Active Users</h5>
+                        <h5>Services IT</h5>
                       </div>
                     </div>
                   </div>
@@ -130,10 +126,9 @@ const Index = () => {
                     <div className="single-counter-item-three text-center mb-40 wow fadeInUp">
                       <div className="text">
                         <h2 className="number">
-                          <span className="currency">$</span>
-                          <Counter end={963} />m
+                          <Counter end={1} />+
                         </h2>
-                        <h5>Total Transactions</h5>
+                        <h5>An d&apos;activité</h5>
                       </div>
                     </div>
                   </div>
@@ -141,9 +136,9 @@ const Index = () => {
                     <div className="single-counter-item-three text-center mb-40 wow fadeInDown">
                       <div className="text">
                         <h2 className="number">
-                          <Counter end={963} />+
+                          <Counter end={100} />%
                         </h2>
-                        <h5>Registered Countries</h5>
+                        <h5>Engagement</h5>
                       </div>
                     </div>
                   </div>
@@ -164,30 +159,30 @@ const Index = () => {
                   <span />
                 </div>
                 <img
-                  src="assets/images/gallery/card-1.png"
+                  src="assets/images/gallery/about-section-card.jpg"
                   className="about-img-one"
-                  alt=""
+                  alt="Transformation IT - Visionary Tech Partners"
                 />
                 <img
-                  src="assets/images/gallery/card-price.png"
+                  src="assets/images/about/about-vtp.jpg"
                   className="about-img-two animate-float-y"
-                  alt=""
+                  alt="VTP - Accompagnement transformation IT"
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="about-content-box content-box-gap mb-50 wow fadeInRight">
                 <div className="section-title text-white wow fadeInDown">
-                  <h2>Easily manage your finance for daily needs</h2>
+                  <h2>Transformez votre infrastructure IT pour la moderniser</h2>
                 </div>
                 <p>
-                  On the other hand we denounce with righteous indignation and
-                  dislike men who are so beguiled and demoralized by the charms
-                  of pleasure of the moment so blinded by desire, that they
-                  cannot foresee the pain and trouble that are bound to ensue
+                  Nous vous accompagnons dans la transformation digitale de votre entreprise
+                  avec des solutions IT innovantes, sécurisées et adaptées à vos besoins.
+                  De l'automatisation des processus à l'intelligence artificielle,
+                  nous mettons la technologie au service de votre croissance.
                 </p>
                 <Link legacyBehavior href="/about">
-                  <a className="main-btn btn-blue">Learn More</a>
+                  <a className="main-btn btn-blue">En savoir plus</a>
                 </Link>
               </div>
             </div>
@@ -196,26 +191,26 @@ const Index = () => {
       </section>
       {/*====== End About section ======*/}
       {/*====== Start Features section ======*/}
-      <section className="features-section-two pb-70">
+      <section className="features-section-two pt-50 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="features-content-box content-box-gap mb-50 wow fadeInLeft">
                 <div className="section-title text-white wow fadeInDown">
-                  <h2>Trusted Payment Services for your transactions</h2>
+                  <h2>Services IT de confiance pour votre transformation digitale</h2>
                 </div>
                 <p>
-                  On the other hand we denounce with righteous indignation and
-                  dislike men who are so beguiled and demoralized by the charms
-                  of pleasure the moment so blinded by desire, that they cannot
-                  foresee
+                  Nous proposons une gamme complète de services IT allant du développement
+                  logiciel sur mesure à l'ingénierie cloud, en passant par la cybersécurité
+                  et l'analyse de données. Nos solutions sont conçues pour répondre
+                  aux défis technologiques modernes.
                 </p>
                 <ul className="check-style-one">
-                  <li>Reflection 2022 Desktop Wallpapers Edition</li>
-                  <li>Designing A Better Infinite Scroll</li>
+                  <li>Solutions sur mesure adaptées à vos besoins</li>
+                  <li>Expertise en cybersécurité et protection des données</li>
                 </ul>
                 <Link legacyBehavior href="/about">
-                  <a className="main-btn filled-btn filled-white">Learn More</a>
+                  <a className="main-btn filled-btn filled-white">En savoir plus</a>
                 </Link>
               </div>
             </div>
@@ -224,7 +219,7 @@ const Index = () => {
                 <div className="shape shape-one">
                   <span />
                 </div>
-                <img src="assets/images/gallery/card-2.png" alt="" />
+                <img src="assets/images/home/home-services-trust.jpg" alt="Services IT de confiance - Équipe VTP, transformation digitale" />
               </div>
             </div>
           </div>
@@ -232,13 +227,13 @@ const Index = () => {
       </section>
       {/*====== End Features section ======*/}
       {/*====== Start Service section ======*/}
-      <section className="service-section pb-50">
+      <section className="service-section pb-50" id="services">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-12">
               <div className="section-title text-white text-center mb-110 wow fadeInDown">
-                <span className="sub-title">Our Services</span>
-                <h2>Amazing Service For Digital Banking Transaction</h2>
+                <span className="sub-title">Nos Services</span>
+                <h2>Services IT exceptionnels pour votre transformation digitale</h2>
               </div>
             </div>
           </div>
@@ -246,20 +241,17 @@ const Index = () => {
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
                 <div className="icon">
-                  <i className="flaticon-user" />
+                  <i className="flaticon-pie-chart" />
                 </div>
                 <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Checking Accounts.</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Analyse de Données &amp; Big Data</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
+                  <p>Analyse de données massives et ingénierie d&apos;insights pour transformer vos données en avantage concurrentiel.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
@@ -267,20 +259,17 @@ const Index = () => {
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
                 <div className="icon">
-                  <i className="flaticon-finance-1" />
+                  <i className="flaticon-idea-1" />
                 </div>
                 <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Savings Accounts</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Ingénierie IA &amp; MLOps</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
+                  <p>Frameworks d&apos;intelligence artificielle et d&apos;opérations ML pour entreprises modernes.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
@@ -288,62 +277,17 @@ const Index = () => {
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
                 <div className="icon">
-                  <i className="flaticon-credit" />
+                  <i className="flaticon-competitive" />
                 </div>
                 <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Debit &amp; Credit Cards</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Cybersécurité &amp; Gestion des Menaces</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
-                <div className="icon">
-                  <i className="flaticon-insurance" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Insurance &amp; Banking</a>
-                    </Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-personal-wealth" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Wealth Management</a>
-                    </Link>
-                  </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
+                  <p>Sécurité de bout en bout et atténuation des menaces pour protéger vos actifs numériques.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
@@ -355,16 +299,67 @@ const Index = () => {
                 </div>
                 <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/service-details">
-                      <a>Transaction Reports</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Ingénierie Cloud &amp; DevOps/DevSecOps</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sed ut perspiciatis unde omnis istees natus error sit
-                    voluptatem accusantium doloremque laudantie totam
-                  </p>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="btn-link">Learn More</a>
+                  <p>Infrastructure cloud et ingénierie DevSecOps pour un déploiement sécurisé et rapide.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-folder-management" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Développement Logiciel &amp; Automatisation</a>
+                    </Link>
+                  </h3>
+                  <p>Solutions sur mesure et automatisation de processus pour optimiser vos opérations.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
+                <div className="icon">
+                  <i className="flaticon-user" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Plateformes d&apos;Identité Numérique &amp; Authentification</a>
+                    </Link>
+                  </h3>
+                  <p>Solutions d&apos;identité numérique et d&apos;authentification pour sécuriser l&apos;accès à vos systèmes.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 offset-lg-4">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-planning" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Conseil IT, Modernisation &amp; Automatisation</a>
+                    </Link>
+                  </h3>
+                  <p>Stratégie IT et modernisation de l&apos;infrastructure pour aligner la technologie sur vos objectifs.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
@@ -384,8 +379,8 @@ const Index = () => {
                     <span />
                   </div>
                   <img
-                    src="assets/images/gallery/card-3.png"
-                    alt="Mobile Mockup"
+                    src="assets/images/home/home-features-cost-it.jpg"
+                    alt="Optimisation et stratégie IT - équipe VTP"
                   />
                 </div>
               </div>
@@ -393,26 +388,26 @@ const Index = () => {
                 <div className="features-content-box content-box-gap mb-20">
                   <div className="section-title text-white wow fadeInDown">
                     <h2>
-                      Save Money to Organize and Determine Priority Future
+                      Optimisez vos coûts IT et structurez votre avenir technologique
                     </h2>
                   </div>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusanlorem que laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo.
+                    Notre approche stratégique vous permet de réduire les coûts opérationnels
+                    tout en modernisant votre infrastructure IT. Nous définissons avec vous
+                    les priorités technologiques pour maximiser le retour sur investissement
+                    et garantir la pérennité de vos systèmes.
                   </p>
                   <div className="row">
                     <div className="col-xl-6 col-lg-12 col-md-6">
                       <div className="features-item-left-box text-white mb-30 wow fadeInUp">
                         <div className="icon">
-                          <i className="flaticon-money-transfer" />
+                          <i className="flaticon-data" />
                         </div>
                         <div className="text">
-                          <h4 className="title">Separating Money</h4>
+                          <h4 className="title">Infrastructure Cloud</h4>
                           <p>
-                            Denounce with righte indige nation and dislike men
-                            demor charms pleasure moment
+                            Migration et gestion de votre infrastructure cloud pour
+                            une agilité et une scalabilité maximales
                           </p>
                         </div>
                       </div>
@@ -420,13 +415,13 @@ const Index = () => {
                     <div className="col-xl-6 col-lg-12 col-md-6">
                       <div className="features-item-left-box text-white mb-30 wow fadeInUp">
                         <div className="icon">
-                          <i className="flaticon-ringing" />
+                          <i className="flaticon-competitive" />
                         </div>
                         <div className="text">
-                          <h4 className="title">Instant Notification</h4>
+                          <h4 className="title">Sécurité 24/7</h4>
                           <p>
-                            Denounce with righte indige nation and dislike men
-                            demor charms pleasure moment
+                            Surveillance continue et protection proactive contre
+                            les menaces cybernétiques en temps réel
                           </p>
                         </div>
                       </div>
@@ -446,7 +441,7 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="testimonial-wrapper-three mr-lg-70 mb-50 wow fadeInLeft">
                 <div className="section-title text-white">
-                  <h2>What Our Client's Say About Us</h2>
+                  <h2>Nos engagements</h2>
                 </div>
                 <Slider
                   {...testimonialSliderThree}
@@ -455,26 +450,25 @@ const Index = () => {
                   <div className="testimonial-item-three">
                     <div className="testimonial-content">
                       <p>
-                        On the other hand we denounce with righteous indignation
-                        and dislike men who are so beguiledc and demoralized by
-                        the charms of pleasure of the moment so blinded by
-                        desire foresee
+                        Nous nous engageons à respecter les délais convenus et à
+                        vous tenir informé à chaque étape. Réactivité, transparence
+                        et livraison dans les temps sont au cœur de notre façon de travailler.
                       </p>
                       <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-1.jpg"
-                              alt="Author Image"
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
                             />
                           </div>
                           <div className="author-title">
-                            <h4>Ronald B. Griffin</h4>
-                            <p className="position">Business Manager</p>
+                            <h4>Réactivité &amp; délais</h4>
+                            <p className="position">Respect des engagements et transparence</p>
                           </div>
                         </div>
                         <div className="author-rating">
-                          <h6>Good Quality</h6>
+                          <h6>Priorité</h6>
                           <ul className="rating">
                             <li>
                               <i className="fas fa-star" />
@@ -499,26 +493,25 @@ const Index = () => {
                   <div className="testimonial-item-three">
                     <div className="testimonial-content">
                       <p>
-                        On the other hand we denounce with righteous indignation
-                        and dislike men who are so beguiledc and demoralized by
-                        the charms of pleasure of the moment so blinded by
-                        desire foresee
+                        Nous nous appuyons sur des bonnes pratiques et des technologies
+                        éprouvées. Qualité du code, sécurité et évolutivité des solutions
+                        font partie intégrante de notre offre.
                       </p>
                       <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-2.jpg"
-                              alt="Author Image"
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
                             />
                           </div>
                           <div className="author-title">
-                            <h4>Ronald B. Griffin</h4>
-                            <p className="position">Business Manager</p>
+                            <h4>Expertise &amp; qualité</h4>
+                            <p className="position">Bonnes pratiques et solutions pérennes</p>
                           </div>
                         </div>
                         <div className="author-rating">
-                          <h6>Good Quality</h6>
+                          <h6>Priorité</h6>
                           <ul className="rating">
                             <li>
                               <i className="fas fa-star" />
@@ -543,26 +536,25 @@ const Index = () => {
                   <div className="testimonial-item-three">
                     <div className="testimonial-content">
                       <p>
-                        On the other hand we denounce with righteous indignation
-                        and dislike men who are so beguiledc and demoralized by
-                        the charms of pleasure of the moment so blinded by
-                        desire foresee
+                        Nous nous engageons à comprendre vos enjeux et à vous accompagner
+                        comme un partenaire. Écoute, conseil et solutions sur mesure
+                        pour répondre au plus près à vos besoins.
                       </p>
                       <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-1.jpg"
-                              alt="Author Image"
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
                             />
                           </div>
                           <div className="author-title">
-                            <h4>Ronald B. Griffin</h4>
-                            <p className="position">Business Manager</p>
+                            <h4>Partenariat &amp; proximité</h4>
+                            <p className="position">Écoute et accompagnement personnalisé</p>
                           </div>
                         </div>
                         <div className="author-rating">
-                          <h6>Good Quality</h6>
+                          <h6>Priorité</h6>
                           <ul className="rating">
                             <li>
                               <i className="fas fa-star" />
@@ -610,7 +602,7 @@ const Index = () => {
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-8">
                 <div className="section-title text-center text-white mb-50">
-                  <h2>Subscribe Our Newsletter to Get More Updates</h2>
+                  <h2>Restez informé de nos actualités</h2>
                 </div>
               </div>
             </div>
@@ -623,7 +615,7 @@ const Index = () => {
                         <input
                           type="text"
                           className="form_control"
-                          placeholder="User Name"
+                          placeholder="Votre nom"
                           name="name"
                         />
                         <i className="far fa-user" />
@@ -632,13 +624,13 @@ const Index = () => {
                         <input
                           type="email"
                           className="form_control"
-                          placeholder="Email Address"
+                          placeholder="Votre adresse e-mail"
                           name="email"
                         />
                         <i className="far fa-envelope" />
                       </span>
                       <div className="form-btn">
-                        <button className="main-btn btn-blue">Subscribe</button>
+                        <button className="main-btn btn-blue">S&apos;inscrire</button>
                       </div>
                     </div>
                     <div className="form_checkbox_two text-center mt-30">
@@ -650,8 +642,8 @@ const Index = () => {
                       />
                       <label htmlFor="check1">
                         <span>
-                          Subscribe to be the first to hear about upcoming
-                          fintech services!
+                          Inscrivez-vous pour recevoir en avant-première nos
+                          actualités IT et nos offres.
                         </span>
                       </label>
                     </div>

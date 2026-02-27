@@ -1,18 +1,13 @@
 import Link from "next/link";
-import Slider from "react-slick";
 import Counter from "../src/components/Counter";
 import Newsletter from "../src/components/Newsletter";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
-import {
-  partnerSliderOne,
-  teamSliderOne,
-  testimonialSliderThree,
-} from "../src/sliderProps";
+
 const About = () => {
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
-      <PageBanner pageName={"About Us"} />
+      <PageBanner pageName={"À Propos"} />
       {/*====== End Breadcrumb Section ======*/}
       {/*====== Start About Section  ======*/}
       <section className="about-section-three pt-130 pb-80">
@@ -22,22 +17,20 @@ const About = () => {
               {/*=== About Content Box ===*/}
               <div className="about-content-box content-box-gap mb-50 wow fadeInLeft">
                 <div className="section-title section-title-left">
-                  <span className="sub-title">About Company</span>
-                  <h2>Help to Create Great Business Future </h2>
+                  <span className="sub-title">Qui Nous Sommes</span>
+                  <h2>Visionary Tech Partners</h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium totam rem aperiam eaque
-                  abillo inventore veritatis quasi architecto beatae
+                  Visionary Tech Partners (VTP) est une firme de conseil technologique créée par une équipe d'experts en cybersécurité, science des données, développement logiciel et ingénierie DevOps/DevSecOps. Nous aidons les organisations à moderniser leur écosystème numérique avec des solutions sécurisées, évolutives et prêtes pour l'avenir.
                 </p>
                 <ul className="check-style-one mb-30">
-                  <li>Reflection 2022 Desktop Wallpapers Edition</li>
-                  <li>Designing A Better Infinite Scroll</li>
-                  <li>Manage your business account</li>
+                  <li>Cybersécurité & Gestion des Menaces</li>
+                  <li>Ingénierie Cloud & DevOps/DevSecOps</li>
+                  <li>Développement Logiciel & Automatisation</li>
                 </ul>
                 <div className="about-button">
-                  <Link legacyBehavior href="/about">
-                    <a className="main-btn filled-btn">Explore More Us</a>
+                  <Link legacyBehavior href="/contact">
+                    <a className="main-btn btn-blue">Contactez-Nous</a>
                   </Link>
                 </div>
               </div>
@@ -47,18 +40,10 @@ const About = () => {
               <div className="about-two_image-box pl-lg-70 mb-50 wow fadeInRight">
                 <div className="about-one-img">
                   <div className="image-overlay" />
-                  <img src="assets/images/about/about-3.jpg" alt="" />
-                  <div className="play-box">
-                    <a
-                      href="https://www.youtube.com/watch?v=TboWOSW7qCI"
-                      className="video-popup"
-                    >
-                      <i className="fas fa-play" />
-                    </a>
-                  </div>
+                  <img src="assets/images/about/about-vtp.jpg" alt="Visionary Tech Partners - Conseil et transformation digitale" />
                 </div>
                 <div className="quote-box-four text-white">
-                  <h3>Effective method for disease detection.</h3>
+                  <h3>Accélérer la maturité numérique mondiale grâce à des solutions technologiques intelligentes.</h3>
                 </div>
               </div>
             </div>
@@ -126,16 +111,16 @@ const About = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <img
-                      src="assets/images/gallery/img-2.jpg"
+                      src="assets/images/about/about-mission.jpg"
                       className="about-one-img wow fadeInUp"
-                      alt="Mission Image"
+                      alt="Notre mission - Équipe VTP"
                     />
                   </div>
                   <div className="col-md-6">
                     <img
-                      src="assets/images/gallery/img-3.jpg"
+                      src="assets/images/about/about-vision.jpg"
                       className="about-two-img wow fadeInDown"
-                      alt="Mission Image"
+                      alt="Notre vision - Équipe VTP"
                     />
                   </div>
                 </div>
@@ -155,8 +140,8 @@ const About = () => {
               {/*=== About Content Box ===*/}
               <div className="about-content-box mb-50">
                 <div className="section-title section-title-left wow fadeInDown">
-                  <span className="sub-title">What’s Our Plan</span>
-                  <h2>Best Investment Solutions For Growth </h2>
+                  <span className="sub-title">Notre Plan</span>
+                  <h2>Mission & Vision</h2>
                 </div>
                 <div className="tab-content-box wow fadeInUp">
                   <ul className="nav nav-tabs mb-20">
@@ -166,12 +151,12 @@ const About = () => {
                         data-toggle="tab"
                         href="#mission"
                       >
-                        Our Mission
+                        Notre Mission
                       </a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" data-toggle="tab" href="#vision">
-                        Our Vision
+                        Notre Vision
                       </a>
                     </li>
                   </ul>
@@ -179,35 +164,18 @@ const About = () => {
                     <div className="tab-pane fade show active" id="mission">
                       <div className="content-box">
                         <p>
-                          On the other hand we denounce with righteous
-                          indignation and dislike men who are so beguiled and
-                          demoralized by the charmso pleasure of the moment so
-                          blinded by desire that they cannesee the pain and
-                          trouble that are bound to ensue{" "}
+                          Notre mission est d'autonomiser les entreprises et les institutions avec des solutions technologiques sécurisées, innovantes et évolutives qui favorisent la transformation, l'efficacité et l'inclusion financière.
                         </p>
-                        <ul className="check-style-two">
-                          <li>Portfolio Diversification</li>
-                          <li>Volatility Protection</li>
-                          <li>Capital Protection</li>
-                          <li>Inflation Protection</li>
-                        </ul>
+                        <p className="mt-20">
+                          Accélérer la maturité numérique mondiale en autonomisant les organisations avec des logiciels intelligents, des architectures cloud évolutives et une gestion proactive des menaces conçue pour l'avenir du travail.
+                        </p>
                       </div>
                     </div>
                     <div className="tab-pane fade" id="vision">
                       <div className="content-box">
                         <p>
-                          On the other hand we denounce with righteous
-                          indignation and dislike men who are so beguiled and
-                          demoralized by the charmso pleasure of the moment so
-                          blinded by desire that they cannesee the pain and
-                          trouble that are bound to ensue{" "}
+                          Être la référence mondiale en matière de confiance numérique et de résilience opérationnelle, en offrant une modernisation de bout en bout grâce à des plateformes d'identité sécurisées, un DevOps cloud d'élite et un conseil IT stratégique.
                         </p>
-                        <ul className="check-style-two">
-                          <li>Portfolio Diversification</li>
-                          <li>Volatility Protection</li>
-                          <li>Capital Protection</li>
-                          <li>Inflation Protection</li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -218,9 +186,200 @@ const About = () => {
         </div>
       </section>
       {/*====== End About Section ======*/}
+      {/*====== Start Core Values Section ======*/}
+      <section className="features-section pt-130 pb-100 text-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-10">
+              <div className="section-title text-center mb-60 wow fadeInDown">
+                <span className="sub-title">Nos Valeurs</span>
+                <h2>Valeurs Fondamentales</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-idea-1" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Innovation</h3>
+                  <p>Nous remettons en question le statu quo et repoussons les limites pour créer des solutions modernes, évolutives et impactantes.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-support" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Intégrité</h3>
+                  <p>Nous opérons avec transparence, honnêteté et responsabilité — toujours faire ce qui est juste pour nos clients et nos communautés.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-target" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Résilience</h3>
+                  <p>Nous concevons des systèmes et stratégies qui peuvent résister à la pression, s'adapter au changement et soutenir la durabilité à long terme.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-medal" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Excellence</h3>
+                  <p>Nous maintenons les plus hauts standards en ingénierie, cybersécurité et conseil — livrant un travail dont nous sommes fiers.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-friend" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Collaboration</h3>
+                  <p>Nous croyons que le succès se construit grâce à des partenariats solides, une vision partagée et un travail d'équipe interdisciplinaire.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="features-item-two text-center wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-global" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Impact Mondial</h3>
+                  <p>Nous nous engageons à construire une technologie qui favorise la croissance économique, l'inclusion financière et des écosystèmes numériques plus forts à travers les frontières.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Core Values Section ======*/}
+      {/*====== Start Services Section ======*/}
+      <section className="service-section-three light-gray-bg pt-125 pb-100 p-r z-1">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-10">
+              <div className="section-title text-center mb-50 wow fadeInDown">
+                <span className="sub-title">Nos Services</span>
+                <h2>Nos Services</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-data-analytics.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-pie-chart" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Analyse de Données & Big Data</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-ia-mlops.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-idea-1" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Ingénierie IA & MLOps</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-cybersecurite.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-competitive" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Cybersécurité & Gestion des Menaces</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-cloud-devops.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-database" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Ingénierie Cloud & DevOps/DevSecOps</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-dev-logiciel.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-folder-management" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Développement Logiciel & Automatisation</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-identite-numerique.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-user" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Plateformes d'Identité Numérique & Authentification</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-consulting-it.jpg)" }}>
+                <div className="icon">
+                  <i className="flaticon-planning" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Conseil IT, Modernisation & Automatisation</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Services Section ======*/}
+      {/*====== Start Strategic Focus Section ======*/}
+      <section className="about-section pt-90 pb-80 text-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-10">
+              <div className="section-title text-center mb-60 wow fadeInDown">
+                <span className="sub-title">Focus Stratégique</span>
+                <h2>Focus Stratégique</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="about-content-box text-center mb-50 wow fadeInUp">
+                <p>
+                  VTP est positionné de manière unique pour opérer à l'intersection des standards des entreprises américaines et des économies numériques émergentes de l'Afrique. Nous nous concentrons sur la construction de systèmes résilients qui soutiennent l'inclusion financière, la modernisation gouvernementale et la confiance numérique transfrontalière.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Strategic Focus Section ======*/}
       {/*====== Start CTA Section ======*/}
       <section
-        className="cta-section bg_cover p-r z-1 pt-70 pb-50"
+        className="cta-section cta-section-vtp bg_cover p-r z-1 pt-70 pb-50"
         style={{ backgroundImage: "url(assets/images/bg/cta-bg-1.jpg)" }}
       >
         <div className="container">
@@ -228,14 +387,14 @@ const About = () => {
             <div className="col-lg-7">
               {/*=== Common Heading ===*/}
               <div className="section-title text-white mb-30 wow fadeInLeft">
-                <h2>Get Free Consultations! We’re Ready to Work Together</h2>
+                <h2>Votre partenaire tech pour la transformation. Parlons-en maintenant.</h2>
               </div>
             </div>
             <div className="col-lg-5">
               {/*=== Team Button ===*/}
               <div className="team-button float-lg-right mb-30 wow fadeInRight">
-                <Link legacyBehavior href="/team">
-                  <a className="main-btn btn-white">Get Free Consultations</a>
+                <Link legacyBehavior href="/contact">
+                  <a className="main-btn filled-btn filled-white">Contactez-nous</a>
                 </Link>
               </div>
             </div>
@@ -250,8 +409,8 @@ const About = () => {
             <div className="col-xl-6 col-lg-10">
               {/*=== Common Heading ===*/}
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Company History</span>
-                <h2>Great Company History</h2>
+                <span className="sub-title">Notre Parcours</span>
+                <h2>Historique Visionary Tech Partners</h2>
               </div>
             </div>
           </div>
@@ -265,17 +424,16 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/gallery/history-1.jpg"
-                      alt="history image"
+                      src="assets/images/about/history-lancement.jpg"
+                      alt="Lancement VTP"
                     />
                   </div>
                   <div className="history-content">
                     <h4 className="title">
-                      <span className="ribbon">1993</span> We Started
+                      <span className="ribbon">Nov. 2025</span> Lancement
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis istey natus sit voluptatem
-                      accusa loremque laudantium totam rem apereaque
+                      Création de Visionary Tech Partners. Début des activités de conseil en technologie, cybersécurité et modernisation IT au service des entreprises et des institutions.
                     </p>
                   </div>
                 </div>
@@ -285,17 +443,16 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/gallery/history-2.jpg"
-                      alt="history image"
+                      src="assets/images/about/history-deploiement.jpg"
+                      alt="Déploiement des offres"
                     />
                   </div>
                   <div className="history-content">
                     <h4 className="title">
-                      <span className="ribbon">1995</span> Opening Office
+                      <span className="ribbon">2025</span> Déploiement des offres
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis istey natus sit voluptatem
-                      accusa loremque laudantium totam rem apereaque
+                      Mise en place de nos services : développement logiciel, ingénierie cloud & DevOps, cybersécurité, analyse de données et conseil en transformation digitale.
                     </p>
                   </div>
                 </div>
@@ -305,57 +462,16 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/gallery/history-3.jpg"
-                      alt="history image"
+                      src="assets/images/about/history-perspectives.jpg"
+                      alt="Perspectives"
                     />
                   </div>
                   <div className="history-content">
                     <h4 className="title">
-                      <span className="ribbon">1997</span> Client Satisfaction
+                      <span className="ribbon">2026</span> Perspectives
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis istey natus sit voluptatem
-                      accusa loremque laudantium totam rem apereaque
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="single-history-item mb-80 wow fadeInUp"
-                  data-wow-delay=".5s"
-                >
-                  <div className="history-img">
-                    <img
-                      src="assets/images/gallery/history-4.jpg"
-                      alt="history image"
-                    />
-                  </div>
-                  <div className="history-content">
-                    <h4 className="title">
-                      <span className="ribbon">2005</span>Improve Ourselve
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis istey natus sit voluptatem
-                      accusa loremque laudantium totam rem apereaque
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="single-history-item mb-80 wow fadeInUp"
-                  data-wow-delay=".6s"
-                >
-                  <div className="history-img">
-                    <img
-                      src="assets/images/gallery/history-5.jpg"
-                      alt="history image"
-                    />
-                  </div>
-                  <div className="history-content">
-                    <h4 className="title">
-                      <span className="ribbon">2010</span>Awards Winning
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis istey natus sit voluptatem
-                      accusa loremque laudantium totam rem apereaque
+                      Renforcement de notre présence et de nos partenariats, avec un focus sur l&apos;inclusion financière et la confiance numérique entre les marchés.
                     </p>
                   </div>
                 </div>
@@ -364,511 +480,62 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/*====== Start History Section ======*/}
-      {/*====== Start Partners Section ======*/}
-      <section className="partners-section dark-black-bg pt-60 pb-60">
-        <div className="container">
-          {/*=== Partners Slider ===*/}
-          <Slider {...partnerSliderOne} className="partner-slider-one">
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-1.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-2.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-3.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-4.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-5.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-6.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-3.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </section>
-      {/*====== End Partners Section ======*/}
-      {/*====== Start Team Section ======*/}
-      <section className="team-section pt-125 pb-130">
+      {/*====== End History Section ======*/}
+      {/*====== Start Contact Info Section ======*/}
+      <section className="contact-info-section pt-125 pb-100 text-white">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-10">
-              {/*=== Common Heading ===*/}
+            <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Meet Our Team</span>
-                <h2>Experience Team Members</h2>
+                <span className="sub-title">Contact</span>
+                <h2>Informations de Contact</h2>
               </div>
             </div>
           </div>
-          {/*=== Team Slider ===*/}
-          <Slider {...teamSliderOne} className="team-slider-one">
-            <div className="single-team-item mb-40 wow fadeInUp">
-              <div className="img-holder">
-                <img src="assets/images/team/team-1.jpg" alt="Team Image" />
-                <svg
-                  className="team-shape"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  width="213px"
-                  height="80px"
-                >
-                  <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                </svg>
-                <span className="share-btn">
-                  <i className="far fa-share-alt" />
-                </span>
-                <ul className="social-link">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="text text-center">
-                <h3 className="title">
-                  <Link legacyBehavior href="/team-details">
-                    <a>Robert C. Simmons</a>
-                  </Link>
-                </h3>
-                <p className="position">Business Consultant</p>
-              </div>
-            </div>
-            <div className="single-team-item mb-40 wow fadeInUp">
-              <div className="img-holder">
-                <img src="assets/images/team/team-2.jpg" alt="Team Image" />
-                <svg
-                  className="team-shape"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  width="213px"
-                  height="80px"
-                >
-                  <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                </svg>
-                <span className="share-btn">
-                  <i className="far fa-share-alt" />
-                </span>
-                <ul className="social-link">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="text text-center">
-                <h3 className="title">
-                  <Link legacyBehavior href="/team-details">
-                    <a>Christopher L. Wagners</a>
-                  </Link>
-                </h3>
-                <p className="position">Senior Manager</p>
-              </div>
-            </div>
-            <div className="single-team-item mb-40 wow fadeInUp">
-              <div className="img-holder">
-                <img src="assets/images/team/team-3.jpg" alt="Team Image" />
-                <svg
-                  className="team-shape"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  width="213px"
-                  height="80px"
-                >
-                  <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                </svg>
-                <span className="share-btn">
-                  <i className="far fa-share-alt" />
-                </span>
-                <ul className="social-link">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="text text-center">
-                <h3 className="title">
-                  <Link legacyBehavior href="/team-details">
-                    <a>Lawrence C. Dickerson</a>
-                  </Link>
-                </h3>
-                <p className="position">Financial Consultant</p>
-              </div>
-            </div>
-            <div className="single-team-item mb-40 wow fadeInUp">
-              <div className="img-holder">
-                <img src="assets/images/team/team-2.jpg" alt="Team Image" />
-                <svg
-                  className="team-shape"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  width="213px"
-                  height="80px"
-                >
-                  <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                </svg>
-                <span className="share-btn">
-                  <i className="far fa-share-alt" />
-                </span>
-                <ul className="social-link">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="text text-center">
-                <h3 className="title">
-                  <Link legacyBehavior href="/team-details">
-                    <a>Christopher L. Wagners</a>
-                  </Link>
-                </h3>
-                <p className="position">Senior Manager</p>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </section>
-      {/*====== End Team Section ======*/}
-      {/*====== Start Feedback Section ======*/}
-      <section className="testimonial-section pb-130">
-        <div className="container">
-          <div className="testimonial-wrapper-two light-gray-bg wow fadeInUp">
-            <div className="row">
-              <div className="col-lg-12">
-                {/*=== Common Heading ===*/}
-                <div className="section-title section-title-left border-bottom-1 mb-40 pb-20">
-                  <span className="sub-title">Clients Testtimonials</span>
-                  <h2>What’s Our Customer Say</h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="contact-info-box text-center mb-50 wow fadeInUp">
+                <div className="row">
+                  <div className="col-md-4 mb-30">
+                    <div className="icon">
+                      <i className="flaticon-email" />
+                    </div>
+                    <div className="text">
+                      <h4>Email</h4>
+                      <p>
+                        <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-4 mb-30">
+                    <div className="icon">
+                      <i className="flaticon-phone-call" />
+                    </div>
+                    <div className="text">
+                      <h4>Téléphone</h4>
+                      <p>
+                        <a href="tel:+0000000000">(000) 000-0000</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-4 mb-30">
+                    <div className="icon">
+                      <i className="flaticon-website" />
+                    </div>
+                    <div className="text">
+                      <h4>Site Web</h4>
+                      <p>
+                        <a href="https://www.vtpg.com" target="_blank" rel="noopener noreferrer">www.vtpg.com</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-10">
-                {/*=== Testimonial Slider ===*/}
-                <Slider
-                  {...testimonialSliderThree}
-                  className="testimonial-slider-three"
-                >
-                  <div className="testimonial-item-two d-flex">
-                    <div className="quote">
-                      <i className="flaticon-left-quote-1" />
-                    </div>
-                    <div className="testimonial-content">
-                      <ul className="ratings">
-                        <li>
-                          <span className="title">Good Quality</span>
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                      </ul>
-                      <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment so
-                        blinded by desire that they cannot foresee the pain and
-                        trouble that are bound ensue and equal blame belongs to
-                        those who fail in their duty through weakness.
-                      </p>
-                      <div className="author-thumb-title d-flex">
-                        <div className="author-thumb">
-                          <img
-                            src="assets/images/testimonial/thumb-1.jpg"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-title">
-                          <h4>Ronald B. Griffin</h4>
-                          <p className="position">Business Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item-two d-flex">
-                    <div className="quote">
-                      <i className="flaticon-left-quote-1" />
-                    </div>
-                    <div className="testimonial-content">
-                      <ul className="ratings">
-                        <li>
-                          <span className="title">Good Quality</span>
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                      </ul>
-                      <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment so
-                        blinded by desire that they cannot foresee the pain and
-                        trouble that are bound ensue and equal blame belongs to
-                        those who fail in their duty through weakness.
-                      </p>
-                      <div className="author-thumb-title d-flex">
-                        <div className="author-thumb">
-                          <img
-                            src="assets/images/testimonial/thumb-1.jpg"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-title">
-                          <h4>Ronald B. Griffin</h4>
-                          <p className="position">Business Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item-two d-flex">
-                    <div className="quote">
-                      <i className="flaticon-left-quote-1" />
-                    </div>
-                    <div className="testimonial-content">
-                      <ul className="ratings">
-                        <li>
-                          <span className="title">Good Quality</span>
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                      </ul>
-                      <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment so
-                        blinded by desire that they cannot foresee the pain and
-                        trouble that are bound ensue and equal blame belongs to
-                        those who fail in their duty through weakness.
-                      </p>
-                      <div className="author-thumb-title d-flex">
-                        <div className="author-thumb">
-                          <img
-                            src="assets/images/testimonial/thumb-1.jpg"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-title">
-                          <h4>Ronald B. Griffin</h4>
-                          <p className="position">Business Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item-two d-flex">
-                    <div className="quote">
-                      <i className="flaticon-left-quote-1" />
-                    </div>
-                    <div className="testimonial-content">
-                      <ul className="ratings">
-                        <li>
-                          <span className="title">Good Quality</span>
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                        <li>
-                          <i className="fas fa-star" />
-                        </li>
-                      </ul>
-                      <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment so
-                        blinded by desire that they cannot foresee the pain and
-                        trouble that are bound ensue and equal blame belongs to
-                        those who fail in their duty through weakness.
-                      </p>
-                      <div className="author-thumb-title d-flex">
-                        <div className="author-thumb">
-                          <img
-                            src="assets/images/testimonial/thumb-1.jpg"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-title">
-                          <h4>Ronald B. Griffin</h4>
-                          <p className="position">Business Manager</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Slider>
-              </div>
-              <div className="col-lg-2">
-                {/*=== Testimonial Dots ===*/}
-                <div className="testimonial-dots" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      {/*====== End Feedback Section ======*/}
+      {/*====== End Contact Info Section ======*/}
       {/*====== Start Newsletter Section ======*/}
       <Newsletter />
     </Layout>

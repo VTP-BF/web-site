@@ -6,7 +6,7 @@ const Newsletter = () => {
           <div className="col-xl-5 col-lg-12">
             {/*=== Common Heading ===*/}
             <div className="section-title section-title-white wow fadeInLeft">
-              <h2>Subscribe Our Newsletter to Get More Updates</h2>
+              <h2>Restez informé de nos actualités</h2>
             </div>
           </div>
           <div className="col-xl-7 col-lg-12">
@@ -19,7 +19,7 @@ const Newsletter = () => {
                       <input
                         type="email"
                         className="form_control"
-                        placeholder="Enter Email Address"
+                        placeholder="Votre adresse e-mail"
                         name="email"
                       />
                       <i className="far fa-envelope" />
@@ -33,15 +33,15 @@ const Newsletter = () => {
                       />
                       <label htmlFor="check2">
                         <span>
-                          I agree to the <a href="#"> Privacy Policy</a>.
+                          J&apos;accepte la <a href="#"> politique de confidentialité</a>.
                         </span>
                       </label>
                     </div>
                   </div>
                   <div className="col-lg-4">
                     <div className="form-button float-lg-right">
-                      <button className="main-btn btn-red">
-                        Subscribe Now
+                      <button className="main-btn btn-blue">
+                        S&apos;inscrire
                       </button>
                     </div>
                   </div>
