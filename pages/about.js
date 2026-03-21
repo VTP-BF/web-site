@@ -21,7 +21,7 @@ const About = () => {
                   <h2>Visionary Tech Partners</h2>
                 </div>
                 <p>
-                  Visionary Tech Partners (VTP) est une firme de conseil technologique créée par une équipe d'experts en cybersécurité, science des données, développement logiciel et ingénierie DevOps/DevSecOps. Nous aidons les organisations à moderniser leur écosystème numérique avec des solutions sécurisées, évolutives et prêtes pour l'avenir.
+                  Visionary Tech Partners (VTP) est une firme de conseil technologique créée par une équipe d&apos;experts en cybersécurité, science des données, développement logiciel et ingénierie DevOps/DevSecOps. Nous aidons les organisations à moderniser leur écosystème numérique avec des solutions sécurisées, évolutives et prêtes pour l&apos;avenir.
                 </p>
                 <ul className="check-style-one mb-30">
                   <li>Cybersécurité & Gestion des Menaces</li>
@@ -164,17 +164,17 @@ const About = () => {
                     <div className="tab-pane fade show active" id="mission">
                       <div className="content-box">
                         <p>
-                          Notre mission est d'autonomiser les entreprises et les institutions avec des solutions technologiques sécurisées, innovantes et évolutives qui favorisent la transformation, l'efficacité et l'inclusion financière.
+                          Notre mission est d&apos;autonomiser les entreprises et les institutions avec des solutions technologiques sécurisées, innovantes et évolutives qui favorisent la transformation, l&apos;efficacité et l&apos;inclusion financière.
                         </p>
                         <p className="mt-20">
-                          Accélérer la maturité numérique mondiale en autonomisant les organisations avec des logiciels intelligents, des architectures cloud évolutives et une gestion proactive des menaces conçue pour l'avenir du travail.
+                          Accélérer la maturité numérique mondiale en autonomisant les organisations avec des logiciels intelligents, des architectures cloud évolutives et une gestion proactive des menaces conçue pour l&apos;avenir du travail.
                         </p>
                       </div>
                     </div>
                     <div className="tab-pane fade" id="vision">
                       <div className="content-box">
                         <p>
-                          Être la référence mondiale en matière de confiance numérique et de résilience opérationnelle, en offrant une modernisation de bout en bout grâce à des plateformes d'identité sécurisées, un DevOps cloud d'élite et un conseil IT stratégique.
+                          Être la référence mondiale en matière de confiance numérique et de résilience opérationnelle, en offrant une modernisation de bout en bout grâce à des plateformes d&apos;identité sécurisées, un DevOps cloud d&apos;élite et un conseil IT stratégique.
                         </p>
                       </div>
                     </div>
@@ -227,7 +227,7 @@ const About = () => {
                 </div>
                 <div className="text">
                   <h3 className="title">Résilience</h3>
-                  <p>Nous concevons des systèmes et stratégies qui peuvent résister à la pression, s'adapter au changement et soutenir la durabilité à long terme.</p>
+                  <p>Nous concevons des systèmes et stratégies qui peuvent résister à la pression, s&apos;adapter au changement et soutenir la durabilité à long terme.</p>
                 </div>
               </div>
             </div>
@@ -249,7 +249,7 @@ const About = () => {
                 </div>
                 <div className="text">
                   <h3 className="title">Collaboration</h3>
-                  <p>Nous croyons que le succès se construit grâce à des partenariats solides, une vision partagée et un travail d'équipe interdisciplinaire.</p>
+                  <p>Nous croyons que le succès se construit grâce à des partenariats solides, une vision partagée et un travail d&apos;équipe interdisciplinaire.</p>
                 </div>
               </div>
             </div>
@@ -260,7 +260,7 @@ const About = () => {
                 </div>
                 <div className="text">
                   <h3 className="title">Impact Mondial</h3>
-                  <p>Nous nous engageons à construire une technologie qui favorise la croissance économique, l'inclusion financière et des écosystèmes numériques plus forts à travers les frontières.</p>
+                  <p>Nous nous engageons à construire une technologie qui favorise la croissance économique, l&apos;inclusion financière et des écosystèmes numériques plus forts à travers les frontières.</p>
                 </div>
               </div>
             </div>
@@ -336,7 +336,7 @@ const About = () => {
                   <i className="flaticon-user" />
                 </div>
                 <div className="text">
-                  <h3 className="title">Plateformes d'Identité Numérique & Authentification</h3>
+                  <h3 className="title">Plateformes d&apos;Identité Numérique & Authentification</h3>
                 </div>
               </div>
             </div>
@@ -369,7 +369,7 @@ const About = () => {
             <div className="col-lg-10">
               <div className="about-content-box text-center mb-50 wow fadeInUp">
                 <p>
-                  VTP est positionné de manière unique pour opérer à l'intersection des standards des entreprises américaines et des économies numériques émergentes de l'Afrique. Nous nous concentrons sur la construction de systèmes résilients qui soutiennent l'inclusion financière, la modernisation gouvernementale et la confiance numérique transfrontalière.
+                  VTP est positionné de manière unique pour opérer à l&apos;intersection des standards des entreprises américaines et des économies numériques émergentes de l&apos;Afrique. Nous nous concentrons sur la construction de systèmes résilients qui soutiennent l&apos;inclusion financière, la modernisation gouvernementale et la confiance numérique transfrontalière.
                 </p>
               </div>
             </div>

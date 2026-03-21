@@ -43,16 +43,16 @@ const Index = () => {
                   Solutions IT pour votre entreprise
                 </h1>
                 <p className="wow fadeInDown" data-wow-delay=".7s">
-                  Nous offrons des services IT de pointe incluant l'IA, la cybersécurité,
-                  le cloud et l'automatisation pour propulser votre business vers l'avenir
+                  Nous offrons des services IT de pointe incluant l&apos;IA, la cybersécurité,
+                  le cloud et l&apos;automatisation pour propulser votre business vers l&apos;avenir
                 </p>
                 <div className="hero-button wow fadeInUp" data-wow-delay=".9s">
                   <a href="#services" className="main-btn btn-blue">
                     Découvrir nos Services
                   </a>
-                  <a href="/contact" className="main-btn filled-btn filled-white">
-                    Nous Contacter
-                  </a>
+                  <Link legacyBehavior href="/contact">
+                    <a className="main-btn filled-btn filled-white">Nous Contacter</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Index = () => {
                 <p>
                   Nous vous accompagnons dans la transformation digitale de votre entreprise
                   avec des solutions IT innovantes, sécurisées et adaptées à vos besoins.
-                  De l'automatisation des processus à l'intelligence artificielle,
+                  De l&apos;automatisation des processus à l&apos;intelligence artificielle,
                   nous mettons la technologie au service de votre croissance.
                 </p>
                 <Link legacyBehavior href="/about">
@@ -201,8 +201,8 @@ const Index = () => {
                 </div>
                 <p>
                   Nous proposons une gamme complète de services IT allant du développement
-                  logiciel sur mesure à l'ingénierie cloud, en passant par la cybersécurité
-                  et l'analyse de données. Nos solutions sont conçues pour répondre
+                  logiciel sur mesure à l&apos;ingénierie cloud, en passant par la cybersécurité
+                  et l&apos;analyse de données. Nos solutions sont conçues pour répondre
                   aux défis technologiques modernes.
                 </p>
                 <ul className="check-style-one">
