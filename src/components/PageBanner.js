@@ -1,9 +1,20 @@
 import Link from "next/link";
-const PageBanner = ({ pageTitle, pageName }) => {
+
+const BANNER_IMAGES = {
+  "À Propos": "assets/images/bg/page-banner-about.jpg",
+  "Nos Services": "assets/images/bg/page-banner-services.jpg",
+  "Contact Us": "assets/images/bg/page-banner-contact.jpg",
+  Contact: "assets/images/bg/page-banner-contact.jpg",
+};
+
+const PageBanner = ({ pageTitle, pageName, bgImage }) => {
+  const imageUrl =
+    bgImage || (pageName && BANNER_IMAGES[pageName]) || "assets/images/bg/page-banner-vtp.jpg";
+  const isContact = pageName === "Contact" || pageName === "Contact Us";
   return (
     <section
-      className="page-banner bg_cover p-r z-1"
-      style={{ backgroundImage: "url(assets/images/bg/page-bg-1.jpg)" }}
+      className={`page-banner bg_cover p-r z-1${isContact ? " page-banner--contact" : ""}`}
+      style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="container">
         <div className="row justify-content-center">

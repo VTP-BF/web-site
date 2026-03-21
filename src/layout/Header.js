@@ -303,7 +303,7 @@ const Header3 = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="assets/images/logo/logo-3.png" alt="Site Logo" />
+                <img src="assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
               </a>
             </Link>
           </div>
@@ -314,7 +314,7 @@ const Header3 = ({ singleMenus }) => (
               <div className="mobile-logo mb-30 d-block d-xl-none text-center">
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
-                    <img src="assets/images/logo/logo-5.png" alt="Site Logo" />
+                    <img src="assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
                   </a>
                 </Link>
               </div>
@@ -478,206 +478,24 @@ const Menus = () => (
   <Fragment>
     <nav className="main-menu d-none d-xl-block">
       <ul>
-        <li className="menu-item has-children">
-          <a href="#" className="active">
-            Home
-          </a>
-          <ul className="sub-menu">
-            <li className="has-children">
-              <a href="#">Multipage</a>
-              <ul className="sub-menu">
-                <li>
-                  <Link legacyBehavior href="/">
-                    Business Consultant
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="index-2">
-                    Investment Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="index-3">
-                    Digital Banking
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="index-4">
-                    Business Advisor
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="index-5">
-                    Marketing Agency
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="has-children">
-              <a href="#">One Page</a>
-              <ul className="sub-menu">
-                <li>
-                  <Link legacyBehavior href="onepage-index">
-                    Business Consultant
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="onepage-index-2">
-                    Investment Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="onepage-index-3">
-                    Digital Banking
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="onepage-index-4">
-                    Business Advisor
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="onepage-index-5">
-                    Marketing Agency
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
         <li className="menu-item">
-          <Link legacyBehavior href="about">
-            About
+          <Link legacyBehavior href="/">
+            <a className="active">Home</a>
           </Link>
         </li>
-        <li className="menu-item has-children">
-          <a href="#">Services</a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="services">
-                Our Services
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="service-details">
-                Service Details
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item has-children">
-          <a href="#">Team</a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="team">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="team-details">
-                Team Details
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item has-children">
-          <a href="#">Pages</a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="career">
-                Career
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="job-details">
-                Job Details
-              </Link>
-            </li>
-            <li className="has-children">
-              <a href="#">Project</a>
-              <ul className="sub-menu">
-                <li>
-                  <Link legacyBehavior href="project-3-column">
-                    Project 3 Column
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="project-masonry">
-                    Project Masonry
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="project-details">
-                    Project Details
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link legacyBehavior href="products">
-                Our Products
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="product-details">
-                Product Details
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="testimonial">
-                Testimonial
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="faqs">
-                Faqs
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="pricing">
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="error-404">
-                Page 404
-              </Link>
-            </li>
-            <li className="has-children">
-              <a href="#">User Pages</a>
-              <ul className="sub-menu">
-                <li>
-                  <Link legacyBehavior href="sign-in">
-                    Sign In
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="sign-up">
-                    Sign Up
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li className="menu-item has-children">
-          <a href="#">News</a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="blog-listing">
-                Blog Standard
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="blog-details">
-                Blog Details
-              </Link>
-            </li>
-          </ul>
+        <li className="menu-item">
+          <Link legacyBehavior href="/about">
+            <a>About</a>
+          </Link>
         </li>
         <li className="menu-item">
-          <Link legacyBehavior href="contact">
-            Contact
+          <Link legacyBehavior href="/services">
+            <a>Services</a>
+          </Link>
+        </li>
+        <li className="menu-item">
+          <Link legacyBehavior href="/contact">
+            <a>Contact</a>
           </Link>
         </li>
       </ul>

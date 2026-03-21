@@ -1,290 +1,146 @@
 import Link from "next/link";
 import Slider from "react-slick";
 import Counter from "../src/components/Counter";
-import FeedbackSectionChart from "../src/components/FeedbackSectionChart";
-import SimpleFaq from "../src/components/SimpleFaq";
-import LatestServices from "../src/components/slider/LatestServices";
 import Layout from "../src/layout/Layout";
-import { partnerSliderOne, projectsSliderOne } from "../src/sliderProps";
+import { testimonialSliderThree } from "../src/sliderProps";
 const Index = () => {
   return (
-    <Layout>
-      {/*====== Start Hero Section ======*/}
-      <section
-        className="banner-one bg_cover p-r z-1"
-        style={{ backgroundImage: "url(assets/images/hero/hero-bg-1.jpg)" }}
-      >
-        <div className="shape shape-one">
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
+      <section className="banner-three p-r z-1">
+        <div className="shape shape-one animate-float-x">
           <span>
-            <img src="assets/images/hero/hero-one_shape-1.png" alt="" />
+            <img src="assets/images/shape/shape-5.png" alt="shape" />
           </span>
         </div>
-        <div className="shape shape-two">
+        <div className="shape shape-two animate-float-y">
           <span>
-            <img src="assets/images/hero/circel.png" alt="" />
+            <img src="assets/images/shape/shape-6.png" alt="shape" />
           </span>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-7 col-lg-10">
-              {/*=== Hero Content ===*/}
-              <div className="hero-content text-white">
-                <span className="tag-line wow fadeInDown" data-wow-delay=".5s">
-                  Business Agency
-                </span>
-                <h1 className="wow fadeInUp" data-wow-delay=".7s">
-                  We Provide Digital Business Solutions
-                </h1>
-                <div className="hero-button wow fadeInUp" data-wow-delay=".9s">
-                  <Link legacyBehavior href="/about">
-                    <a className="main-btn btn-red">Explore More</a>
-                  </Link>
-                  <Link legacyBehavior href="/services">
-                    <a className="main-btn filled-btn filled-white">
-                      Our Services
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Hero Section ======*/}
-      {/*====== Start About Section ======*/}
-      <section className="about-section-one pt-125 pb-70">
-        <div className="shape shape-one">
+        <div className="shape shape-three animate-float-y">
           <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              width="293px"
-              height="849px"
-            >
-              <path
-                fillRule="evenodd"
-                fill="rgb(250, 250, 250)"
-                d="M292.858,848.283 L45.529,527.037 L183.238,230.105 L0.311,0.959 L292.858,0.959 L292.858,848.283 Z"
-              />
-            </svg>
+            <img src="assets/images/shape/shape-7.png" alt="shape" />
           </span>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              {/*=== About Content Box ===*/}
-              <div className="about-content-box content-box-gap wow fadeInLeft mb-50">
-                <div className="section-title section-title-left">
-                  <span className="sub-title">About Company</span>
-                  <h2>Help to Create Great Business Future </h2>
-                </div>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium totam rem aperiam eaque
-                  abillo inventore veritatis quasi architecto beatae vitae dicta
-                  sunt explicabo nemo enim ipsam voluptatem quia.
-                </p>
-                <Link legacyBehavior href="/about">
-                  <a className="btn-link">Learn More Us</a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              {/*=== Quote Box One ===*/}
-              <div className="quote-box-one ml-lg-70 mb-50">
-                <h2>Effective method for disease detection.</h2>
-              </div>
-            </div>
-          </div>
+        <div className="shape shape-four animate-float-y">
+          <span>
+            <img src="assets/images/shape/shape-8.png" alt="shape" />
+          </span>
         </div>
-      </section>
-      {/*====== End About Section ======*/}
-      {/*====== Start Features Section ======*/}
-      <section className="features-section p-r z-1 pb-85">
-        <div className="shape shape-one">
+        <div className="shape shape-five">
           <span />
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 col-lg-12">
-              {/*=== FEatures Image Box ===*/}
-              <div className="features-one_img-box mb-50">
-                <img
-                  src="assets/images/features/img-1.jpg"
-                  className="features-img-one wow fadeInDown"
-                  alt="Features Image"
-                />
-                <img
-                  src="assets/images/features/img-2.jpg"
-                  className="features-img-two wow fadeInUp"
-                  alt="Features Image"
-                />
-                <div className="quote-box-two wow fadeInLeft">
-                  <h3>Work Hard to Success</h3>
-                </div>
-                <div className="big-logo wow fadeInRight">
-                  <Link legacyBehavior href="/">
-                    <a>
-                      <img
-                        src="assets/images/logo/big-logo-1.png"
-                        alt="Site logo"
-                      />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-12">
-              {/*=== Features Content Box ===*/}
-              <div className="features-one_content-box pl-lg-70 mb-10">
-                <div className="section-title section-title-left mb-35 wow fadeInDown">
-                  <span className="sub-title">What We Do ?</span>
-                  <h2>Easy Way to Success Your Business</h2>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 col-sm-12">
-                    {/*=== Features Item ===*/}
-                    <div className="features-item animate-hover-icon mb-40 wow fadeInUp">
-                      <div className="icon">
-                        <i className="flaticon-stats" />
-                      </div>
-                      <div className="text">
-                        <h4 className="title">Strategy and Innovation</h4>
-                        <p>Natus error sit volupte atem accusa dolore</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    {/*=== Features Item ===*/}
-                    <div className="features-item animate-hover-icon mb-40 wow fadeInUp">
-                      <div className="icon">
-                        <i className="flaticon-support" />
-                      </div>
-                      <div className="text">
-                        <h4 className="title">Quality Insure Compliance</h4>
-                        <p>Natus error sit volupte atem accusa dolore</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    {/*=== Features Item ===*/}
-                    <div className="features-item animate-hover-icon mb-40 wow fadeInUp">
-                      <div className="icon">
-                        <i className="flaticon-digital-strategy" />
-                      </div>
-                      <div className="text">
-                        <h4 className="title">Sales &amp; Market Research</h4>
-                        <p>Natus error sit volupte atem accusa dolore</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    {/*=== Features Item ===*/}
-                    <div className="features-item animate-hover-icon mb-40 wow fadeInUp">
-                      <div className="icon">
-                        <i className="flaticon-data" />
-                      </div>
-                      <div className="text">
-                        <h4 className="title">Data Analytics Solutions</h4>
-                        <p>Natus error sit volupte atem accusa dolore</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="shape shape-six">
+          <span>
+            <img src="assets/images/shape/shape-9.png" alt="" />
+          </span>
         </div>
-      </section>
-      {/*====== End Features Section ======*/}
-      {/*====== Start Service Section ======*/}
-      <section
-        className="service-section bg_cover pt-125 p-r z-1 pb-150"
-        style={{ backgroundImage: "url(assets/images/bg/service-bg-1.jpg)" }}
-      >
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-10">
-              {/*=== Common Heading ===*/}
-              <div className="section-title text-center text-white mb-60 wow fadeInDown">
-                <span className="sub-title">Latest Services</span>
-                <h2>Amazing Business Services</h2>
-              </div>
-            </div>
-          </div>
-          {/*=== Service Slider ===*/}
-          <LatestServices />
-        </div>
-      </section>
-      {/*====== End Service Section ======*/}
-      {/*====== Start Fact Section ======*/}
-      <section className="fact-section p-r z-1 pt-130">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-7 col-lg-12">
-              {/*=== Fact image box ===*/}
-              <div className="fact-img_one-box text-right pr-lg-70 mb-50">
-                <div className="quote-box-three text-left wow fadeInLeft z-1">
-                  <h3>
-                    We Have 25 Years Of Experience in Business Consulting
-                    Services
-                  </h3>
-                  <div className="author-thumb-title d-flex align-items-center">
-                    <div className="author-thumb">
-                      <img
-                        src="assets/images/author-1.jpg"
-                        alt="Author Image"
-                      />
-                    </div>
-                    <div className="author-title">
-                      <h4 className="title">Joseh G. Coleman</h4>
-                      <p className="position">CEO &amp; Founder</p>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src="assets/images/gallery/img-1.jpg"
-                  className="wow fadeInDown"
-                  alt="Fact image"
-                />
-              </div>
-            </div>
-            <div className="col-xl-5 col-lg-12">
-              {/*=== Fact content Box ===*/}
-              <div className="fact-one_content-box mb-10">
-                <div className="section-title section-title-left wow fadeInDown">
-                  <span className="sub-title">Who We Are</span>
-                  <h2>We’re Committed to Creating Change</h2>
-                </div>
-                <p className="wow fadeInUp">
-                  Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                  accusantium doloremque laudantium totam rem apereaque abillo
-                  inventore veritatis quasi architecto beatae
+          <div className="row align-items-center">
+            <div className="col-lg-5">
+              <div className="hero-content">
+                <h1 className="wow fadeInUp" data-wow-delay=".5s">
+                  Solutions IT pour votre entreprise
+                </h1>
+                <p className="wow fadeInDown" data-wow-delay=".7s">
+                  Nous offrons des services IT de pointe incluant l'IA, la cybersécurité,
+                  le cloud et l'automatisation pour propulser votre business vers l'avenir
                 </p>
-                <div className="single-counter-item d-flex align-items-center mb-40 wow fadeInDown">
-                  <div className="icon">
-                    <a href="#">
-                      <i className="far fa-arrow-right" />
-                    </a>
+                <div className="hero-button wow fadeInUp" data-wow-delay=".9s">
+                  <a href="#services" className="main-btn btn-blue">
+                    Découvrir nos Services
+                  </a>
+                  <a href="/contact" className="main-btn filled-btn filled-white">
+                    Nous Contacter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div
+                className="hero-img-box hero-img-box-wide hero-img-box-bg wow fadeInRight"
+                data-wow-delay=".10s"
+                style={{ backgroundImage: "url(assets/images/home/home-hero-software-innovation.png)" }}
+                role="img"
+                aria-label="Solutions IT - Software Innovation - Visionary Tech Partners"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Banner Section ======*/}
+      {/*====== Start Fact Section ======*/}
+      <section className="fact-section-three p-r z-1 pt-150">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="author-rating-box-two mb-40 wow fadeInUp">
+                <ul className="rating">
+                  <li>
+                    <span>Expertise</span>
+                  </li>
+                  <li>
+                    <i className="fas fa-star" />
+                  </li>
+                  <li>
+                    <i className="fas fa-star" />
+                  </li>
+                  <li>
+                    <i className="fas fa-star" />
+                  </li>
+                  <li>
+                    <i className="fas fa-star" />
+                  </li>
+                  <li>
+                    <i className="fas fa-star" />
+                  </li>
+                </ul>
+                <h5>Votre partenaire tech pour la transformation digitale</h5>
+                <div className="author-thumb-title d-flex align-items-center">
+                  <div className="author-thumb">
+                    <img
+                      src="assets/images/home/vtp-fact-thumb.png"
+                      alt="Visionary Tech Partners"
+                    />
                   </div>
-                  <div className="text d-flex justify-content-between align-items-center">
-                    <h2 className="number">
-                      <Counter end={2359} />
-                    </h2>
-                    <h5>Projects Completed in Last 5 Years</h5>
+                  <div className="author-title">
+                    <h5>Visionary Tech Partners</h5>
                   </div>
                 </div>
-                <div className="single-counter-item d-flex align-items-center mb-40 wow fadeInDown">
-                  <div className="icon">
-                    <a href="#">
-                      <i className="far fa-arrow-right" />
-                    </a>
+              </div>
+            </div>
+            <div className="col-lg-9">
+              <div className="fact-wrapper ml-lg-55">
+                <div className="row justify-content-center">
+                  <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="single-counter-item-three text-center mb-40 wow fadeInDown">
+                      <div className="text">
+                        <h2 className="number">
+                          <Counter end={7} />+
+                        </h2>
+                        <h5>Services IT</h5>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text d-flex justify-content-between">
-                    <h2 className="number">
-                      <Counter end={5368} />
-                    </h2>
-                    <h5>Happy Global Customers Who Trusted Us</h5>
+                  <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="single-counter-item-three text-center mb-40 wow fadeInUp">
+                      <div className="text">
+                        <h2 className="number">
+                          <Counter end={1} />+
+                        </h2>
+                        <h5>An d&apos;activité</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="single-counter-item-three text-center mb-40 wow fadeInDown">
+                      <div className="text">
+                        <h2 className="number">
+                          <Counter end={100} />%
+                        </h2>
+                        <h5>Engagement</h5>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -293,691 +149,217 @@ const Index = () => {
         </div>
       </section>
       {/*====== End Fact Section ======*/}
-      {/*====== Start Project Section ======*/}
-      <section className="project-section pt-75 pb-100">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-              {/*=== Common Heading ===*/}
-              <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Latest Project &amp; Case</span>
-                <h2>Let’s Looks Our Global Projects</h2>
-              </div>
-            </div>
-          </div>
-          {/*=== Project Slider ===*/}
-          <Slider {...projectsSliderOne} className="projects-slider-one">
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-1.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-2.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon d-flex">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-3.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-4.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-5.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*=== Project Item ===*/}
-            <div className="project-item wow fadeInUp">
-              <div className="img-holder">
-                <img
-                  src="assets/images/project/img-2.jpg"
-                  alt="Project Image"
-                />
-                <div className="project-hover">
-                  <div className="hover-content d-flex">
-                    <Link legacyBehavior href="/project-details">
-                      <a className="icon-btn">
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                    <div className="icon">
-                      <i className="flaticon-finance" />
-                    </div>
-                    <div className="text">
-                      <h3 className="title">
-                        <Link legacyBehavior href="/project-details">
-                          <a>Financial Management</a>
-                        </Link>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </section>
-      {/*====== End Project Section ======*/}
-      {/*====== Start CTA Section ======*/}
-      <section
-        className="cta-section bg_cover p-r z-1 pt-70 pb-50"
-        style={{ backgroundImage: "url(assets/images/bg/cta-bg-1.jpg)" }}
-      >
+      {/*====== Start About section ======*/}
+      <section className="about-section pt-90 pb-80">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              {/*=== Common Heading ===*/}
-              <div className="section-title text-white mb-30 wow fadeInLeft">
-                <h2>Get Free Consultations! We’re Ready to Work Together</h2>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="about-six_image-box p-r z-1 mb-50 wow fadeInLeft">
+                <div className="shape shape-one">
+                  <span />
+                </div>
+                <img
+                  src="assets/images/gallery/about-section-card.jpg"
+                  className="about-img-one"
+                  alt="Transformation IT - Visionary Tech Partners"
+                />
+                <img
+                  src="assets/images/about/about-vtp.jpg"
+                  className="about-img-two animate-float-y"
+                  alt="VTP - Accompagnement transformation IT"
+                />
               </div>
             </div>
-            <div className="col-lg-5">
-              {/*=== CTA Button ===*/}
-              <div className="cta-button float-lg-right mb-30 wow fadeInRight">
-                <Link legacyBehavior href="/team">
-                  <a className="main-btn btn-white">Get Free Consultations</a>
+            <div className="col-lg-6">
+              <div className="about-content-box content-box-gap mb-50 wow fadeInRight">
+                <div className="section-title text-white wow fadeInDown">
+                  <h2>Transformez votre infrastructure IT pour la moderniser</h2>
+                </div>
+                <p>
+                  Nous vous accompagnons dans la transformation digitale de votre entreprise
+                  avec des solutions IT innovantes, sécurisées et adaptées à vos besoins.
+                  De l'automatisation des processus à l'intelligence artificielle,
+                  nous mettons la technologie au service de votre croissance.
+                </p>
+                <Link legacyBehavior href="/about">
+                  <a className="main-btn btn-blue">En savoir plus</a>
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*====== End CTA Section ======*/}
-      {/*====== Start Team Section ======*/}
-      <section className="team-section pt-125 pb-80">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-10">
-              {/*=== Common Heading ===*/}
-              <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Meet Our Team</span>
-                <h2>Experience Team Members</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              {/*=== Single Team Item ===*/}
-              <div
-                className="single-team-item mb-40 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="img-holder">
-                  <img src="assets/images/team/team-1.jpg" alt="Team Image" />
-                  <svg
-                    className="team-shape"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    width="213px"
-                    height="80px"
-                  >
-                    <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                  </svg>
-                  <span className="share-btn">
-                    <i className="far fa-share-alt" />
-                  </span>
-                  <ul className="social-link">
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/team-details">
-                      <a>Robert C. Simmons</a>
-                    </Link>
-                  </h3>
-                  <p className="position">Business Consultant</p>
-                  <p className="mail">
-                    <i className="far fa-envelope" />
-                    <a href="mailto:infomebusniess@gmail.com">
-                      infomebusniess@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              {/*=== Single Team Item ===*/}
-              <div
-                className="single-team-item mb-40 wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                <div className="img-holder">
-                  <img src="assets/images/team/team-2.jpg" alt="Team Image" />
-                  <svg
-                    className="team-shape"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    width="213px"
-                    height="80px"
-                  >
-                    <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                  </svg>
-                  <span className="share-btn">
-                    <i className="far fa-share-alt" />
-                  </span>
-                  <ul className="social-link">
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/team-details">
-                      <a>Christopher L. Wagner</a>
-                    </Link>
-                  </h3>
-                  <p className="position">Senior Manager</p>
-                  <p className="mail">
-                    <i className="far fa-envelope" />
-                    <a href="mailto:infomebusniess@gmail.com">
-                      infomebusniess@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              {/*=== Single Team Item ===*/}
-              <div
-                className="single-team-item mb-40 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="img-holder">
-                  <img src="assets/images/team/team-3.jpg" alt="Team Image" />
-                  <svg
-                    className="team-shape"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    width="213px"
-                    height="80px"
-                  >
-                    <path d="M212.734,79.031 L132.079,12.251 L57.530,49.433 L-0.001,0.042 L-0.001,79.031 L212.734,79.031 Z" />
-                  </svg>
-                  <span className="share-btn">
-                    <i className="far fa-share-alt" />
-                  </span>
-                  <ul className="social-link">
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/team-details">
-                      <a>Lawrence C. Dickerson</a>
-                    </Link>
-                  </h3>
-                  <p className="position">Financial Consultant</p>
-                  <p className="mail">
-                    <i className="far fa-envelope" />
-                    <a href="mailto:infomebusniess@gmail.com">
-                      infomebusniess@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Team Section ======*/}
-      {/*====== Start Feedback Section ======*/}
-      <section className="feedback-section p-r z-2 pb-130">
-        <FeedbackSectionChart />
-      </section>
-      {/*====== End Feedback Section ======*/}
-      {/*====== Start FAQ Section ======*/}
-      <section className="faq-section mb-80">
+      {/*====== End About section ======*/}
+      {/*====== Start Features section ======*/}
+      <section className="features-section-two pt-50 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              {/*=== Faq Content Box ===*/}
-              <div className="faq-one_content-box mb-50 wow fadeInLeft">
-                <div className="section-title section-title-left">
-                  <span className="sub-title">Faqs</span>
-                  <h2>Have Any Questions ? Question &amp; Answer</h2>
+              <div className="features-content-box content-box-gap mb-50 wow fadeInLeft">
+                <div className="section-title text-white wow fadeInDown">
+                  <h2>Services IT de confiance pour votre transformation digitale</h2>
                 </div>
-                <blockquote>
-                  Sed ut perspiciatis unde omnis iste natus error voluptatem
-                  accusantium doloremque laudantium totam aperiam
-                </blockquote>
+                <p>
+                  Nous proposons une gamme complète de services IT allant du développement
+                  logiciel sur mesure à l'ingénierie cloud, en passant par la cybersécurité
+                  et l'analyse de données. Nos solutions sont conçues pour répondre
+                  aux défis technologiques modernes.
+                </p>
                 <ul className="check-style-one">
-                  <li>Reflection 2022 Desktop Wallpapers Edition</li>
-                  <li>Designing A Better Infinite Scroll</li>
+                  <li>Solutions sur mesure adaptées à vos besoins</li>
+                  <li>Expertise en cybersécurité et protection des données</li>
                 </ul>
-                <div className="faq-button">
-                  <a href="#" className="main-btn filled-btn">
-                    Explore More Us
-                  </a>
-                </div>
+                <Link legacyBehavior href="/about">
+                  <a className="main-btn filled-btn filled-white">En savoir plus</a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
-              <div
-                className="faq-accordion-one mb-50 wow fadeInRight"
-                id="accordionOne"
-              >
-                <SimpleFaq />
+              <div className="features-two_img-box p-r z-1 mb-50 wow fadeInRight">
+                <div className="shape shape-one">
+                  <span />
+                </div>
+                <img src="assets/images/home/home-services-trust.jpg" alt="Services IT de confiance - Équipe VTP, transformation digitale" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*====== End FAQ Section ======*/}
-      {/*====== Start Partners Section ======*/}
-      <section className="partners-section dark-black-bg pt-60 pb-60">
-        <div className="container">
-          {/*=== Partner Slider ===*/}
-          <Slider {...partnerSliderOne} className="partner-slider-one">
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-1.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-2.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-3.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-4.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-5.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-6.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-img">
-                <a href="#">
-                  <img
-                    src="assets/images/partners/logo-3.png"
-                    alt="Partner Image"
-                  />
-                </a>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </section>
-      {/*====== End Partners Section ======*/}
-      {/*====== Start Blog Section ======*/}
-      <section className="blog-section pt-120 pb-90 p-r z-1">
-        <svg
-          className="shape shape-one"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="770px"
-          height="287px"
-        >
-          <path
-            fillRule="evenodd"
-            opacity="0.039"
-            fill="rgb(13, 18, 28)"
-            d="M769.184,286.494 L477.558,45.033 L208.005,179.475 L-0.013,0.888 L-0.013,286.494 L769.184,286.494 Z"
-          />
-        </svg>
-        <div className="shape shape-two">
-          <span />
-        </div>
+      {/*====== End Features section ======*/}
+      {/*====== Start Service section ======*/}
+      <section className="service-section pb-50" id="services">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-10">
-              {/*=== Common Heading ===*/}
-              <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Article &amp; News</span>
-                <h2>Get Every Single News &amp; Blog</h2>
+            <div className="col-xl-6 col-lg-12">
+              <div className="section-title text-white text-center mb-110 wow fadeInDown">
+                <span className="sub-title">Nos Services</span>
+                <h2>Services IT exceptionnels pour votre transformation digitale</h2>
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6 col-sm-12">
-              {/*=== Blog Post Item ===*/}
-              <div
-                className="blog-post-item-one mb-40 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-1.jpg" alt="Blog Image" />
-                  <span className="post-date">
-                    <a href="#">
-                      25<span>Mar</span>
-                    </a>
-                  </span>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-pie-chart" />
                 </div>
-                <div className="entry-content">
-                  <div className="post-meta">
-                    <ul>
-                      <li>
-                        <span>
-                          <a href="#">Business</a>
-                        </span>
-                      </li>
-                      <li>
-                        <span>
-                          <a href="#">Comments (05)</a>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>Guide To Newly Supporte Modern CSS Psedo</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Analyse de Données &amp; Big Data</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sit amet consectetur adipiscing elseds do eiusmod tempor
-                    incididunt
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="btn-link">Read More</a>
+                  <p>Analyse de données massives et ingénierie d&apos;insights pour transformer vos données en avantage concurrentiel.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6 col-sm-12">
-              {/*=== Blog Post Item ===*/}
-              <div
-                className="blog-post-item-one mb-40 wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-2.jpg" alt="Blog Image" />
-                  <span className="post-date">
-                    <a href="#">
-                      25<span>Mar</span>
-                    </a>
-                  </span>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
+                <div className="icon">
+                  <i className="flaticon-idea-1" />
                 </div>
-                <div className="entry-content">
-                  <div className="post-meta">
-                    <ul>
-                      <li>
-                        <span>
-                          <a href="#">Business</a>
-                        </span>
-                      </li>
-                      <li>
-                        <span>
-                          <a href="#">Comments (05)</a>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>DevTools Debugging Tips Shortcuts Chrome</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Ingénierie IA &amp; MLOps</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sit amet consectetur adipiscing elseds do eiusmod tempor
-                    incididunt
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="btn-link">Read More</a>
+                  <p>Frameworks d&apos;intelligence artificielle et d&apos;opérations ML pour entreprises modernes.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6 col-sm-12">
-              {/*=== Blog Post Item ===*/}
-              <div
-                className="blog-post-item-one mb-40 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-3.jpg" alt="Blog Image" />
-                  <span className="post-date">
-                    <a href="#">
-                      25<span>Mar</span>
-                    </a>
-                  </span>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-competitive" />
                 </div>
-                <div className="entry-content">
-                  <div className="post-meta">
-                    <ul>
-                      <li>
-                        <span>
-                          <a href="#">Business</a>
-                        </span>
-                      </li>
-                      <li>
-                        <span>
-                          <a href="#">Comments (05)</a>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="text">
                   <h3 className="title">
-                    <Link legacyBehavior href="/blog-details">
-                      <a>Guide To Newly Supporte Modern CSS Psedo</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Cybersécurité &amp; Gestion des Menaces</a>
                     </Link>
                   </h3>
-                  <p>
-                    Sit amet consectetur adipiscing elseds do eiusmod tempor
-                    incididunt
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="btn-link">Read More</a>
+                  <p>Sécurité de bout en bout et atténuation des menaces pour protéger vos actifs numériques.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
+                <div className="icon">
+                  <i className="flaticon-database" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Ingénierie Cloud &amp; DevOps/DevSecOps</a>
+                    </Link>
+                  </h3>
+                  <p>Infrastructure cloud et ingénierie DevSecOps pour un déploiement sécurisé et rapide.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-folder-management" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Développement Logiciel &amp; Automatisation</a>
+                    </Link>
+                  </h3>
+                  <p>Solutions sur mesure et automatisation de processus pour optimiser vos opérations.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
+                <div className="icon">
+                  <i className="flaticon-user" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Plateformes d&apos;Identité Numérique &amp; Authentification</a>
+                    </Link>
+                  </h3>
+                  <p>Solutions d&apos;identité numérique et d&apos;authentification pour sécuriser l&apos;accès à vos systèmes.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 offset-lg-4">
+              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-planning" />
+                </div>
+                <div className="text">
+                  <h3 className="title">
+                    <Link legacyBehavior href="/services">
+                      <a>Conseil IT, Modernisation &amp; Automatisation</a>
+                    </Link>
+                  </h3>
+                  <p>Stratégie IT et modernisation de l&apos;infrastructure pour aligner la technologie sur vos objectifs.</p>
+                  <Link legacyBehavior href="/services">
+                    <a className="btn-link">En savoir plus</a>
                   </Link>
                 </div>
               </div>
@@ -985,55 +367,288 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/*====== End Blog Section ======*/}
-      {/*====== Start Newsletter Section ======*/}
-      <section className="newsletter-section black-bg pt-50 pb-40">
+      {/*====== End Service section ======*/}
+      {/*====== Start Features section ======*/}
+      <section className="features-section-two">
+        <div className="container">
+          <div className="features-wrapper wow fadeInDown">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="features-two_img-box p-r z-1 mb-50">
+                  <div className="shape shape-one">
+                    <span />
+                  </div>
+                  <img
+                    src="assets/images/home/home-features-cost-it.jpg"
+                    alt="Optimisation et stratégie IT - équipe VTP"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div className="features-content-box content-box-gap mb-20">
+                  <div className="section-title text-white wow fadeInDown">
+                    <h2>
+                      Optimisez vos coûts IT et structurez votre avenir technologique
+                    </h2>
+                  </div>
+                  <p>
+                    Notre approche stratégique vous permet de réduire les coûts opérationnels
+                    tout en modernisant votre infrastructure IT. Nous définissons avec vous
+                    les priorités technologiques pour maximiser le retour sur investissement
+                    et garantir la pérennité de vos systèmes.
+                  </p>
+                  <div className="row">
+                    <div className="col-xl-6 col-lg-12 col-md-6">
+                      <div className="features-item-left-box text-white mb-30 wow fadeInUp">
+                        <div className="icon">
+                          <i className="flaticon-data" />
+                        </div>
+                        <div className="text">
+                          <h4 className="title">Infrastructure Cloud</h4>
+                          <p>
+                            Migration et gestion de votre infrastructure cloud pour
+                            une agilité et une scalabilité maximales
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-12 col-md-6">
+                      <div className="features-item-left-box text-white mb-30 wow fadeInUp">
+                        <div className="icon">
+                          <i className="flaticon-competitive" />
+                        </div>
+                        <div className="text">
+                          <h4 className="title">Sécurité 24/7</h4>
+                          <p>
+                            Surveillance continue et protection proactive contre
+                            les menaces cybernétiques en temps réel
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Features section ======*/}
+      {/*====== Start Testimonial section ======*/}
+      <section className="testimonial-section pt-130 pb-80">
         <div className="container">
           <div className="row">
-            <div className="col-xl-5 col-lg-12">
-              {/*=== Common Heading ===*/}
-              <div className="section-title section-title-white wow fadeInLeft">
-                <h2>Subscribe Our Newsletter to Get More Updates</h2>
+            <div className="col-lg-6">
+              <div className="testimonial-wrapper-three mr-lg-70 mb-50 wow fadeInLeft">
+                <div className="section-title text-white">
+                  <h2>Nos engagements</h2>
+                </div>
+                <Slider
+                  {...testimonialSliderThree}
+                  className="testimonial-slider-three mb-60"
+                >
+                  <div className="testimonial-item-three">
+                    <div className="testimonial-content">
+                      <p>
+                        Nous nous engageons à respecter les délais convenus et à
+                        vous tenir informé à chaque étape. Réactivité, transparence
+                        et livraison dans les temps sont au cœur de notre façon de travailler.
+                      </p>
+                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
+                        <div className="author-thumb-title d-flex align-items-center">
+                          <div className="author-thumb">
+                            <img
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
+                            />
+                          </div>
+                          <div className="author-title">
+                            <h4>Réactivité &amp; délais</h4>
+                            <p className="position">Respect des engagements et transparence</p>
+                          </div>
+                        </div>
+                        <div className="author-rating">
+                          <h6>Priorité</h6>
+                          <ul className="rating">
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-item-three">
+                    <div className="testimonial-content">
+                      <p>
+                        Nous nous appuyons sur des bonnes pratiques et des technologies
+                        éprouvées. Qualité du code, sécurité et évolutivité des solutions
+                        font partie intégrante de notre offre.
+                      </p>
+                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
+                        <div className="author-thumb-title d-flex align-items-center">
+                          <div className="author-thumb">
+                            <img
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
+                            />
+                          </div>
+                          <div className="author-title">
+                            <h4>Expertise &amp; qualité</h4>
+                            <p className="position">Bonnes pratiques et solutions pérennes</p>
+                          </div>
+                        </div>
+                        <div className="author-rating">
+                          <h6>Priorité</h6>
+                          <ul className="rating">
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-item-three">
+                    <div className="testimonial-content">
+                      <p>
+                        Nous nous engageons à comprendre vos enjeux et à vous accompagner
+                        comme un partenaire. Écoute, conseil et solutions sur mesure
+                        pour répondre au plus près à vos besoins.
+                      </p>
+                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
+                        <div className="author-thumb-title d-flex align-items-center">
+                          <div className="author-thumb">
+                            <img
+                              src="assets/images/logo/vtp-logo.png"
+                              alt="VTP"
+                            />
+                          </div>
+                          <div className="author-title">
+                            <h4>Partenariat &amp; proximité</h4>
+                            <p className="position">Écoute et accompagnement personnalisé</p>
+                          </div>
+                        </div>
+                        <div className="author-rating">
+                          <h6>Priorité</h6>
+                          <ul className="rating">
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                            <li>
+                              <i className="fas fa-star" />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
+                <div className="testimonial-dots" />
               </div>
             </div>
-            <div className="col-xl-7 col-lg-12">
-              {/*=== Newsletter Item ===*/}
-              <div className="newsletter-from wow fadeInRight">
-                <form onSubmit={(e) => e.preventDefault()}>
-                  <div className="row align-items-center">
-                    <div className="col-lg-8">
-                      <div className="form_group">
+            <div className="col-lg-6">
+              <div className="map-img-box p-r z-1 mb-50 wow fadeInRight">
+                <img src="assets/images/gallery/map-2.png" alt="" />
+                <div className="thumb-marker">
+                  <img
+                    src="assets/images/testimonial/marker-thumb.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Testimonial section ======*/}
+      {/*====== Start Newsletter section ======*/}
+      <section className="newsletter-seciton">
+        <div className="container">
+          <div className="newsletter-wrapper-one pt-70 pb-70 wow fadeInDown">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 col-lg-8">
+                <div className="section-title text-center text-white mb-50">
+                  <h2>Restez informé de nos actualités</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-xl-8">
+                <div className="newsletter-from-two">
+                  <form onSubmit={(e) => e.preventDefault()}>
+                    <div className="form_group">
+                      <span className="input-box">
+                        <input
+                          type="text"
+                          className="form_control"
+                          placeholder="Votre nom"
+                          name="name"
+                        />
+                        <i className="far fa-user" />
+                      </span>
+                      <span className="input-box">
                         <input
                           type="email"
                           className="form_control"
-                          placeholder="Enter Email Address"
+                          placeholder="Votre adresse e-mail"
                           name="email"
                         />
                         <i className="far fa-envelope" />
-                      </div>
-                      <div className="form_checkbox">
-                        <input
-                          type="checkbox"
-                          name="checkbox"
-                          id="check1"
-                          defaultChecked=""
-                        />
-                        <label htmlFor="check1">
-                          <span>
-                            I agree to the <a href="#"> Privacy Policy</a>.
-                          </span>
-                        </label>
+                      </span>
+                      <div className="form-btn">
+                        <button className="main-btn btn-blue">S&apos;inscrire</button>
                       </div>
                     </div>
-                    <div className="col-lg-4">
-                      <div className="form-button float-lg-right">
-                        <button className="main-btn btn-red">
-                          Subscribe Now
-                        </button>
-                      </div>
+                    <div className="form_checkbox_two text-center mt-30">
+                      <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="check1"
+                        defaultChecked=""
+                      />
+                      <label htmlFor="check1">
+                        <span>
+                          Inscrivez-vous pour recevoir en avant-première nos
+                          actualités IT et nos offres.
+                        </span>
+                      </label>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

@@ -19,13 +19,13 @@ const FeedbackSectionChart = () => {
                 </div>
                 <div className="testimonial-content">
                   <p>
-                    On the other hand, we denounce with righteous indignations
-                    dislike men who are so beguile moralized by the charms of
-                    pleasure of the moment so blinded desire
+                    Grâce à leur accompagnement, nous avons modernisé notre
+                    infrastructure IT sans interruption de service et réduit nos
+                    coûts opérationnels.
                   </p>
                   <ul className="ratings">
                     <li>
-                      <span className="title">Good Quality</span>
+                      <span className="title">Excellente collaboration</span>
                     </li>
                     <li>
                       <i className="fas fa-star" />
@@ -47,12 +47,12 @@ const FeedbackSectionChart = () => {
                     <div className="author-thumb">
                       <img
                         src="assets/images/testimonial/thumb-1.jpg"
-                        alt="Author Image"
+                        alt="Client IT"
                       />
                     </div>
                     <div className="author-title">
-                      <h4>Ronald B. Griffin</h4>
-                      <p className="position">Business Manager</p>
+                      <h4>Claire Dupont</h4>
+                      <p className="position">Directrice IT</p>
                     </div>
                   </div>
                 </div>
@@ -63,13 +63,13 @@ const FeedbackSectionChart = () => {
                 </div>
                 <div className="testimonial-content">
                   <p>
-                    On the other hand, we denounce with righteous indignations
-                    dislike men who are so beguile moralized by the charms of
-                    pleasure of the moment so blinded desire
+                    Leur équipe nous a aidés à structurer notre stratégie data
+                    et à mettre en place une plateforme analytique fiable et
+                    sécurisée.
                   </p>
                   <ul className="ratings">
                     <li>
-                      <span className="title">Good Quality</span>
+                      <span className="title">Impact mesurable</span>
                     </li>
                     <li>
                       <i className="fas fa-star" />
@@ -91,12 +91,12 @@ const FeedbackSectionChart = () => {
                     <div className="author-thumb">
                       <img
                         src="assets/images/testimonial/thumb-1.jpg"
-                        alt="Author Image"
+                        alt="Client Data"
                       />
                     </div>
                     <div className="author-title">
-                      <h4>Ronald B. Griffin</h4>
-                      <p className="position">Business Manager</p>
+                      <h4>Martin Leroy</h4>
+                      <p className="position">Responsable Data</p>
                     </div>
                   </div>
                 </div>
@@ -107,13 +107,12 @@ const FeedbackSectionChart = () => {
                 </div>
                 <div className="testimonial-content">
                   <p>
-                    On the other hand, we denounce with righteous indignations
-                    dislike men who are so beguile moralized by the charms of
-                    pleasure of the moment so blinded desire
+                    Un partenaire fiable pour nos projets cloud et sécurité :
+                    réactifs, pédagogues et orientés résultats.
                   </p>
                   <ul className="ratings">
                     <li>
-                      <span className="title">Good Quality</span>
+                      <span className="title">Partenaire de confiance</span>
                     </li>
                     <li>
                       <i className="fas fa-star" />
@@ -135,12 +134,12 @@ const FeedbackSectionChart = () => {
                     <div className="author-thumb">
                       <img
                         src="assets/images/testimonial/thumb-1.jpg"
-                        alt="Author Image"
+                        alt="Client Cloud & Sécurité"
                       />
                     </div>
                     <div className="author-title">
-                      <h4>Ronald B. Griffin</h4>
-                      <p className="position">Business Manager</p>
+                      <h4>Sophie Martin</h4>
+                      <p className="position">CEO</p>
                     </div>
                   </div>
                 </div>
@@ -154,7 +153,7 @@ const FeedbackSectionChart = () => {
             <div className="row">
               <div className="col-xl-6 col-lg-12 col-md-6 col-sm-12">
                 <div className="single-skill-item d-flex align-items-center mb-30">
-                  <ProgressBar value={85} color="#f94d1c" />
+                  <ProgressBar value={85} color="#007eff" />
                   <div className="text">
                     <h3 className="title">Business Consulting</h3>
                   </div>
@@ -162,7 +161,7 @@ const FeedbackSectionChart = () => {
               </div>
               <div className="col-xl-6 col-lg-12 col-md-6 col-sm-12">
                 <div className="single-skill-item d-flex align-items-center mb-30">
-                  <ProgressBar value={67} color="#f94d1c" />
+                  <ProgressBar value={67} color="#007eff" />
                   <div className="text">
                     <h3 className="title">Financial Investment</h3>
                   </div>

@@ -330,3 +330,31 @@ export const testimonialSliderTwo = {
   slidesToShow: 2,
   slidesToScroll: 1,
 };
+
+/** Slider « What We Offer » : 7 services en slides (1 à 2 visibles selon breakpoint) */
+export const featuresOfferSlider = {
+  dots: true,
+  arrows: true,
+  infinite: true,
+  speed: 600,
+  autoplay: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      },
+    },
+  ],
+};

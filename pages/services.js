@@ -4,34 +4,30 @@ import PageBanner from "../src/components/PageBanner";
 import SimpleFaq from "../src/components/SimpleFaq";
 import LatestServices from "../src/components/slider/LatestServices";
 import Layout from "../src/layout/Layout";
+
 const Services = () => {
   return (
-    <Layout>
-      <PageBanner pageName={"Our Services"} />
-      <section className="features-section pt-130 pb-100">
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
+      <PageBanner pageName={"Nos Services"} />
+      <section className="features-section pt-130 pb-100 text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
-              {/*=== Common Heading ===*/}
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">What We Offer</span>
-                <h2>We Help People &amp; Small Business</h2>
+                <span className="sub-title">Ce Que Nous Proposons</span>
+                <h2>Solutions IT Pour Votre Transformation Digitale</h2>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-xl-6 col-lg-12">
-              {/*=== Features Item ===*/}
-              <div
-                className="features-item-two mb-30 d-flex align-items-center wow fadeInUp"
-                data-wow-delay=".2s"
-              >
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".2s">
                 <span className="number">01.</span>
                 <div className="icon">
-                  <i className="flaticon-pie-chart-1" />
+                  <i className="flaticon-pie-chart" />
                 </div>
                 <div className="text">
-                  <h3 className="title">Direct Involvement in Assets</h3>
+                  <h3 className="title">Analyse de Données &amp; Big Data</h3>
                 </div>
                 <a href="#" className="icon-btn">
                   <i className="fas fa-arrow-right" />
@@ -39,17 +35,13 @@ const Services = () => {
               </div>
             </div>
             <div className="col-xl-6 col-lg-12">
-              {/*=== Features Item ===*/}
-              <div
-                className="features-item-two mb-30 d-flex align-items-center wow fadeInUp"
-                data-wow-delay=".3s"
-              >
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".3s">
                 <span className="number">02.</span>
                 <div className="icon">
-                  <i className="flaticon-pie-chart-1" />
+                  <i className="flaticon-idea-1" />
                 </div>
                 <div className="text">
-                  <h3 className="title">Rich Experience and Wide Expertise</h3>
+                  <h3 className="title">Ingénierie IA &amp; MLOps</h3>
                 </div>
                 <a href="#" className="icon-btn">
                   <i className="fas fa-arrow-right" />
@@ -57,17 +49,13 @@ const Services = () => {
               </div>
             </div>
             <div className="col-xl-6 col-lg-12">
-              {/*=== Features Item ===*/}
-              <div
-                className="features-item-two mb-30 d-flex align-items-center wow fadeInUp"
-                data-wow-delay=".4s"
-              >
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".4s">
                 <span className="number">03.</span>
                 <div className="icon">
-                  <i className="flaticon-pie-chart-1" />
+                  <i className="flaticon-competitive" />
                 </div>
                 <div className="text">
-                  <h3 className="title">Openness and Transparency Solutions</h3>
+                  <h3 className="title">Cybersécurité &amp; Gestion des Menaces</h3>
                 </div>
                 <a href="#" className="icon-btn">
                   <i className="fas fa-arrow-right" />
@@ -75,19 +63,55 @@ const Services = () => {
               </div>
             </div>
             <div className="col-xl-6 col-lg-12">
-              {/*=== Features Item ===*/}
-              <div
-                className="features-item-two mb-30 d-flex align-items-center wow fadeInUp"
-                data-wow-delay=".5s"
-              >
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
                 <span className="number">04.</span>
                 <div className="icon">
-                  <i className="flaticon-pie-chart-1" />
+                  <i className="flaticon-database" />
                 </div>
                 <div className="text">
-                  <h3 className="title">
-                    Co-investments Solutions and Planning
-                  </h3>
+                  <h3 className="title">Ingénierie Cloud &amp; DevOps/DevSecOps</h3>
+                </div>
+                <a href="#" className="icon-btn">
+                  <i className="fas fa-arrow-right" />
+                </a>
+              </div>
+            </div>
+            <div className="col-xl-6 col-lg-12">
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".6s">
+                <span className="number">05.</span>
+                <div className="icon">
+                  <i className="flaticon-folder-management" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Développement Logiciel &amp; Automatisation</h3>
+                </div>
+                <a href="#" className="icon-btn">
+                  <i className="fas fa-arrow-right" />
+                </a>
+              </div>
+            </div>
+            <div className="col-xl-6 col-lg-12">
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".7s">
+                <span className="number">06.</span>
+                <div className="icon">
+                  <i className="flaticon-user" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Plateformes d&apos;Identité Numérique &amp; Authentification</h3>
+                </div>
+                <a href="#" className="icon-btn">
+                  <i className="fas fa-arrow-right" />
+                </a>
+              </div>
+            </div>
+            <div className="col-xl-6 col-lg-12 offset-xl-3">
+              <div className="features-item-two mb-30 d-flex align-items-center wow fadeInUp" data-wow-delay=".8s">
+                <span className="number">07.</span>
+                <div className="icon">
+                  <i className="flaticon-planning" />
+                </div>
+                <div className="text">
+                  <h3 className="title">Conseil IT, Modernisation &amp; Automatisation</h3>
                 </div>
                 <a href="#" className="icon-btn">
                   <i className="fas fa-arrow-right" />
@@ -99,15 +123,15 @@ const Services = () => {
       </section>
       {/*====== End Features Section ======*/}
       {/*====== Start Faq Section ======*/}
-      <section className="faq-section pb-70">
+      <section className="faq-section pb-70 text-white">
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               {/*=== Faq Content Box ===*/}
               <div className="faq-one_content-box mb-50">
                 <div className="section-title section-title-left mb-50 wow fadeInDown">
-                  <span className="sub-title">Faqs</span>
-                  <h2>Have Any Questions ? Question &amp; Answer</h2>
+                  <span className="sub-title">FAQ</span>
+                  <h2>Des Questions ? Questions &amp; Réponses</h2>
                 </div>
                 <div
                   className="faq-accordion-two mb-50 wow fadeInUp"
@@ -121,15 +145,7 @@ const Services = () => {
               {/*=== Faq Image Box ===*/}
               <div className="faq-one_image-box ml-lg-70 p-r mb-50 wow fadeInRight">
                 <div className="image-overlay" />
-                <img src="assets/images/gallery/faq-1.jpg" alt="Faq Image" />
-                <div className="play-content text-center">
-                  <a
-                    href="https://www.youtube.com/watch?v=TboWOSW7qCI"
-                    className="video-popup"
-                  >
-                    <i className="fas fa-play" />
-                  </a>
-                </div>
+                <img src="assets/images/gallery/faq-1.jpg" alt="Support IT et Solutions Technologiques" />
               </div>
             </div>
           </div>
@@ -156,8 +172,8 @@ const Services = () => {
             <div className="col-xl-8 col-lg-10">
               {/*=== Common Heading ===*/}
               <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">Latest Services</span>
-                <h2>Amazing Business Services</h2>
+                <span className="sub-title">Nos Services</span>
+                <h2>Solutions Business Exceptionnelles</h2>
               </div>
             </div>
           </div>
@@ -165,127 +181,59 @@ const Services = () => {
           <LatestServices />
         </div>
       </section>
-      {/*====== Start Pricing Section ======*/}
-      <section className="pricing-section pt-125 pb-100">
+      {/*====== Start CTA Section ======*/}
+      <section className="pricing-section pt-125 pb-100 text-white">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
+            <div className="col-xl-10 col-lg-12">
               {/*=== Common Heading ===*/}
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">Our Pricing Package</span>
-                <h2>Amazing Pricing Package</h2>
+                <span className="sub-title">Devis Personnalisé</span>
+                <h2>Solutions IT Sur Mesure Pour Votre Entreprise</h2>
               </div>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              {/*=== Pricing Item ===*/}
-              <div
-                className="pricing-item-one mb-60 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <span className="save">Save 100%</span>
-                <div className="pricing-header text-center pb-35">
-                  <span className="plan">Free Plan</span>
-                  <h2 className="price">
-                    <span className="currency">$</span>0
-                    <span className="sm">.00</span>
-                  </h2>
+            <div className="col-xl-8 col-lg-10">
+              <div className="cta-content-box text-center wow fadeInUp">
+                <p className="mb-40" style={{ fontSize: "18px", lineHeight: "1.8" }}>
+                  Chaque projet IT est unique. Nous proposons des solutions personnalisées adaptées à vos besoins spécifiques, 
+                  votre budget et vos objectifs métier. Contactez-nous pour un audit gratuit et un devis sur mesure.
+                </p>
+                <div className="row justify-content-center">
+                  <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div className="cta-feature-item">
+                      <div className="icon mb-20">
+                        <i className="fas fa-clipboard-check" style={{ fontSize: "40px", color: "#007eff" }} />
+                      </div>
+                      <h4 className="title mb-15">Audit Gratuit</h4>
+                      <p>Analyse complète de votre infrastructure IT actuelle</p>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div className="cta-feature-item">
+                      <div className="icon mb-20">
+                        <i className="fas fa-file-invoice-dollar" style={{ fontSize: "40px", color: "#007eff" }} />
+                      </div>
+                      <h4 className="title mb-15">Devis Personnalisé</h4>
+                      <p>Proposition adaptée à vos besoins et votre budget</p>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div className="cta-feature-item">
+                      <div className="icon mb-20">
+                        <i className="fas fa-headset" style={{ fontSize: "40px", color: "#007eff" }} />
+                      </div>
+                      <h4 className="title mb-15">Accompagnement</h4>
+                      <p>Support dédié tout au long de votre projet</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="pricing-body">
-                  <ul className="pricing-list">
-                    <li className="check">Free Consultations</li>
-                    <li className="check">Business Planning</li>
-                    <li className="check">Investment Process</li>
-                    <li className="uncheck">Market Research</li>
-                    <li className="uncheck">Online Support</li>
-                  </ul>
-                  <Link legacyBehavior href="/pricing">
-                    <a className="main-btn btn-black">Start Package</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              {/*=== Pricing Item ===*/}
-              <div
-                className="pricing-item-one mb-60 wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                <span className="save">Save 25%</span>
-                <div className="pricing-header text-center pb-35">
-                  <span className="plan">Regular Plan</span>
-                  <h2 className="price">
-                    <span className="currency">$</span>48
-                    <span className="sm">.00</span>
-                  </h2>
-                </div>
-                <div className="pricing-body">
-                  <ul className="pricing-list">
-                    <li className="check">Free Consultations</li>
-                    <li className="check">Business Planning</li>
-                    <li className="check">Investment Process</li>
-                    <li className="check">Market Research</li>
-                    <li className="check">Online Support</li>
-                  </ul>
-                  <Link legacyBehavior href="/pricing">
-                    <a className="main-btn btn-black">Start Package</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              {/*=== Pricing Item ===*/}
-              <div
-                className="pricing-item-one mb-60 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <span className="save">Save 49%</span>
-                <div className="pricing-header text-center pb-35">
-                  <span className="plan">Standard Plan</span>
-                  <h2 className="price">
-                    <span className="currency">$</span>48
-                    <span className="sm">.00</span>
-                  </h2>
-                </div>
-                <div className="pricing-body">
-                  <ul className="pricing-list">
-                    <li className="check">Free Consultations</li>
-                    <li className="check">Business Planning</li>
-                    <li className="check">Investment Process</li>
-                    <li className="check">Market Research</li>
-                    <li className="check">Online Support</li>
-                  </ul>
-                  <Link legacyBehavior href="/pricing">
-                    <a className="main-btn btn-black">Start Package</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              {/*=== Pricing Item ===*/}
-              <div
-                className="pricing-item-one mb-60 wow fadeInUp"
-                data-wow-delay=".5s"
-              >
-                <span className="save">Save 23%</span>
-                <div className="pricing-header text-center pb-35">
-                  <span className="plan">Silver Plan</span>
-                  <h2 className="price">
-                    <span className="currency">$</span>96
-                    <span className="sm">.00</span>
-                  </h2>
-                </div>
-                <div className="pricing-body">
-                  <ul className="pricing-list">
-                    <li className="check">Free Consultations</li>
-                    <li className="check">Business Planning</li>
-                    <li className="check">Investment Process</li>
-                    <li className="check">Market Research</li>
-                    <li className="check">Online Support</li>
-                  </ul>
-                  <Link legacyBehavior href="/pricing">
-                    <a className="main-btn btn-black">Start Package</a>
+                <div className="cta-button mt-50">
+                  <Link legacyBehavior href="/contact">
+                    <a className="main-btn btn-blue" style={{ fontSize: "18px", padding: "15px 40px" }}>
+                      Demander un Devis Gratuit
+                    </a>
                   </Link>
                 </div>
               </div>
@@ -293,77 +241,77 @@ const Services = () => {
           </div>
         </div>
       </section>
-      {/*====== End Pricing Section ======*/}
+      {/*====== End CTA Section ======*/}
       {/*====== Start Faq Section ======*/}
-      <section className="features-section pb-90">
+      <section className="features-section pb-90 text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-10">
               {/*=== Common Heading ===*/}
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">What We Do ?</span>
-                <h2>Easy Way to Success</h2>
+                <span className="sub-title">Notre Approche</span>
+                <h2>Le Chemin Vers le Succès</h2>
               </div>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
               {/*=== Features Item ===*/}
               <div
                 className="features-item animate-hover-icon mb-40 wow fadeInUp"
                 data-wow-delay=".2s"
               >
                 <div className="icon">
-                  <i className="flaticon-stats" />
+                  <i className="flaticon-business" />
                 </div>
                 <div className="text">
-                  <h4 className="title">Make Strategy and Innovations</h4>
-                  <p>Natus error sit volupte atem accusa dolore</p>
+                  <h4 className="title">Vision</h4>
+                  <p>Nous analysons votre contexte métier et technologique pour définir une feuille de route claire, priorisée et réaliste.</p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
               {/*=== Features Item ===*/}
               <div
                 className="features-item animate-hover-icon mb-40 wow fadeInUp"
                 data-wow-delay=".3s"
               >
                 <div className="icon">
-                  <i className="flaticon-support" />
+                  <i className="flaticon-folder-management" />
                 </div>
                 <div className="text">
-                  <h4 className="title">Best Quality Insure Compliance</h4>
-                  <p>Natus error sit volupte atem accusa dolore</p>
+                  <h4 className="title">Architecture</h4>
+                  <p>Nous concevons une architecture moderne et sécurisée (cloud, données, IAM, IA/MLOps) alignée sur vos objectifs.</p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
               {/*=== Features Item ===*/}
               <div
                 className="features-item animate-hover-icon mb-40 wow fadeInUp"
                 data-wow-delay=".4s"
               >
                 <div className="icon">
-                  <i className="flaticon-digital-strategy" />
+                  <i className="flaticon-finance" />
                 </div>
                 <div className="text">
-                  <h4 className="title">Sales and Market Research</h4>
-                  <p>Natus error sit volupte atem accusa dolore</p>
+                  <h4 className="title">Déploiement</h4>
+                  <p>Nous déployons vos solutions (logiciels, data, cloud, DevSecOps) avec une démarche agile et hautement automatisée.</p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
               {/*=== Features Item ===*/}
               <div
                 className="features-item animate-hover-icon mb-40 wow fadeInUp"
                 data-wow-delay=".5s"
               >
                 <div className="icon">
-                  <i className="flaticon-data" />
+                  <i className="flaticon-profits" />
                 </div>
                 <div className="text">
-                  <h4 className="title">Data Analytics and Solutions</h4>
-                  <p>Natus error sit volupte atem accusa dolore</p>
+                  <h4 className="title">Optimisation</h4>
+                  <p>Nous sécurisons vos plateformes 24/7 et optimisons en continu performances et coûts pour maximiser votre ROI.</p>
                 </div>
               </div>
             </div>

@@ -343,34 +343,39 @@ const Footer3 = () => (
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/logo-3.png"
-                        alt="Footer Logo"
+                        src="assets/images/logo/vtp-logo.png"
+                        alt="VTP - Visionary Tech Partners"
                       />
                     </a>
                   </Link>
                 </div>
+                <p>
+                  Solutions IT innovantes pour transformer votre infrastructure technologique et optimiser vos processus métier.
+                </p>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
-              <h4 className="widget-title">Product</h4>
+              <h4 className="widget-title">Services</h4>
               <div className="footer-content">
                 <ul className="widget-nav">
                   <li>
-                    <a href="#">Home</a>
+                    <Link legacyBehavior href="/services">
+                      <a>Nos Services</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">How it works</a>
+                    <a href="#features">Solutions IT</a>
                   </li>
                   <li>
-                    <a href="#">Features</a>
+                    <a href="#cloud">Infrastructure Cloud</a>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <a href="#security">Cybersécurité</a>
                   </li>
                   <li>
-                    <a href="#">Download</a>
+                    <a href="#ai">IA & MLOps</a>
                   </li>
                 </ul>
               </div>
@@ -378,25 +383,29 @@ const Footer3 = () => (
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
-              <h4 className="widget-title">Resources</h4>
+              <h4 className="widget-title">Ressources</h4>
               <div className="footer-content">
                 <ul className="widget-nav">
                   <li>
-                    <a href="#">Blog</a>
+                    <Link legacyBehavior href="/about">
+                      <a>À propos</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Help Center</a>
+                    <Link legacyBehavior href="/faqs">
+                      <a>FAQ</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      Affiliate <span className="status">New</span>
+                    <a href="#contact">
+                      Contact <span className="status">New</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">Press</a>
+                    <a href="#blog">Blog</a>
                   </li>
                   <li>
-                    <a href="#">Changelog</a>
+                    <a href="#support">Support</a>
                   </li>
                 </ul>
               </div>
@@ -404,14 +413,14 @@ const Footer3 = () => (
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="footer-widget contact-info-widget-two mb-40 wow fadeInUp">
-              <h4 className="widget-title">Support</h4>
+              <h4 className="widget-title">Contact</h4>
               <div className="footer-content">
                 <div className="contact-info-box d-flex mb-10">
                   <div className="icon">
                     <i className="far fa-map-marker-alt" />
                   </div>
                   <div className="text">
-                    <p>55 Main Street, 2nd Block 3rd Floor, New York</p>
+                    <p>Paris, France</p>
                   </div>
                 </div>
                 <div className="contact-info-box d-flex mb-10">
@@ -420,17 +429,7 @@ const Footer3 = () => (
                   </div>
                   <div className="text">
                     <p>
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
-                    </p>
-                  </div>
-                </div>
-                <div className="contact-info-box d-flex mb-10">
-                  <div className="icon">
-                    <i className="far fa-phone" />
-                  </div>
-                  <div className="text">
-                    <p>
-                      <a href="tel:+012(345)6789">+012 (345) 6789</a>
+                      <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
                     </p>
                   </div>
                 </div>
@@ -444,7 +443,7 @@ const Footer3 = () => (
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="footer-text">
-              <p>Copy@ 2022 Fintex. All Rights reserved by Webtend</p>
+              <p>© {new Date().getFullYear()} Tous droits réservés</p>
             </div>
           </div>
           <div className="col-lg-6">

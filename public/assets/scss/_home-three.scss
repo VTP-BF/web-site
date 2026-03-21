@@ -68,6 +68,24 @@
             }
         }
     }
+    // Section Nos engagements : étoiles en bleu
+    & .testimonial-section .author-rating-box .author-rating ul.rating li i{
+        color: $blue-dark;
+    }
+    // Cercle logo section Nos engagements : garder la forme ronde
+    & .testimonial-section .author-rating-box .author-thumb-title .author-thumb{
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 0;
+        }
+    }
     & .navigation-two{
         &.sticky{
             background-color: #0a0e12;
@@ -79,6 +97,20 @@
                     }
                 }
             }
+        }
+        & .site-branding .brand-logo img{
+            max-height: 52px;
+            max-width: 280px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        & .mobile-logo .brand-logo img{
+            max-height: 48px;
+            max-width: 250px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
         }
     }
     .sign-in-button{
@@ -154,9 +186,48 @@
         }
     }
     & .banner-three{
+        // Remonter la colonne de l'image hero
+        & .row > .col-lg-7{
+            height: 407px;
+            width: 520px;
+            margin-top: -120px;
+        }
+        // Retirer la lueur bleue en arrière-plan (shape-five)
+        & .shape.shape-five{
+            display: none;
+        }
+        // Shape-four (shape-8) : remonter uniquement
+        & .shape.shape-four{
+            top: 0;
+        }
+        & .shape.shape-six span img{
+            height: 250px;
+            width: auto;
+        }
         & .hero-content{
+            & h1{
+                font-size: 52px;
+                line-height: 60px;
+            }
             & p{
                 color: rgba(255, 255, 255, .6);
+            }
+        }
+        // Image hero (homme + hologramme) : élargie, inversée
+        & .hero-img-box{
+            &.hero-img-box-wide{
+                width: 100%;
+                max-width: 100%;
+            }
+            // Image hero en fond : hauteur 300px pour ne pas cacher l’image
+            &.hero-img-box-bg{
+                height: 600px;
+                background-size: cover;
+                background-position: left top;
+                background-repeat: no-repeat;
+            }
+            & .hero-img{
+                height: 300px;
             }
         }
     }
@@ -164,6 +235,31 @@
         & .text{
             & h5{
                 color: #fff;
+            }
+        }
+    }
+    // Section Fact three (bandeau compteurs) : hauteur min 300px, contenu adapté VTP
+    & .fact-section-three{
+        min-height: 250px;
+        & .author-rating-box-two .rating li i{
+            color: $blue-dark;
+        }
+    }
+    // Section Fact (compteurs) : fond sombre, chiffres bleus, texte blanc
+    & .fact-section{
+        background-color: #010101;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    & .single-counter-item-two{
+        & .text{
+            & h2.number{
+                color: $blue-dark;
+                font-weight: 700;
+            }
+            & h5{
+                color: rgba(255, 255, 255, 0.9);
+                font-weight: 500;
             }
         }
     }
@@ -184,7 +280,287 @@
             }
         }
     }
-    
+    // Override des cartes de fonctionnalités pour thème sombre :
+    // le parent utilise souvent `text-white`, on force donc le texte des cartes en sombre.
+    & .features-item{
+        color: rgba(13, 12, 12, 1);
+        & .text{
+            & h4.title{
+                color: rgba(13, 12, 12, 1);
+            }
+            & p{
+                color: rgba(13, 12, 12, 1);
+            }
+        }
+    }
+    // Section feedback : fond sombre, tous les textes en blanc
+    & .feedback-section{
+        background-color: #010101;
+        padding-top: 130px;
+        // Tous les textes dans la section feedback doivent être blancs
+        & h1, & h2, & h3, & h4, & h5, & h6{
+            color: #fff;
+        }
+        // Surcharge spécifique pour h3.title dans la section feedback
+        & h3.title{
+            color: #fff !important;
+        }
+        & p{
+            color: rgba(255, 255, 255, 0.7);
+        }
+        & .skill-content-box{
+            & .single-skill-item{
+                & .text{
+                    & h3.title{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        // Témoignages : carte sur fond sombre avec accents bleus
+        & .testimonial-wrapper-one{
+            background-color: #11151b !important;
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.5);
+            & .testimonial-item{
+                & .quote > i{
+                    color: $blue-dark !important;
+                }
+                & .testimonial-content{
+                    & > p{
+                        color: rgba(255, 255, 255, 0.85) !important;
+                    }
+                    & ul.ratings{
+                        & li{
+                            & span.title{
+                                color: $blue-dark !important;
+                            }
+                            & i{
+                                color: $blue-dark !important;
+                            }
+                        }
+                    }
+                    & .author-thumb-title{
+                        & .author-title{
+                            & h4{
+                                color: #fff !important;
+                            }
+                            & p.position{
+                                color: rgba(255, 255, 255, 0.7) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Section FAQ : fond sombre, couleurs cohérentes avec le thème bleu
+    & .faq-section{
+        background-color: #010101;
+        padding-top: 130px;
+        &.text-white{
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(255, 255, 255, 1);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    & .faq-one_content-box{
+        & .accordion-card{
+            background-color: #ffffff;
+            border-color: rgba(24, 28, 34, 0.1);
+            &.accordion-active{
+                border-color: $blue-dark;
+                box-shadow: 0px 10px 40px 0px rgba(0, 126, 255, 0.1);
+            }
+            & .card-header h5{
+                color: rgba(5, 5, 5, 1);
+                &:before{
+                    color: $blue-dark;
+                }
+                &:after{
+                    color: $blue-dark;
+                }
+                &[aria-expanded=true]{
+                    color: $blue-dark;
+                }
+            }
+            & .card-body{
+                & p{
+                    color: rgba(5, 5, 5, 0.85);
+                }
+            }
+        }
+    }
+    // Section CTA : overlay bleu au lieu d’orange sur l’image de fond
+    & .cta-section{
+        &:after{
+            background-color: rgba(0, 126, 255, 0.85);
+        }
+        & .section-title.text-white h2{
+            color: rgba(255, 255, 255, 1);
+        }
+        & .main-btn.filled-white{
+            border-color: rgba(255, 255, 255, 0.5);
+            color: #fff;
+            &:hover{
+                background-color: #fff;
+                color: $blue-dark;
+                border-color: #fff;
+            }
+        }
+    }
+    // Section Historique : cartes blanches avec texte noir, ruban bleu (pas orange)
+    & .history-section{
+        & .section-title{
+            & .sub-title{ color: $blue-dark; }
+            & h2{ color: rgba(255, 255, 255, 1); }
+        }
+        & .single-history-item .history-content{
+            background-color: #ffffff;
+            color: #1a1a1a;
+            & h4.title{
+                color: #1a1a1a;
+                & span.ribbon{
+                    background-color: $blue-dark;
+                    color: #fff;
+                    &:after{
+                        border-right-color: #ffffff;
+                    }
+                }
+            }
+            & p{
+                color: rgba(26, 26, 26, 0.85);
+            }
+        }
+    }
+    // Section « What We Offer » : fond clair (blanc sale → blanc)
+    & .features-section{
+        background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 100%);
+        // Le texte doit être noir sur ce fond clair
+        &.text-white{
+            padding-top: 130px;
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(5, 5, 5, 1);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    // Changes 3 à 6 : cartes de fonctionnalités `.features-item-two`
+    // Palette bleue, mais on garde un vrai effet de survol.
+    & .features-item-two{
+        // texte principal de la carte en sombre (parent `text-white`)
+        color: rgba(5, 5, 5, 1);
+        // animations d'apparition et transitions fluides
+        opacity: 0;
+        @include transform(translateY(30px));
+        @include transition(all 0.6s ease-out);
+        // animation au scroll (via WOW.js qui ajoute la classe .animated)
+        &.wow.fadeInUp.animated,
+        &.animated{
+            opacity: 1;
+            @include transform(translateY(0));
+            // Désactiver l'animation CSS quand WOW.js prend le relais
+            animation: none;
+        }
+        // tailles de police
+        & span.number{
+            color: rgba(5, 5, 5, 1);
+            font-size: 18px;
+            @include transition(color 0.3s ease);
+        }
+        & .text{
+            & h3.title{
+                color: rgba(5, 5, 5, 1);
+                font-size: 17px;
+                line-height: 1.35;
+                @include transition(color 0.3s ease);
+            }
+            & p{
+                color: rgba(5, 5, 5, 1);
+                font-size: 14px;
+                line-height: 1.4;
+                @include transition(color 0.3s ease);
+            }
+        }
+        // réduction du padding et des icônes pour cartes plus compactes
+        padding: 22px 24px;
+        @include transition(all 0.4s cubic-bezier(0.4, 0, 0.2, 1));
+        // effet de scale subtil au survol
+        &:hover{
+            @include transform(translateY(-5px) scale(1.02));
+            box-shadow: 0px 15px 40px 0px rgba(0, 126, 255, 0.15);
+        }
+        & .icon{
+            flex: 0 0 58px;
+            max-width: 58px;
+            height: 58px;
+            @include transition(all 0.4s cubic-bezier(0.4, 0, 0.2, 1));
+            & i{
+                font-size: 28px;
+                @include transition(all 0.4s ease);
+            }
+        }
+        & .icon-btn{
+            flex: 0 0 45px;
+            max-width: 45px;
+            height: 45px;
+            font-size: 16px;
+            @include transition(all 0.4s cubic-bezier(0.4, 0, 0.2, 1));
+            & i{
+                @include transition(all 0.3s ease);
+            }
+        }
+        // état normal : cercle bleu avec texte blanc
+        & .icon{
+            background-color: rgba(0, 126, 255, 1);
+            color: rgba(255, 255, 255, 1);
+            & i{
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+        & .icon-btn{
+            background-color: transparent;
+            border-color: rgba(24, 28, 34, .102);
+            color: $blue-dark;
+            & i{
+                color: $blue-dark;
+            }
+        }
+        // état :hover – comme avant, mais en bleu `$blue-dark` avec animations fluides
+        &:hover{
+            & .icon{
+                background-color: $blue-dark;
+                color: #fff;
+                @include transform(rotate(5deg) scale(1.1));
+                & i{
+                    color: #fff;
+                }
+            }
+            & .icon-btn{
+                background-color: $blue-dark;
+                border-color: transparent;
+                color: #fff;
+                @include transform(translateX(5px));
+                & i{
+                    color: #fff;
+                }
+            }
+        }
+    }
     & .contact-info-box{
         & .icon{
             & i{
@@ -201,14 +577,184 @@
             }
         }
     }
-    & .footer-content{
-        & ul.widget-nav{
-            & li{
-                & a{
-                    & span.status{
-                        background-color: #007eff;
-                        color: #fff;
+    // Section About Three : fond noir avec texte blanc
+    & .about-section-three{
+        background-color: #010101;
+        & .section-title{
+            & .sub-title{
+                color: $blue-dark;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+            & h2{
+                color: rgba(255, 255, 255, 1);
+                margin-top: 10px;
+            }
+        }
+        & .about-content-box{
+            & p{
+                color: rgba(255, 255, 255, 0.85);
+            }
+            & ul.check-style-one{
+                & li{
+                    color: rgba(255, 255, 255, 0.85);
+                }
+            }
+        }
+        & .about-two_image-box .quote-box-four{
+            background-color: $blue-dark;
+            &.text-white h3{
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+    // Section About : fond clair avec texte noir (sans text-white)
+    & .about-section{
+        & .about-six_image-box .about-img-two{
+            max-width: 200px;
+            max-height: 185px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.85;
+        }
+        &:not(.text-white){
+            background-color: #ffffff;
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(5, 5, 5, 1);
+                    margin-top: 10px;
+                }
+            }
+            & .about-content-box{
+                & p{
+                    color: rgba(5, 5, 5, 0.85);
+                }
+                & .tab-content-box{
+                    & .nav-tabs .nav-link{
+                        &.active{
+                            color: $blue-dark;
+                        }
                     }
+                    & .tab-content{
+                        & .content-box{
+                            & p{
+                                color: rgba(5, 5, 5, 0.85);
+                            }
+                            & ul.check-style-two{
+                                & li{
+                                    color: rgba(5, 5, 5, 0.85);
+                                    &:before{
+                                        background-color: $blue-dark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Section About avec text-white : texte blanc sur fond sombre
+        &.text-white{
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(255, 255, 255, 1);
+                    margin-top: 10px;
+                }
+            }
+            & .about-content-box{
+                & p{
+                    color: rgba(255, 255, 255, 0.85);
+                }
+            }
+        }
+    }
+    // Section Contact Info avec text-white : texte blanc sur fond sombre
+    & .contact-info-section{
+        &.text-white{
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(255, 255, 255, 1);
+                    margin-top: 10px;
+                }
+            }
+            & .contact-info-box{
+                & .text{
+                    & h4{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    & p{
+                        color: rgba(255, 255, 255, 0.85);
+                        & a{
+                            color: rgba(255, 255, 255, 0.85);
+                            &:hover{
+                                color: $blue-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Section Contact (formulaire) : titre et texte en blanc sur fond sombre
+    & .contact-section{
+        & .contact-one_form-box .form-title{
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        & .contact-one_content-box{
+            & .section-title .sub-title{
+                color: $blue-dark;
+            }
+            & .section-title h2{
+                color: rgba(255, 255, 255, 1);
+            }
+            & > p{
+                color: rgba(255, 255, 255, 0.85);
+            }
+            & .social-box h3.title{
+                color: #fff;
+            }
+        }
+    }
+    // Section Contact Information (page Contact) : texte clair sur fond sombre
+    & .contact-information-section{
+        & .section-title{
+            & .sub-title{
+                color: $blue-dark;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+            & h2{
+                color: #fff;
+                margin-top: 10px;
+            }
+        }
+        & .single-info-item{
+            & .info h3.title{
+                color: #fff;
+            }
+            & .info p{
+                color: rgba(255, 255, 255, 0.85);
+                & a{
+                    color: rgba(255, 255, 255, 0.85);
                     &:hover{
                         color: $blue-dark;
                     }
@@ -216,13 +762,249 @@
             }
         }
     }
-    .footer-social-box{
-        & ul.social-link{
-            & li{
-                & a{
-                    &:hover{
-                        background-color: $blue-dark;
+    // Footer : tous les textes en blanc sur fond sombre, adapté au thème bleu
+    & .footer-three{
+        background-color: #0f0f0f;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        & .footer-logo img{
+            max-height: 56px;
+            width: auto;
+            object-fit: contain;
+        }
+        & .footer-widget-wrapper{
+            & .footer-widget{
+                & h4.widget-title{
+                    color: #fff;
+                    font-weight: 600;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        & .footer-content{
+            color: rgba(255, 255, 255, 0.7);
+            & > p{
+                color: rgba(255, 255, 255, 0.7);
+            }
+            & h4.widget-title{
+                color: #fff;
+            }
+            & ul.widget-nav{
+                & li{
+                    & a{
+                        color: rgba(255, 255, 255, 0.7);
+                        transition: color 0.3s ease;
+                        &:hover{
+                            color: $blue-dark;
+                        }
+                        & span.status{
+                            background-color: #007eff;
+                            color: #fff;
+                            font-weight: 700;
+                        }
                     }
+                }
+            }
+            & .contact-info-box{
+                & .icon{
+                    & i{
+                        color: $blue-dark;
+                        font-size: 18px;
+                    }
+                }
+                & .text{
+                    & p{
+                        color: rgba(255, 255, 255, 0.7);
+                        & a{
+                            color: rgba(255, 255, 255, 0.7);
+                            transition: color 0.3s ease;
+                            &:hover{
+                                color: $blue-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-social-box{
+            & ul.social-link{
+                & li{
+                    & a{
+                        color: rgba(255, 255, 255, 0.7);
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            background-color: $blue-dark;
+                            color: #fff;
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-copyright{
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 0;
+            & .footer-text{
+                & p{
+                    color: rgba(255, 255, 255, 0.7);
+                    & span.number{
+                        color: #fff;
+                    }
+                }
+            }
+            & .footer-nav{
+                & ul{
+                    & li{
+                        & a{
+                            color: rgba(255, 255, 255, 0.7);
+                            transition: color 0.3s ease;
+                            &:hover{
+                                color: $blue-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Change 7 : sur le layout `home-three-dark`, le breadcrumb du PageBanner
+    // passe de l’orange ($primary) à un bleu (#007eff / rgba(0, 126, 255, 1)).
+    & .page-banner{
+        & .page-banner-content{
+            & .breadcrumb-link{
+                &::before{
+                    color: $blue-dark;
+                }
+                & li.active{
+                    color: rgba(0, 126, 255, 1);
+                    border-bottom: 1px solid rgba(0, 126, 255, 1);
+                }
+            }
+        }
+    }
+    // Section CTA (remplace Pricing) : fond sombre, couleurs cohérentes avec le thème bleu
+    & .pricing-section{
+        background-color: #010101;
+        padding-top: 130px;
+        &.text-white{
+            & .section-title{
+                & .sub-title{
+                    color: $blue-dark;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+                & h2{
+                    color: rgba(255, 255, 255, 1);
+                    margin-top: 10px;
+                }
+            }
+        }
+        & .cta-content-box{
+            & p{
+                color: rgba(255, 255, 255, 0.8);
+            }
+            & .cta-feature-item{
+                padding: 30px 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                & .icon{
+                    & i{
+                        color: $blue-dark;
+                    }
+                }
+                & h4.title{
+                    color: rgba(5, 5, 5, 1);
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
+                & p{
+                    color: rgba(5, 5, 5, 0.85);
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+    // Section « Amazing Business Services » (fond clair) : titres lisibles + accent bleu
+    & .service-section-three{
+        & .section-title{
+            & .sub-title{
+                color: $blue-dark;
+            }
+            & h2{
+                color: rgba(5, 5, 5, 1);
+            }
+        }
+        // Cartes Nos Services : image en arrière-plan (affichage comme page-banner via .bg_cover) + overlay
+        & .service-item-three{
+            padding: 0 24px 32px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 7px;
+                background: linear-gradient(180deg, rgba(1, 1, 1, 0.5) 0%, rgba(1, 1, 1, 0.85) 100%);
+                pointer-events: none;
+            }
+            & .icon,
+            & .text{
+                position: relative;
+                z-index: 1;
+            }
+            & .icon{
+                width: 70px;
+                height: 70px;
+                margin-top: -35px;
+                & i{
+                    font-size: 32px;
+                }
+            }
+            & .text{
+                padding-top: 22px;
+                & h3.title{
+                    font-size: 17px;
+                    line-height: 1.35;
+                    margin-bottom: 0;
+                    color: #fff;
+                }
+            }
+        }
+        // Cartes slider Latest Services : icône et overlay en bleu au lieu d’orange
+        & .service-item{
+            & .text{
+                & i{
+                    color: $blue-dark;
+                }
+                & h3.title,
+                & h3 a{
+                    color: $heading;
+                }
+            }
+            & .hover-text{
+                background-color: $blue-dark;
+                & .title-icon i{
+                    color: #fff;
+                }
+                & .title-icon h3,
+                & .title-icon h3 a{
+                    color: #fff;
+                    &:hover{
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+                }
+                & p{
+                    color: rgba(255, 255, 255, 0.85);
+                }
+                & .icon-btn{
+                    background-color: #fff;
+                    color: $blue-dark;
                 }
             }
         }

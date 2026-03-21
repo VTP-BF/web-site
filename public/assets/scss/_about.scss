@@ -181,6 +181,9 @@
 
 
 .about-six_image-box{
+    & .about-img-one{
+        width: 400px;
+    }
     & .shape{
         position: absolute;
         z-index: -1;
@@ -200,6 +203,8 @@
         position: absolute;
         right: 70px;
         top: 100px;
+        left: 245px;
+        backdrop-filter: blur(12px);
     }
 }
 

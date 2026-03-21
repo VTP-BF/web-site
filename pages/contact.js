@@ -3,8 +3,8 @@ import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 const Contact = () => {
   return (
-    <Layout>
-      <PageBanner pageName={"Contact Us"} />
+    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
+      <PageBanner pageName={"Contact"} />
       <section className="contact-information-section pt-130 pb-80">
         <div className="container">
           <div className="row align-items-center">
@@ -13,7 +13,7 @@ const Contact = () => {
               <div className="information-one_img-box mb-50 wow fadeInLeft">
                 <img
                   src="assets/images/contact/img-1.jpg"
-                  alt="Contact Image"
+                  alt="Contact - Visionary Tech Partners"
                 />
               </div>
             </div>
@@ -21,16 +21,16 @@ const Contact = () => {
               {/*=== Information Content Box ===*/}
               <div className="information-one_content-box ml-lg-40">
                 <div className="section-title section-title-left mb-50 wow fadeInDown">
-                  <span className="sub-title">Get In Touch</span>
-                  <h2>Ready to Work Together! Join With Fintex</h2>
+                  <span className="sub-title">Nous contacter</span>
+                  <h2>Prêts à travailler ensemble ? Contactez VTP</h2>
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
                   <div className="icon">
                     <img src="assets/images/icon/icon-1.png" alt="Icon" />
                   </div>
                   <div className="info">
-                    <h3 className="title">Loaction</h3>
-                    <p>509 Main Street, 3rd Floor, New York</p>
+                    <h3 className="title">Adresse</h3>
+                    <p>Paris, France</p>
                   </div>
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
@@ -38,10 +38,10 @@ const Contact = () => {
                     <img src="assets/images/icon/icon-2.png" alt="Icon" />
                   </div>
                   <div className="info">
-                    <h3 className="title">Email Us</h3>
+                    <h3 className="title">E-mail</h3>
                     <p>
-                      <a href="mailto:supportfintex@gmail.com">
-                        supportfintex@gmail.com
+                      <a href="mailto:info@vtpglobal.com">
+                        info@vtpglobal.com
                       </a>
                     </p>
                   </div>
@@ -51,10 +51,9 @@ const Contact = () => {
                     <img src="assets/images/icon/icon-3.png" alt="Icon" />
                   </div>
                   <div className="info">
-                    <h3 className="title">Phone Number</h3>
+                    <h3 className="title">Téléphone</h3>
                     <p>
-                      <a href="tel:+012(345)67899">+012(345) 678 99</a>,
-                      <a href="tel:+88063542">+88063542</a>
+                      <a href="tel:+33123456789">+33 1 23 45 67 89</a>
                     </p>
                   </div>
                 </div>
@@ -68,7 +67,7 @@ const Contact = () => {
       <section className="contact-page-map wow fadeInUp">
         {/*=== Map Box ===*/}
         <div className="map-box">
-          <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" />
+          <iframe src="https://maps.google.com/maps?q=Paris%2C%20France&t=&z=11&ie=UTF8&iwloc=&output=embed" title="Carte - Paris, France" />
         </div>
       </section>
       {/*====== End Contact Map Section ======*/}
@@ -80,16 +79,16 @@ const Contact = () => {
               {/*=== Contact Content Box ===*/}
               <div className="contact-one_content-box mb-50 wow fadeInLeft">
                 <div className="section-title section-title-left                                                                                                    ">
-                  <span className="sub-title">Contact Us</span>
-                  <h2>Have any Question On Mind! Say Hi</h2>
+                  <span className="sub-title">Contact</span>
+                  <h2>Une question ? Écrivez-nous</h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error voluptate
-                  accusantium doloremque laudantium totam rem aperiames abillo
-                  inventore veritatis quasi architecto beatae
+                  Vous avez un projet IT, une question sur nos services ou souhaitez
+                  échanger sur votre transformation digitale ? Remplissez le formulaire
+                  ou contactez-nous directement par e-mail.
                 </p>
                 <div className="social-box">
-                  <h3 className="title">Follow Us</h3>
+                  <h3 className="title">Suivez-nous</h3>
                   <ul className="social-link">
                     <li>
                       <a href="#">
@@ -128,6 +127,7 @@ const Contact = () => {
             <div className="col-lg-7">
               {/*=== Contact Form Box ===*/}
               <div className="contact-one_form-box ml-lg-40 mb-50 wow fadeInRight">
+                <h3 className="form-title text-white mb-30">Envoyez-nous un message</h3>
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   className="contact-form"
@@ -135,10 +135,12 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-lg-6">
                       <div className="form_group">
+                        <label htmlFor="contact-name" className="sr-only">Nom complet</label>
                         <input
+                          id="contact-name"
                           type="text"
                           className="form_control"
-                          placeholder="Full Name"
+                          placeholder="Nom complet"
                           name="name"
                           required=""
                         />
@@ -147,10 +149,12 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
+                        <label htmlFor="contact-email" className="sr-only">Adresse e-mail</label>
                         <input
+                          id="contact-email"
                           type="email"
                           className="form_control"
-                          placeholder="Email Address"
+                          placeholder="Adresse e-mail"
                           name="email"
                           required=""
                         />
@@ -159,10 +163,12 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
+                        <label htmlFor="contact-phone" className="sr-only">Téléphone</label>
                         <input
+                          id="contact-phone"
                           type="text"
                           className="form_control"
-                          placeholder="Phone"
+                          placeholder="Téléphone"
                           name="phone"
                           required=""
                         />
@@ -171,20 +177,25 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <select className="wide">
-                          <option data-display="Subject">Subject</option>
-                          <option value={1}>Customer Support</option>
-                          <option value={2}>Customer Support</option>
+                        <label htmlFor="contact-subject" className="sr-only">Sujet</label>
+                        <select id="contact-subject" className="wide" name="subject">
+                          <option value="" data-display="Choisir un sujet">Choisir un sujet</option>
+                          <option value="info">Demande d&apos;information</option>
+                          <option value="support">Support technique</option>
+                          <option value="project">Proposition de projet</option>
                         </select>
                         <i className="far fa-question" />
                       </div>
                     </div>
                     <div className="col-lg-12">
                       <div className="form_group">
+                        <label htmlFor="contact-message" className="sr-only">Message</label>
                         <textarea
+                          id="contact-message"
                           className="form_control"
                           name="message"
-                          placeholder="Write your Message"
+                          placeholder="Votre message"
+                          rows={5}
                           defaultValue={""}
                         />
                         <i className="far fa-pencil" />
@@ -195,15 +206,15 @@ const Contact = () => {
                         <input type="checkbox" name="checkbox" id="check1" />
                         <label htmlFor="check1">
                           <span>
-                            I agree that my data is collected and stored.
+                            J&apos;accepte que mes données soient collectées et traitées.
                           </span>
                         </label>
                       </div>
                     </div>
                     <div className="col-lg-12">
                       <div className="form_group">
-                        <button className="main-btn btn-red">
-                          Send Message
+                        <button type="submit" className="main-btn btn-blue">
+                          Envoyer le message
                         </button>
                       </div>
                     </div>
