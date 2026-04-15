@@ -61,18 +61,18 @@ const ServiceDetails = () => {
               {/*=== Solution Image Box ===*/}
               <div className="solution-one_image-box p-r mb-50">
                 <img
-                  src="assets/images/gallery/solution-1.jpg"
+                  src="/assets/images/gallery/solution-1.jpg"
                   className="solution-img-one wow fadeInRight"
                   alt=""
                 />
                 <img
-                  src="assets/images/gallery/solution-2.jpg"
+                  src="/assets/images/gallery/solution-2.jpg"
                   className="solution-img-two wow fadeInLeft"
                   alt=""
                 />
                 <div className="company-card text-center wow fadeInUp">
                   <h5 className="title">Company Yearly Graph</h5>
-                  <img src="assets/images/gallery/graph.png" alt="" />
+                  <img src="/assets/images/gallery/graph.png" alt="" />
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const ServiceDetails = () => {
               {/*=== Management Image Box ===*/}
               <div className="management-one_img-box mb-50 wow fadeInLeft">
                 <img
-                  src="assets/images/gallery/img-4.jpg"
+                  src="/assets/images/gallery/img-4.jpg"
                   alt="management image"
                 />
               </div>
@@ -270,7 +270,7 @@ const ServiceDetails = () => {
               {/*=== Optimization Image Box ===*/}
               <div className="optimization-one_image-box text-lg-right mb-50 wow fadeInRight">
                 <img
-                  src="assets/images/gallery/optimization-1.jpg"
+                  src="/assets/images/gallery/optimization-1.jpg"
                   className="optimization-img-one"
                   alt="optimization image"
                 />
@@ -278,7 +278,7 @@ const ServiceDetails = () => {
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/big-logo-2.png"
+                        src="/assets/images/logo/big-logo-2.png"
                         alt="Site Logo"
                       />
                     </a>

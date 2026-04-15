@@ -14,7 +14,7 @@ const BlogListing = () => {
               <div className="blog-list-wrpper">
                 <div className="blog-post-item-two d-flex mb-40 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/img-7.jpg" alt="Blog Image" />
+                    <img src="/assets/images/blog/img-7.jpg" alt="Blog Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Mar</span>
@@ -52,7 +52,7 @@ const BlogListing = () => {
                 </div>
                 <div className="blog-post-item-two d-flex mb-40 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/img-8.jpg" alt="Blog Image" />
+                    <img src="/assets/images/blog/img-8.jpg" alt="Blog Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Mar</span>
@@ -130,7 +130,7 @@ const BlogListing = () => {
                 <div
                   className="blog-post-item-content post-content-bg mb-40 text-white wow fadeInUp"
                   style={{
-                    backgroundImage: "url(assets/images/blog/item-bg-1.jpg)",
+                    backgroundImage: "url(/assets/images/blog/item-bg-1.jpg)",
                   }}
                 >
                   <div className="entry-content bg_cover">
@@ -173,7 +173,7 @@ const BlogListing = () => {
                 </div>
                 <div className="blog-post-item-two d-flex mb-40 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/img-9.jpg" alt="Blog Image" />
+                    <img src="/assets/images/blog/img-9.jpg" alt="Blog Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Mar</span>
@@ -211,7 +211,7 @@ const BlogListing = () => {
                 </div>
                 <div className="blog-post-item-two d-flex mb-40 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/img-10.jpg" alt="Blog Image" />
+                    <img src="/assets/images/blog/img-10.jpg" alt="Blog Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Mar</span>
@@ -430,7 +430,7 @@ const BlogListing = () => {
                   <ul className="recent-post-list">
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-1.jpg"
+                        src="/assets/images/blog/post-thumb-1.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -447,7 +447,7 @@ const BlogListing = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-2.jpg"
+                        src="/assets/images/blog/post-thumb-2.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -464,7 +464,7 @@ const BlogListing = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-3.jpg"
+                        src="/assets/images/blog/post-thumb-3.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -481,7 +481,7 @@ const BlogListing = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-4.jpg"
+                        src="/assets/images/blog/post-thumb-4.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -503,7 +503,7 @@ const BlogListing = () => {
                   className="sidebar-widget contact-info-widget mb-40 border-0 p-0 bg_cover wow fadeInUp"
                   style={{
                     backgroundImage:
-                      "url(assets/images/blog/contact-info-bg.jpg)",
+                      "url(/assets/images/blog/contact-info-bg.jpg)",
                   }}
                 >
                   <div className="contact-info-content">

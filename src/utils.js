@@ -1,14 +1,21 @@
 export const animation = () => {
-  if (typeof window !== "undefined") {
-    const WOW = require("wowjs");
-    new WOW.WOW({
-      boxClass: "wow",
-      animateClass: "animated",
-      offset: 0,
-      mobile: true,
-      live: true,
-    }).init();
-  }
+  if (typeof window === "undefined") return;
+  /* WOW UMD utilise }).call(this) : sous Webpack this ≠ window → MutationObserver factice.
+     src/vendor/wow.js est une copie patchée avec .call(window). */
+  require("./vendor/wow.js");
+  if (typeof window.WOW !== "function") return;
+
+  window.__vtpWowInstance?.stop?.();
+
+  const instance = new window.WOW({
+    boxClass: "wow",
+    animateClass: "animated",
+    offset: 0,
+    mobile: true,
+    live: true,
+  });
+  window.__vtpWowInstance = instance;
+  instance.init();
 };
 
 // Sticky nav

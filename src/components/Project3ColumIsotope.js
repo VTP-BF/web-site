@@ -99,7 +99,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-8.jpg" alt="project image" />
+              <img src="/assets/images/project/img-8.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -122,7 +122,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-9.jpg" alt="project image" />
+              <img src="/assets/images/project/img-9.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -145,7 +145,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-10.jpg" alt="project image" />
+              <img src="/assets/images/project/img-10.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -168,7 +168,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-11.jpg" alt="project image" />
+              <img src="/assets/images/project/img-11.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -191,7 +191,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-12.jpg" alt="project image" />
+              <img src="/assets/images/project/img-12.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -214,7 +214,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-13.jpg" alt="project image" />
+              <img src="/assets/images/project/img-13.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -237,7 +237,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-14.jpg" alt="project image" />
+              <img src="/assets/images/project/img-14.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -260,7 +260,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-15.jpg" alt="project image" />
+              <img src="/assets/images/project/img-15.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">
@@ -283,7 +283,7 @@ const Project3ColumIsotope = () => {
           {/*=== Project Item ===*/}
           <div className="project-item-three mb-20 wow fadeInUp">
             <div className="img-holder">
-              <img src="assets/images/project/img-16.jpg" alt="project image" />
+              <img src="/assets/images/project/img-16.jpg" alt="project image" />
             </div>
             <div className="project-content text-center">
               <h3 className="title">

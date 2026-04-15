@@ -14,50 +14,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>
-          Fintex - Consulting &amp; Financial Technology React NextJS Template
-        </title>
-        {/*====== Favicon Icon ======*/}
-        <link
-          rel="shortcut icon"
-          href="assets/images/favicon.ico"
-          type="image/png"
+        <title>Visionary Tech Partners (VTP) | Visionary Group</title>
+        <meta
+          name="description"
+          content="Visionary Tech Partners — solutions IT, cloud, cybersécurité et IA. Groupe Visionary."
         />
-        {/*====== FontAwesome css ======*/}
-        <link
-          rel="stylesheet"
-          href="assets/fonts/fontawesome/css/all.min.css"
+        <meta property="og:site_name" content="Visionary Tech Partners" />
+        <meta property="og:title" content="Visionary Tech Partners (VTP) | Visionary Group" />
+        <meta
+          property="og:url"
+          content="https://www.visionarygroup.io"
         />
-        {/*====== Flaticon css ======*/}
-        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css" />
-        {/*====== Bootstrap css ======*/}
-        <link
-          rel="stylesheet"
-          href="assets/vendor/bootstrap/css/bootstrap.min.css"
-        />
-        {/*====== magnific-popup css ======*/}
-        <link
-          rel="stylesheet"
-          href="assets/vendor/magnific-popup/dist/magnific-popup.css"
-        />
-        {/*====== Slick-popup css ======*/}
-        <link rel="stylesheet" href="assets/vendor/slick/slick.css" />
-        {/*====== Jquery UI css ======*/}
-        <link
-          rel="stylesheet"
-          href="assets/vendor/jquery-ui/jquery-ui.min.css"
-        />
-        {/*====== Nice Select css ======*/}
-        <link
-          rel="stylesheet"
-          href="assets/vendor/nice-select/css/nice-select.css"
-        />
-        {/*====== Animate css ======*/}
-        <link rel="stylesheet" href="assets/vendor/animate.css" />
-        {/*====== Default css ======*/}
-        <link rel="stylesheet" href="assets/css/default.css" />
-        {/*====== Style css ======*/}
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="canonical" href="https://www.visionarygroup.io" />
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />

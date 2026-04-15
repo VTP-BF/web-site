@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Counter from "../src/components/Counter";
-import Newsletter from "../src/components/Newsletter";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 
 const About = () => {
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
-      <PageBanner pageName={"À Propos"} />
+      <PageBanner pageName={"À Propos"} omitActiveBreadcrumb />
       {/*====== End Breadcrumb Section ======*/}
       {/*====== Start About Section  ======*/}
       <section className="about-section-three pt-130 pb-80">
@@ -40,7 +39,7 @@ const About = () => {
               <div className="about-two_image-box pl-lg-70 mb-50 wow fadeInRight">
                 <div className="about-one-img">
                   <div className="image-overlay" />
-                  <img src="assets/images/about/about-vtp.jpg" alt="Visionary Tech Partners - Conseil et transformation digitale" />
+                  <img src="/assets/images/about/about-vtp.jpg" alt="Visionary Tech Partners - Conseil et transformation digitale" />
                 </div>
                 <div className="quote-box-four text-white">
                   <h3>Accélérer la maturité numérique mondiale grâce à des solutions technologiques intelligentes.</h3>
@@ -111,25 +110,25 @@ const About = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/about-mission.jpg"
+                      src="/assets/images/about/about-mission.jpg"
                       className="about-one-img wow fadeInUp"
                       alt="Notre mission - Équipe VTP"
                     />
                   </div>
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/about-vision.jpg"
+                      src="/assets/images/about/about-vision.jpg"
                       className="about-two-img wow fadeInDown"
                       alt="Notre vision - Équipe VTP"
                     />
                   </div>
                 </div>
-                <div className="big-logo">
+                <div className="big-logo big-logo-vtp">
                   <Link legacyBehavior href="/">
-                    <a>
+                    <a className="big-logo-vtp__frame">
                       <img
-                        src="assets/images/logo/big-logo-1.png"
-                        alt="Site logo"
+                        src="/assets/images/logo/vtp-logo.png"
+                        alt="Visionary Tech Partners"
                       />
                     </a>
                   </Link>
@@ -140,7 +139,6 @@ const About = () => {
               {/*=== About Content Box ===*/}
               <div className="about-content-box mb-50">
                 <div className="section-title section-title-left wow fadeInDown">
-                  <span className="sub-title">Notre Plan</span>
                   <h2>Mission & Vision</h2>
                 </div>
                 <div className="tab-content-box wow fadeInUp">
@@ -281,7 +279,7 @@ const About = () => {
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-data-analytics.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-data-analytics.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-pie-chart" />
                 </div>
@@ -291,7 +289,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-ia-mlops.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-ia-mlops.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-idea-1" />
                 </div>
@@ -301,7 +299,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-cybersecurite.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-cybersecurite.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-competitive" />
                 </div>
@@ -311,7 +309,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-cloud-devops.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-cloud-devops.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-database" />
                 </div>
@@ -321,7 +319,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-dev-logiciel.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-dev-logiciel.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-folder-management" />
                 </div>
@@ -331,7 +329,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-identite-numerique.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-identite-numerique.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-user" />
                 </div>
@@ -341,7 +339,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 mb-30">
-              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(assets/images/services/service-consulting-it.jpg)" }}>
+              <div className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp" style={{ backgroundImage: "url(/assets/images/services/service-consulting-it.jpg)" }}>
                 <div className="icon">
                   <i className="flaticon-planning" />
                 </div>
@@ -380,7 +378,7 @@ const About = () => {
       {/*====== Start CTA Section ======*/}
       <section
         className="cta-section cta-section-vtp bg_cover p-r z-1 pt-70 pb-50"
-        style={{ backgroundImage: "url(assets/images/bg/cta-bg-1.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/bg/cta-bg-1.jpg)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -424,7 +422,7 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/about/history-lancement.jpg"
+                      src="/assets/images/about/history-lancement.jpg"
                       alt="Lancement VTP"
                     />
                   </div>
@@ -443,7 +441,7 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/about/history-deploiement.jpg"
+                      src="/assets/images/about/history-deploiement.jpg"
                       alt="Déploiement des offres"
                     />
                   </div>
@@ -462,7 +460,7 @@ const About = () => {
                 >
                   <div className="history-img">
                     <img
-                      src="assets/images/about/history-perspectives.jpg"
+                      src="/assets/images/about/history-perspectives.jpg"
                       alt="Perspectives"
                     />
                   </div>
@@ -536,8 +534,6 @@ const About = () => {
         </div>
       </section>
       {/*====== End Contact Info Section ======*/}
-      {/*====== Start Newsletter Section ======*/}
-      <Newsletter />
     </Layout>
   );
 };

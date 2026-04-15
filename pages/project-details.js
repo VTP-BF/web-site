@@ -51,7 +51,7 @@ const PProjectDetails = () => {
               </div>
               {/*=== Block Image ===*/}
               <figure className="block-image mb-30 wow fadeInUp">
-                <img src="assets/images/project/project-single-1.jpg" alt="" />
+                <img src="/assets/images/project/project-single-1.jpg" alt="" />
               </figure>
               {/*=== Content Block ===*/}
               <div className="content-block mb-35 wow fadeInUp">
@@ -142,7 +142,7 @@ const PProjectDetails = () => {
                 <div className="col-md-6">
                   <figure className="block-image mb-40 wow fadeInUp">
                     <img
-                      src="assets/images/project/project-single-2.jpg"
+                      src="/assets/images/project/project-single-2.jpg"
                       alt=""
                     />
                   </figure>
@@ -150,7 +150,7 @@ const PProjectDetails = () => {
                 <div className="col-md-6">
                   <figure className="block-image mb-40 wow fadeInUp">
                     <img
-                      src="assets/images/project/project-single-3.jpg"
+                      src="/assets/images/project/project-single-3.jpg"
                       alt=""
                     />
                   </figure>
@@ -179,7 +179,7 @@ const PProjectDetails = () => {
                   <div className="prev-post post-nav-item d-flex align-items-center mb-30">
                     <div className="thumb">
                       <img
-                        src="assets/images/project/prev.jpg"
+                        src="/assets/images/project/prev.jpg"
                         alt="Post Thumb"
                       />
                     </div>
@@ -199,7 +199,7 @@ const PProjectDetails = () => {
                   <div className="next-post post-nav-item d-flex align-items-center mb-30">
                     <div className="thumb">
                       <img
-                        src="assets/images/project/next.jpg"
+                        src="/assets/images/project/next.jpg"
                         alt="Post Thumb"
                       />
                     </div>

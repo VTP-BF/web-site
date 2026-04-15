@@ -23,7 +23,7 @@ const Index = () => {
               className="image-layer bg_cover"
               style={{
                 backgroundImage:
-                  "url(assets/images/hero/hero-two-slider-1.jpg)",
+                  "url(/assets/images/hero/hero-two-slider-1.jpg)",
               }}
             />
             <div className="container">
@@ -71,7 +71,7 @@ const Index = () => {
               className="image-layer bg_cover"
               style={{
                 backgroundImage:
-                  "url(assets/images/hero/hero-two-slider-2.jpg)",
+                  "url(/assets/images/hero/hero-two-slider-2.jpg)",
               }}
             />
             <div className="container">
@@ -119,7 +119,7 @@ const Index = () => {
               className="image-layer bg_cover"
               style={{
                 backgroundImage:
-                  "url(assets/images/hero/hero-two-slider-3.jpg)",
+                  "url(/assets/images/hero/hero-two-slider-3.jpg)",
               }}
             />
             <div className="container">
@@ -265,14 +265,14 @@ const Index = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/about-4.jpg"
+                      src="/assets/images/about/about-4.jpg"
                       className="about-img-one mb-20 wow fadeInUp"
                       alt=""
                     />
                   </div>
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/about-5.jpg"
+                      src="/assets/images/about/about-5.jpg"
                       className="about-img-two mb-20 wow fadeInDown"
                       alt=""
                     />
@@ -281,7 +281,7 @@ const Index = () => {
                 <div className="big-logo">
                   <Link legacyBehavior href="/">
                     <a>
-                      <img src="assets/images/logo/big-logo-3.jpg" alt="" />
+                      <img src="/assets/images/logo/big-logo-3.jpg" alt="" />
                     </a>
                   </Link>
                 </div>
@@ -308,10 +308,10 @@ const Index = () => {
                 </ul>
                 <div className="avatar-box d-flex">
                   <div className="thumb">
-                    <img src="assets/images/about/avatar-1.jpg" alt="" />
+                    <img src="/assets/images/about/avatar-1.jpg" alt="" />
                   </div>
                   <div className="text">
-                    <img src="assets/images/about/sign.png" alt="" />
+                    <img src="/assets/images/about/sign.png" alt="" />
                     <h6>CEO &amp; Founder</h6>
                   </div>
                 </div>
@@ -417,7 +417,7 @@ const Index = () => {
       {/*====== Start Advantage Section ======*/}
       <section
         className="advantage-section bg_cover pt-285 pb-130"
-        style={{ backgroundImage: "url(assets/images/bg/advantage-bg.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/bg/advantage-bg.jpg)" }}
       >
         <div className="container">
           {/*====== Skill Section ======*/}
@@ -485,7 +485,7 @@ const Index = () => {
             <div className="project-item-two mb-50 wow fadeInUp">
               <div className="img-holder">
                 <img
-                  src="assets/images/project/img-6.jpg"
+                  src="/assets/images/project/img-6.jpg"
                   alt="project image"
                 />
               </div>
@@ -506,7 +506,7 @@ const Index = () => {
             <div className="project-item-two mb-50 wow fadeInUp">
               <div className="img-holder">
                 <img
-                  src="assets/images/project/img-7.jpg"
+                  src="/assets/images/project/img-7.jpg"
                   alt="project image"
                 />
               </div>
@@ -527,7 +527,7 @@ const Index = () => {
             <div className="project-item-two mb-50 wow fadeInUp">
               <div className="img-holder">
                 <img
-                  src="assets/images/project/img-8.jpg"
+                  src="/assets/images/project/img-8.jpg"
                   alt="project image"
                 />
               </div>
@@ -548,7 +548,7 @@ const Index = () => {
             <div className="project-item-two mb-50 wow fadeInUp">
               <div className="img-holder">
                 <img
-                  src="assets/images/project/img-7.jpg"
+                  src="/assets/images/project/img-7.jpg"
                   alt="project image"
                 />
               </div>
@@ -589,7 +589,7 @@ const Index = () => {
                 data-wow-delay=".2s"
               >
                 <div className="img-holder">
-                  <img src="assets/images/team/team-4.jpg" alt="Team Image" />
+                  <img src="/assets/images/team/team-4.jpg" alt="Team Image" />
                 </div>
                 <div className="text">
                   <h3 className="title">
@@ -608,7 +608,7 @@ const Index = () => {
                 data-wow-delay=".3s"
               >
                 <div className="img-holder">
-                  <img src="assets/images/team/team-5.jpg" alt="Team Image" />
+                  <img src="/assets/images/team/team-5.jpg" alt="Team Image" />
                 </div>
                 <div className="text">
                   <h3 className="title">
@@ -627,7 +627,7 @@ const Index = () => {
                 data-wow-delay=".4s"
               >
                 <div className="img-holder">
-                  <img src="assets/images/team/team-6.jpg" alt="Team Image" />
+                  <img src="/assets/images/team/team-6.jpg" alt="Team Image" />
                 </div>
                 <div className="text">
                   <h3 className="title">
@@ -646,7 +646,7 @@ const Index = () => {
                 data-wow-delay=".5s"
               >
                 <div className="img-holder">
-                  <img src="assets/images/team/team-7.jpg" alt="Team Image" />
+                  <img src="/assets/images/team/team-7.jpg" alt="Team Image" />
                 </div>
                 <div className="text">
                   <h3 className="title">
@@ -717,7 +717,7 @@ const Index = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-2.jpg"
+                            src="/assets/images/testimonial/thumb-2.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -764,7 +764,7 @@ const Index = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-3.jpg"
+                            src="/assets/images/testimonial/thumb-3.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -811,7 +811,7 @@ const Index = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -858,7 +858,7 @@ const Index = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -899,7 +899,7 @@ const Index = () => {
                 data-wow-delay=".2s"
               >
                 <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-1.jpg" alt="Blog Image" />
+                  <img src="/assets/images/blog/img-1.jpg" alt="Blog Image" />
                   <span className="post-date">
                     <a href="#">
                       25<span>Mar</span>
@@ -943,7 +943,7 @@ const Index = () => {
                 data-wow-delay=".3s"
               >
                 <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-2.jpg" alt="Blog Image" />
+                  <img src="/assets/images/blog/img-2.jpg" alt="Blog Image" />
                   <span className="post-date">
                     <a href="#">
                       25<span>Mar</span>
@@ -987,7 +987,7 @@ const Index = () => {
                 data-wow-delay=".4s"
               >
                 <div className="post-thumbnail">
-                  <img src="assets/images/blog/img-3.jpg" alt="Blog Image" />
+                  <img src="/assets/images/blog/img-3.jpg" alt="Blog Image" />
                   <span className="post-date">
                     <a href="#">
                       25<span>Mar</span>

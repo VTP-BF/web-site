@@ -9,22 +9,22 @@ const Index = () => {
       <section className="banner-three p-r z-1">
         <div className="shape shape-one animate-float-x">
           <span>
-            <img src="assets/images/shape/shape-5.png" alt="shape" />
+            <img src="/assets/images/shape/shape-5.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-two animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-6.png" alt="shape" />
+            <img src="/assets/images/shape/shape-6.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-three animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-7.png" alt="shape" />
+            <img src="/assets/images/shape/shape-7.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-four animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-8.png" alt="shape" />
+            <img src="/assets/images/shape/shape-8.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-five">
@@ -32,7 +32,7 @@ const Index = () => {
         </div>
         <div className="shape shape-six">
           <span>
-            <img src="assets/images/shape/shape-9.png" alt="" />
+            <img src="/assets/images/shape/shape-9.png" alt="" />
           </span>
         </div>
         <div className="container">
@@ -60,7 +60,7 @@ const Index = () => {
               <div
                 className="hero-img-box hero-img-box-wide hero-img-box-bg wow fadeInRight"
                 data-wow-delay=".10s"
-                style={{ backgroundImage: "url(assets/images/home/home-hero-software-innovation.png)" }}
+                style={{ backgroundImage: "url(/assets/images/home/home-hero-software-innovation.png)" }}
                 role="img"
                 aria-label="Solutions IT - Software Innovation - Visionary Tech Partners"
               />
@@ -99,7 +99,7 @@ const Index = () => {
                 <div className="author-thumb-title d-flex align-items-center">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/home/vtp-fact-thumb.png"
+                      src="/assets/images/home/vtp-fact-thumb.png"
                       alt="Visionary Tech Partners"
                     />
                   </div>
@@ -159,12 +159,12 @@ const Index = () => {
                   <span />
                 </div>
                 <img
-                  src="assets/images/gallery/about-section-card.jpg"
+                  src="/assets/images/gallery/about-section-card.jpg"
                   className="about-img-one"
                   alt="Transformation IT - Visionary Tech Partners"
                 />
                 <img
-                  src="assets/images/about/about-vtp.jpg"
+                  src="/assets/images/about/about-vtp.jpg"
                   className="about-img-two animate-float-y"
                   alt="VTP - Accompagnement transformation IT"
                 />
@@ -219,7 +219,7 @@ const Index = () => {
                 <div className="shape shape-one">
                   <span />
                 </div>
-                <img src="assets/images/home/home-services-trust.jpg" alt="Services IT de confiance - Équipe VTP, transformation digitale" />
+                <img src="/assets/images/home/home-services-trust.jpg" alt="Services IT de confiance - Équipe VTP, transformation digitale" />
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@ const Index = () => {
                     <span />
                   </div>
                   <img
-                    src="assets/images/home/home-features-cost-it.jpg"
+                    src="/assets/images/home/home-features-cost-it.jpg"
                     alt="Optimisation et stratégie IT - équipe VTP"
                   />
                 </div>
@@ -458,7 +458,7 @@ const Index = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/logo/vtp-logo.png"
+                              src="/assets/images/logo/vtp-logo.png"
                               alt="VTP"
                             />
                           </div>
@@ -501,7 +501,7 @@ const Index = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/logo/vtp-logo.png"
+                              src="/assets/images/logo/vtp-logo.png"
                               alt="VTP"
                             />
                           </div>
@@ -544,7 +544,7 @@ const Index = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/logo/vtp-logo.png"
+                              src="/assets/images/logo/vtp-logo.png"
                               alt="VTP"
                             />
                           </div>
@@ -582,10 +582,10 @@ const Index = () => {
             </div>
             <div className="col-lg-6">
               <div className="map-img-box p-r z-1 mb-50 wow fadeInRight">
-                <img src="assets/images/gallery/map-2.png" alt="" />
+                <img src="/assets/images/gallery/map-2.png" alt="" />
                 <div className="thumb-marker">
                   <img
-                    src="assets/images/testimonial/marker-thumb.jpg"
+                    src="/assets/images/testimonial/marker-thumb.jpg"
                     alt=""
                   />
                 </div>
@@ -595,65 +595,6 @@ const Index = () => {
         </div>
       </section>
       {/*====== End Testimonial section ======*/}
-      {/*====== Start Newsletter section ======*/}
-      <section className="newsletter-seciton">
-        <div className="container">
-          <div className="newsletter-wrapper-one pt-70 pb-70 wow fadeInDown">
-            <div className="row justify-content-center">
-              <div className="col-xl-6 col-lg-8">
-                <div className="section-title text-center text-white mb-50">
-                  <h2>Restez informé de nos actualités</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-xl-8">
-                <div className="newsletter-from-two">
-                  <form onSubmit={(e) => e.preventDefault()}>
-                    <div className="form_group">
-                      <span className="input-box">
-                        <input
-                          type="text"
-                          className="form_control"
-                          placeholder="Votre nom"
-                          name="name"
-                        />
-                        <i className="far fa-user" />
-                      </span>
-                      <span className="input-box">
-                        <input
-                          type="email"
-                          className="form_control"
-                          placeholder="Votre adresse e-mail"
-                          name="email"
-                        />
-                        <i className="far fa-envelope" />
-                      </span>
-                      <div className="form-btn">
-                        <button className="main-btn btn-blue">S&apos;inscrire</button>
-                      </div>
-                    </div>
-                    <div className="form_checkbox_two text-center mt-30">
-                      <input
-                        type="checkbox"
-                        name="checkbox"
-                        id="check1"
-                        defaultChecked=""
-                      />
-                      <label htmlFor="check1">
-                        <span>
-                          Inscrivez-vous pour recevoir en avant-première nos
-                          actualités IT et nos offres.
-                        </span>
-                      </label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };

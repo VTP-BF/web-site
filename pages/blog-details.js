@@ -43,7 +43,7 @@ const BlogDetails = () => {
                       </p>
                       <figure className="block-image">
                         <img
-                          src="assets/images/blog/single-blog-1.jpg"
+                          src="/assets/images/blog/single-blog-1.jpg"
                           alt=""
                         />
                       </figure>
@@ -104,7 +104,7 @@ const BlogDetails = () => {
                 <div className="post-author-box d-flex mb-80 wow fadeInUp">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/blog/author-1.jpg"
+                      src="/assets/images/blog/author-1.jpg"
                       alt="post author"
                     />
                   </div>
@@ -151,7 +151,7 @@ const BlogDetails = () => {
                       <div className="prev-post post-nav-item d-flex mb-30">
                         <div className="thumb">
                           <img
-                            src="assets/images/blog/prev.jpg"
+                            src="/assets/images/blog/prev.jpg"
                             alt="Post Thumb"
                           />
                         </div>
@@ -174,7 +174,7 @@ const BlogDetails = () => {
                       <div className="next-post post-nav-item d-flex mb-30">
                         <div className="thumb">
                           <img
-                            src="assets/images/blog/next.jpg"
+                            src="/assets/images/blog/next.jpg"
                             alt="Post Thumb"
                           />
                         </div>
@@ -218,7 +218,7 @@ const BlogDetails = () => {
                           </p>
                           <div className="comment-author-title">
                             <img
-                              src="assets/images/blog/comment-1.jpg"
+                              src="/assets/images/blog/comment-1.jpg"
                               alt="comment avater"
                             />
                             <span className="author-name">John P. Fields</span>
@@ -244,7 +244,7 @@ const BlogDetails = () => {
                           </p>
                           <div className="comment-author-title">
                             <img
-                              src="assets/images/blog/comment-2.jpg"
+                              src="/assets/images/blog/comment-2.jpg"
                               alt="comment avater"
                             />
                             <span className="author-name">
@@ -272,7 +272,7 @@ const BlogDetails = () => {
                           </p>
                           <div className="comment-author-title">
                             <img
-                              src="assets/images/blog/comment-1.jpg"
+                              src="/assets/images/blog/comment-1.jpg"
                               alt="comment avater"
                             />
                             <span className="author-name">
@@ -427,7 +427,7 @@ const BlogDetails = () => {
                   <ul className="recent-post-list">
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-1.jpg"
+                        src="/assets/images/blog/post-thumb-1.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -444,7 +444,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-2.jpg"
+                        src="/assets/images/blog/post-thumb-2.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -461,7 +461,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-3.jpg"
+                        src="/assets/images/blog/post-thumb-3.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -478,7 +478,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-4.jpg"
+                        src="/assets/images/blog/post-thumb-4.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -500,7 +500,7 @@ const BlogDetails = () => {
                   className="sidebar-widget contact-info-widget mb-40 border-0 p-0 bg_cover wow fadeInUp"
                   style={{
                     backgroundImage:
-                      "url(assets/images/blog/contact-info-bg.jpg)",
+                      "url(/assets/images/blog/contact-info-bg.jpg)",
                   }}
                 >
                   <div className="contact-info-content">

@@ -135,7 +135,7 @@ const DefaultFooter = () => (
                 <div className="footer-widget-logo">
                   <Link legacyBehavior href="/">
                     <a>
-                      <img src="assets/images/logo/footer-logo-1.png" alt="" />
+                      <img src="/assets/images/logo/footer-logo-1.png" alt="" />
                     </a>
                   </Link>
                 </div>
@@ -227,7 +227,7 @@ const Footer2 = () => (
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/footer-logo-2.png"
+                        src="/assets/images/logo/footer-logo-2.png"
                         alt="Footer Logo"
                       />
                     </a>
@@ -343,7 +343,7 @@ const Footer3 = () => (
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/vtp-logo.png"
+                        src="/assets/images/logo/vtp-logo.png"
                         alt="VTP - Visionary Tech Partners"
                       />
                     </a>
@@ -417,14 +417,6 @@ const Footer3 = () => (
               <div className="footer-content">
                 <div className="contact-info-box d-flex mb-10">
                   <div className="icon">
-                    <i className="far fa-map-marker-alt" />
-                  </div>
-                  <div className="text">
-                    <p>Paris, France</p>
-                  </div>
-                </div>
-                <div className="contact-info-box d-flex mb-10">
-                  <div className="icon">
                     <i className="far fa-envelope" />
                   </div>
                   <div className="text">
@@ -441,35 +433,9 @@ const Footer3 = () => (
       {/*=== Footer Copyright ===*/}
       <div className="footer-copyright border-top-white-op-1">
         <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="footer-text">
+          <div className="col-12">
+            <div className="footer-text text-center text-lg-start">
               <p>© {new Date().getFullYear()} Tous droits réservés</p>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="footer-social-box text-center float-lg-right">
-              <ul className="social-link">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -491,7 +457,7 @@ const Footer4 = () => (
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/logo-4.png"
+                        src="/assets/images/logo/logo-4.png"
                         alt="Footer Logo"
                       />
                     </a>
@@ -660,7 +626,7 @@ const Footer5 = () => (
                   <Link legacyBehavior href="/">
                     <a>
                       <img
-                        src="assets/images/logo/logo-4.png"
+                        src="/assets/images/logo/logo-4.png"
                         alt="Footer Logo"
                       />
                     </a>

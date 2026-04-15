@@ -37,7 +37,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-7.png"
+                  src="/assets/images/partners/logo-7.png"
                   alt="Partner Image"
                 />
               </a>
@@ -47,7 +47,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-8.png"
+                  src="/assets/images/partners/logo-8.png"
                   alt="Partner Image"
                 />
               </a>
@@ -57,7 +57,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-9.png"
+                  src="/assets/images/partners/logo-9.png"
                   alt="Partner Image"
                 />
               </a>
@@ -67,7 +67,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-10.png"
+                  src="/assets/images/partners/logo-10.png"
                   alt="Partner Image"
                 />
               </a>
@@ -77,7 +77,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-11.png"
+                  src="/assets/images/partners/logo-11.png"
                   alt="Partner Image"
                 />
               </a>
@@ -87,7 +87,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-12.png"
+                  src="/assets/images/partners/logo-12.png"
                   alt="Partner Image"
                 />
               </a>
@@ -97,7 +97,7 @@ export default class PartnerSlider2 extends Component {
             <div className="partner-img">
               <a href="#">
                 <img
-                  src="assets/images/partners/logo-9.png"
+                  src="/assets/images/partners/logo-9.png"
                   alt="Partner Image"
                 />
               </a>

@@ -1,4 +1,3 @@
-import Newsletter from "../src/components/Newsletter";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 const Contact = () => {
@@ -12,7 +11,7 @@ const Contact = () => {
               {/*=== Information Image Box ===*/}
               <div className="information-one_img-box mb-50 wow fadeInLeft">
                 <img
-                  src="assets/images/contact/img-1.jpg"
+                  src="/assets/images/contact/img-1.jpg"
                   alt="Contact - Visionary Tech Partners"
                 />
               </div>
@@ -26,16 +25,7 @@ const Contact = () => {
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
                   <div className="icon">
-                    <img src="assets/images/icon/icon-1.png" alt="Icon" />
-                  </div>
-                  <div className="info">
-                    <h3 className="title">Adresse</h3>
-                    <p>Paris, France</p>
-                  </div>
-                </div>
-                <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
-                  <div className="icon">
-                    <img src="assets/images/icon/icon-2.png" alt="Icon" />
+                    <img src="/assets/images/icon/icon-2.png" alt="Icon" />
                   </div>
                   <div className="info">
                     <h3 className="title">E-mail</h3>
@@ -48,7 +38,7 @@ const Contact = () => {
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
                   <div className="icon">
-                    <img src="assets/images/icon/icon-3.png" alt="Icon" />
+                    <img src="/assets/images/icon/icon-3.png" alt="Icon" />
                   </div>
                   <div className="info">
                     <h3 className="title">Téléphone</h3>
@@ -63,14 +53,6 @@ const Contact = () => {
         </div>
       </section>
       {/*====== End Contact Information Section ======*/}
-      {/*====== Start Contact Map Section ======*/}
-      <section className="contact-page-map wow fadeInUp">
-        {/*=== Map Box ===*/}
-        <div className="map-box">
-          <iframe src="https://maps.google.com/maps?q=Paris%2C%20France&t=&z=11&ie=UTF8&iwloc=&output=embed" title="Carte - Paris, France" />
-        </div>
-      </section>
-      {/*====== End Contact Map Section ======*/}
       {/*====== Start Contact Section ======*/}
       <section className="contact-section pt-120 pb-80">
         <div className="container">
@@ -78,7 +60,7 @@ const Contact = () => {
             <div className="col-lg-5">
               {/*=== Contact Content Box ===*/}
               <div className="contact-one_content-box mb-50 wow fadeInLeft">
-                <div className="section-title section-title-left                                                                                                    ">
+                <div className="section-title section-title-left">
                   <span className="sub-title">Contact</span>
                   <h2>Une question ? Écrivez-nous</h2>
                 </div>
@@ -87,41 +69,6 @@ const Contact = () => {
                   échanger sur votre transformation digitale ? Remplissez le formulaire
                   ou contactez-nous directement par e-mail.
                 </p>
-                <div className="social-box">
-                  <h3 className="title">Suivez-nous</h3>
-                  <ul className="social-link">
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-behance" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-dribbble" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
             <div className="col-lg-7">
@@ -226,8 +173,6 @@ const Contact = () => {
         </div>
       </section>
       {/*====== End Contact Section ======*/}
-      {/*====== Start Newsletter Section ======*/}
-      <Newsletter />
     </Layout>
   );
 };

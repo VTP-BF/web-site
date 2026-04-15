@@ -57,7 +57,7 @@ const Testimonial = () => {
                 <div className="author-thumb-title d-flex">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-1.jpg"
+                      src="/assets/images/testimonial/thumb-1.jpg"
                       alt="Author Image"
                     />
                   </div>
@@ -101,7 +101,7 @@ const Testimonial = () => {
                 <div className="author-thumb-title d-flex">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-2.jpg"
+                      src="/assets/images/testimonial/thumb-2.jpg"
                       alt="Author Image"
                     />
                   </div>
@@ -145,7 +145,7 @@ const Testimonial = () => {
                 <div className="author-thumb-title d-flex">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-3.jpg"
+                      src="/assets/images/testimonial/thumb-3.jpg"
                       alt="Author Image"
                     />
                   </div>
@@ -189,7 +189,7 @@ const Testimonial = () => {
                 <div className="author-thumb-title d-flex">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-2.jpg"
+                      src="/assets/images/testimonial/thumb-2.jpg"
                       alt="Author Image"
                     />
                   </div>
@@ -264,7 +264,7 @@ const Testimonial = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -311,7 +311,7 @@ const Testimonial = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -358,7 +358,7 @@ const Testimonial = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>
@@ -405,7 +405,7 @@ const Testimonial = () => {
                       <div className="author-thumb-title d-flex">
                         <div className="author-thumb">
                           <img
-                            src="assets/images/testimonial/thumb-1.jpg"
+                            src="/assets/images/testimonial/thumb-1.jpg"
                             alt="Author Image"
                           />
                         </div>

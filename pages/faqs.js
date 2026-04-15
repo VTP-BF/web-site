@@ -27,23 +27,23 @@ const Faqs = () => {
               {/*=== Faq Image Box ===*/}
               <div className="faq-two_image-box p-r z-1 ml-lg-70 mb-50 wow fadeInRight">
                 <img
-                  src="assets/images/gallery/faq-2.jpg"
+                  src="/assets/images/gallery/faq-2.jpg"
                   className="faq-one-img"
                   alt="Faq Image"
                 />
                 <img
-                  src="assets/images/gallery/faq-3.jpg"
+                  src="/assets/images/gallery/faq-3.jpg"
                   className="faq-two-img"
                   alt="Faq Image"
                 />
                 <img
-                  src="assets/images/gallery/faq-4.jpg"
+                  src="/assets/images/gallery/faq-4.jpg"
                   className="faq-three-img"
                   alt="Faq Image"
                 />
                 <div className="fintex-logo">
                   <img
-                    src="assets/images/logo/big-logo-1.png"
+                    src="/assets/images/logo/big-logo-1.png"
                     alt="Fintext Logo"
                   />
                 </div>

@@ -279,7 +279,7 @@ const ProductDetails = () => {
               <span className="status">New</span>
               <div className="product-img">
                 <img
-                  src="assets/images/product/img-1.png"
+                  src="/assets/images/product/img-1.png"
                   alt="product image"
                 />
                 <div className="product-meta">
@@ -322,7 +322,7 @@ const ProductDetails = () => {
             <div className="single-product-item mb-30 text-center wow fadeInUp">
               <div className="product-img">
                 <img
-                  src="assets/images/product/img-2.png"
+                  src="/assets/images/product/img-2.png"
                   alt="product image"
                 />
                 <a href="#" className="cart-btn">
@@ -360,7 +360,7 @@ const ProductDetails = () => {
             <div className="single-product-item mb-30 text-center wow fadeInUp">
               <div className="product-img">
                 <img
-                  src="assets/images/product/img-3.png"
+                  src="/assets/images/product/img-3.png"
                   alt="product image"
                 />
                 <a href="#" className="cart-btn">
@@ -401,7 +401,7 @@ const ProductDetails = () => {
             <div className="single-product-item mb-30 text-center wow fadeInUp">
               <div className="product-img">
                 <img
-                  src="assets/images/product/img-4.png"
+                  src="/assets/images/product/img-4.png"
                   alt="product image"
                 />
                 <a href="#" className="cart-btn">
@@ -442,7 +442,7 @@ const ProductDetails = () => {
             <div className="single-product-item mb-30 text-center wow fadeInUp">
               <div className="product-img">
                 <img
-                  src="assets/images/product/img-5.png"
+                  src="/assets/images/product/img-5.png"
                   alt="product image"
                 />
                 <a href="#" className="cart-btn">

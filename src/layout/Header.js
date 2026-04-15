@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Fragment, useEffect } from "react";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import useWindowSize from "../useWindowSize";
 import { stickyNav } from "../utils";
 import MobileMenu from "./MobileMenu";
@@ -108,13 +109,13 @@ const DefaultHeader = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo default-logo">
-                <img src="assets/images/logo/logo-1.png" alt="Site Logo" />
+                <img src="/assets/images/logo/logo-1.png" alt="Site Logo" />
               </a>
             </Link>
             <Link legacyBehavior href="/">
               <a className="brand-logo default-sticky-logo">
                 <img
-                  src="assets/images/logo/default-sticky-logo.png"
+                  src="/assets/images/logo/default-sticky-logo.png"
                   alt="Site Logo"
                 />
               </a>
@@ -128,7 +129,7 @@ const DefaultHeader = ({ singleMenus }) => (
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
                     <img
-                      src="assets/images/logo/default-sticky-logo.png"
+                      src="/assets/images/logo/default-sticky-logo.png"
                       alt="Site Logo"
                     />
                   </a>
@@ -242,7 +243,7 @@ const Header2 = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="assets/images/logo/logo-2.png" alt="Site Logo" />
+                <img src="/assets/images/logo/logo-2.png" alt="Site Logo" />
               </a>
             </Link>
           </div>
@@ -253,7 +254,7 @@ const Header2 = ({ singleMenus }) => (
               <div className="mobile-logo mb-30 d-block d-xl-none text-center">
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
-                    <img src="assets/images/logo/logo-2.png" alt="Site Logo" />
+                    <img src="/assets/images/logo/logo-2.png" alt="Site Logo" />
                   </a>
                 </Link>
               </div>
@@ -303,7 +304,7 @@ const Header3 = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
+                <img src="/assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
               </a>
             </Link>
           </div>
@@ -314,7 +315,7 @@ const Header3 = ({ singleMenus }) => (
               <div className="mobile-logo mb-30 d-block d-xl-none text-center">
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
-                    <img src="assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
+                    <img src="/assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
                   </a>
                 </Link>
               </div>
@@ -326,24 +327,10 @@ const Header3 = ({ singleMenus }) => (
                   <MobileMenu />
                 </Fragment>
               )}
-              <div className="menu-button pt-30">
-                <Link legacyBehavior href="/sign-in">
-                  <a className="main-btn btn-blue">Log in</a>
-                </Link>
-              </div>
             </div>
             {/*=== Nav right item ===*/}
             <div className="nav-right-item d-flex align-items-center">
-              <div className="sign-in-button">
-                <Link legacyBehavior href="/sign-up">
-                  <a className="btn-link">Sign Up</a>
-                </Link>
-              </div>
-              <div className="menu-button">
-                <Link legacyBehavior href="/sign-in">
-                  <a className="main-btn btn-blue">Log in</a>
-                </Link>
-              </div>
+              <LanguageSwitcher />
               <div className="navbar-toggler">
                 <span />
                 <span />
@@ -369,7 +356,7 @@ const Header4 = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="assets/images/logo/logo-4.png" alt="Site Logo" />
+                <img src="/assets/images/logo/logo-4.png" alt="Site Logo" />
               </a>
             </Link>
           </div>
@@ -379,7 +366,7 @@ const Header4 = ({ singleMenus }) => (
             <div className="mobile-logo mb-30 d-block d-xl-none text-center">
               <Link legacyBehavior href="/">
                 <a className="brand-logo">
-                  <img src="assets/images/logo/logo-4.png" alt="Site Logo" />
+                  <img src="/assets/images/logo/logo-4.png" alt="Site Logo" />
                 </a>
               </Link>
             </div>
@@ -422,7 +409,7 @@ const Header5 = ({ singleMenus }) => (
           <div className="site-branding d-flex align-items-center">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="assets/images/logo/logo-4.png" alt="Site Logo" />
+                <img src="/assets/images/logo/logo-4.png" alt="Site Logo" />
               </a>
             </Link>
             <a href="tel:+000(123)45688" className="call-button">
@@ -438,7 +425,7 @@ const Header5 = ({ singleMenus }) => (
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
                     <img
-                      src="assets/images/logo/default-sticky-logo.png"
+                      src="/assets/images/logo/default-sticky-logo.png"
                       alt="Site Logo"
                     />
                   </a>

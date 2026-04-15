@@ -18,7 +18,7 @@ const JobDetails = () => {
                 <div className="single-job-item d-flex mb-30 wow fadeInUp">
                   <div className="job-thumb">
                     <img
-                      src="assets/images/career/job-1.png"
+                      src="/assets/images/career/job-1.png"
                       alt="Job Author"
                     />
                   </div>
@@ -176,25 +176,25 @@ const JobDetails = () => {
                   <Slider {...gallerySlider} className="gallery-slider mb-20">
                     <div className="single-gallery-img">
                       <img
-                        src="assets/images/career/img-1.jpg"
+                        src="/assets/images/career/img-1.jpg"
                         alt="Gallery Image"
                       />
                     </div>
                     <div className="single-gallery-img">
                       <img
-                        src="assets/images/career/img-2.jpg"
+                        src="/assets/images/career/img-2.jpg"
                         alt="Gallery Image"
                       />
                     </div>
                     <div className="single-gallery-img">
                       <img
-                        src="assets/images/career/img-3.jpg"
+                        src="/assets/images/career/img-3.jpg"
                         alt="Gallery Image"
                       />
                     </div>
                     <div className="single-gallery-img">
                       <img
-                        src="assets/images/career/img-2.jpg"
+                        src="/assets/images/career/img-2.jpg"
                         alt="Gallery Image"
                       />
                     </div>
@@ -204,7 +204,7 @@ const JobDetails = () => {
                     className="video-slider mb-35 wow fadeInUp"
                   >
                     <div className="single-video">
-                      <img src="assets/images/career/img-4.jpg" alt="" />
+                      <img src="/assets/images/career/img-4.jpg" alt="" />
                       <div className="image-overlay" />
                       <div className="play-content text-center">
                         <a
@@ -216,7 +216,7 @@ const JobDetails = () => {
                       </div>
                     </div>
                     <div className="single-video">
-                      <img src="assets/images/career/img-4.jpg" alt="" />
+                      <img src="/assets/images/career/img-4.jpg" alt="" />
                       <div className="image-overlay" />
                       <div className="play-content text-center">
                         <a
@@ -235,7 +235,7 @@ const JobDetails = () => {
                   <div className="single-job-item d-flex mb-30">
                     <div className="job-thumb">
                       <img
-                        src="assets/images/career/job-2.png"
+                        src="/assets/images/career/job-2.png"
                         alt="Job Author"
                       />
                     </div>
@@ -276,7 +276,7 @@ const JobDetails = () => {
                   <div className="single-job-item d-flex mb-30">
                     <div className="job-thumb">
                       <img
-                        src="assets/images/career/job-3.png"
+                        src="/assets/images/career/job-3.png"
                         alt="Job Author"
                       />
                     </div>
@@ -317,7 +317,7 @@ const JobDetails = () => {
                   <div className="single-job-item d-flex mb-30">
                     <div className="job-thumb">
                       <img
-                        src="assets/images/career/job-4.png"
+                        src="/assets/images/career/job-4.png"
                         alt="Job Author"
                       />
                     </div>
@@ -358,7 +358,7 @@ const JobDetails = () => {
                   <div className="single-job-item d-flex mb-30">
                     <div className="job-thumb">
                       <img
-                        src="assets/images/career/job-5.png"
+                        src="/assets/images/career/job-5.png"
                         alt="Job Author"
                       />
                     </div>

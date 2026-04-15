@@ -46,7 +46,7 @@ const FeedbackSectionChart = () => {
                   <div className="author-thumb-title d-flex">
                     <div className="author-thumb">
                       <img
-                        src="assets/images/testimonial/thumb-1.jpg"
+                        src="/assets/images/testimonial/thumb-1.jpg"
                         alt="Client IT"
                       />
                     </div>
@@ -90,7 +90,7 @@ const FeedbackSectionChart = () => {
                   <div className="author-thumb-title d-flex">
                     <div className="author-thumb">
                       <img
-                        src="assets/images/testimonial/thumb-1.jpg"
+                        src="/assets/images/testimonial/thumb-1.jpg"
                         alt="Client Data"
                       />
                     </div>
@@ -133,7 +133,7 @@ const FeedbackSectionChart = () => {
                   <div className="author-thumb-title d-flex">
                     <div className="author-thumb">
                       <img
-                        src="assets/images/testimonial/thumb-1.jpg"
+                        src="/assets/images/testimonial/thumb-1.jpg"
                         alt="Client Cloud & Sécurité"
                       />
                     </div>
@@ -174,7 +174,7 @@ const FeedbackSectionChart = () => {
       {/*=== Video Wrapper ===*/}
       <div
         className="video-wrapper-one bg_cover pt-220 pb-220 p-r z-1 wow fadeInUp"
-        style={{ backgroundImage: "url(assets/images/bg/video-bg-1.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/bg/video-bg-1.jpg)" }}
       >
         <svg
           className="shape shape-one"

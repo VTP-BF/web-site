@@ -21,22 +21,22 @@ const OnePageIndex3 = () => {
       <section className="banner-three p-r z-1" id="onepage-home">
         <div className="shape shape-one animate-float-x">
           <span>
-            <img src="assets/images/shape/shape-5.png" alt="shape" />
+            <img src="/assets/images/shape/shape-5.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-two animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-6.png" alt="shape" />
+            <img src="/assets/images/shape/shape-6.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-three animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-7.png" alt="shape" />
+            <img src="/assets/images/shape/shape-7.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-four animate-float-y">
           <span>
-            <img src="assets/images/shape/shape-8.png" alt="shape" />
+            <img src="/assets/images/shape/shape-8.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-five">
@@ -44,7 +44,7 @@ const OnePageIndex3 = () => {
         </div>
         <div className="shape shape-six">
           <span>
-            <img src="assets/images/shape/shape-9.png" alt="" />
+            <img src="/assets/images/shape/shape-9.png" alt="" />
           </span>
         </div>
         <div className="container">
@@ -74,7 +74,7 @@ const OnePageIndex3 = () => {
                 data-wow-delay=".10s"
               >
                 <img
-                  src="assets/images/hero/hero-three-one.png"
+                  src="/assets/images/hero/hero-three-one.png"
                   className="hero-img"
                   alt=""
                 />
@@ -114,7 +114,7 @@ const OnePageIndex3 = () => {
                 <div className="author-thumb-title d-flex align-items-center">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/testimonial/thumb-4.jpg"
+                      src="/assets/images/testimonial/thumb-4.jpg"
                       alt="Author Image"
                     />
                   </div>
@@ -176,12 +176,12 @@ const OnePageIndex3 = () => {
                   <span />
                 </div>
                 <img
-                  src="assets/images/gallery/card-1.png"
+                  src="/assets/images/gallery/card-1.png"
                   className="about-img-one"
                   alt=""
                 />
                 <img
-                  src="assets/images/gallery/card-price.png"
+                  src="/assets/images/gallery/card-price.png"
                   className="about-img-two animate-float-y"
                   alt=""
                 />
@@ -236,7 +236,7 @@ const OnePageIndex3 = () => {
                 <div className="shape shape-one">
                   <span />
                 </div>
-                <img src="assets/images/gallery/card-2.png" alt="" />
+                <img src="/assets/images/gallery/card-2.png" alt="" />
               </div>
             </div>
           </div>
@@ -396,7 +396,7 @@ const OnePageIndex3 = () => {
                     <span />
                   </div>
                   <img
-                    src="assets/images/gallery/card-3.png"
+                    src="/assets/images/gallery/card-3.png"
                     alt="Mobile Mockup"
                   />
                 </div>
@@ -479,7 +479,7 @@ const OnePageIndex3 = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-1.jpg"
+                              src="/assets/images/testimonial/thumb-1.jpg"
                               alt="Author Image"
                             />
                           </div>
@@ -523,7 +523,7 @@ const OnePageIndex3 = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-2.jpg"
+                              src="/assets/images/testimonial/thumb-2.jpg"
                               alt="Author Image"
                             />
                           </div>
@@ -567,7 +567,7 @@ const OnePageIndex3 = () => {
                         <div className="author-thumb-title d-flex align-items-center">
                           <div className="author-thumb">
                             <img
-                              src="assets/images/testimonial/thumb-1.jpg"
+                              src="/assets/images/testimonial/thumb-1.jpg"
                               alt="Author Image"
                             />
                           </div>
@@ -605,10 +605,10 @@ const OnePageIndex3 = () => {
             </div>
             <div className="col-lg-6">
               <div className="map-img-box p-r z-1 mb-50 wow fadeInRight">
-                <img src="assets/images/gallery/map-2.png" alt="" />
+                <img src="/assets/images/gallery/map-2.png" alt="" />
                 <div className="thumb-marker">
                   <img
-                    src="assets/images/testimonial/marker-thumb.jpg"
+                    src="/assets/images/testimonial/marker-thumb.jpg"
                     alt=""
                   />
                 </div>

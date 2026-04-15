@@ -10,22 +10,22 @@ const Index4 = () => {
       <section className="banner-four p-r z-1">
         <div className="shape shape-one animate-float-x">
           <span>
-            <img src="assets/images/hero/h-shape-1.png" alt="Shape" />
+            <img src="/assets/images/hero/h-shape-1.png" alt="Shape" />
           </span>
         </div>
         <div className="shape shape-two">
           <span>
-            <img src="assets/images/hero/h-shape-2.png" alt="Shape" />
+            <img src="/assets/images/hero/h-shape-2.png" alt="Shape" />
           </span>
         </div>
         <div className="shape shape-three">
           <span>
-            <img src="assets/images/hero/h-shape-3.png" alt="Shape" />
+            <img src="/assets/images/hero/h-shape-3.png" alt="Shape" />
           </span>
         </div>
         <div className="shape shape-four animate-float-x">
           <span>
-            <img src="assets/images/hero/h-shape-4.png" alt="Shape" />
+            <img src="/assets/images/hero/h-shape-4.png" alt="Shape" />
           </span>
         </div>
         <div className="shape-dot shape-dot-one animate-float-y">
@@ -78,7 +78,7 @@ const Index4 = () => {
             <div className="col-xl-5">
               <div className="hero-img-box wow fadeInRight" data-wow-delay="1s">
                 <img
-                  src="assets/images/hero/hero-four-1.png"
+                  src="/assets/images/hero/hero-four-1.png"
                   alt="Hero Image"
                 />
                 <div className="circle-border">
@@ -101,7 +101,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-13.png"
+                      src="/assets/images/partners/logo-13.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -111,7 +111,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-14.png"
+                      src="/assets/images/partners/logo-14.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -121,7 +121,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-15.png"
+                      src="/assets/images/partners/logo-15.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -131,7 +131,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-16.png"
+                      src="/assets/images/partners/logo-16.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -141,7 +141,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-17.png"
+                      src="/assets/images/partners/logo-17.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -151,7 +151,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-18.png"
+                      src="/assets/images/partners/logo-18.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -161,7 +161,7 @@ const Index4 = () => {
                 <div className="partner-img">
                   <a href="#">
                     <img
-                      src="assets/images/partners/logo-15.png"
+                      src="/assets/images/partners/logo-15.png"
                       alt="Partner Image"
                     />
                   </a>
@@ -235,7 +235,7 @@ const Index4 = () => {
             <div className="col-xl-6 col-lg-12">
               <div className="service-one_image-box text-center mb-20 p-r z-1 wow fadeInDown">
                 <img
-                  src="assets/images/service/img-7.png"
+                  src="/assets/images/service/img-7.png"
                   className="service-one-img"
                   alt="Service Image"
                 />
@@ -315,17 +315,17 @@ const Index4 = () => {
             <div className="col-lg-6">
               <div className="about-four_image-box p-r z-1">
                 <img
-                  src="assets/images/about/about-6.jpg"
+                  src="/assets/images/about/about-6.jpg"
                   className="about-img-one wow fadeInDown"
                   alt="About Image"
                 />
                 <img
-                  src="assets/images/about/about-7.jpg"
+                  src="/assets/images/about/about-7.jpg"
                   className="about-img-two wow fadeInLeft"
                   alt="About Image"
                 />
                 <img
-                  src="assets/images/about/about-8.jpg"
+                  src="/assets/images/about/about-8.jpg"
                   className="about-img-three wow fadeInUp"
                   alt="About Image"
                 />
@@ -334,7 +334,7 @@ const Index4 = () => {
                 </div>
                 <div className="shape shape-one animate-float-x">
                   <span>
-                    <img src="assets/images/shape/pattern-bg-2.png" alt="" />
+                    <img src="/assets/images/shape/pattern-bg-2.png" alt="" />
                   </span>
                 </div>
               </div>
@@ -392,7 +392,7 @@ const Index4 = () => {
         <div className="container">
           <div
             className="fact-wrapper-one p-r pt-60 pb-55 bg_cover"
-            style={{ backgroundImage: "url(assets/images/bg/fact-bg-1.jpg)" }}
+            style={{ backgroundImage: "url(/assets/images/bg/fact-bg-1.jpg)" }}
           >
             <div className="counter-item-white">
               <div className="icon">
@@ -447,7 +447,7 @@ const Index4 = () => {
         <div
           className="pattern-bg bg_cover"
           style={{
-            backgroundImage: "url(assets/images/shape/pattern-bg-1.png)",
+            backgroundImage: "url(/assets/images/shape/pattern-bg-1.png)",
           }}
         />
         <div className="container">
@@ -463,7 +463,7 @@ const Index4 = () => {
                   who beguiled and demoralized charmso pleasure
                 </p>
                 <img
-                  src="assets/images/gallery/graph-2.png"
+                  src="/assets/images/gallery/graph-2.png"
                   alt="Graph Image"
                 />
               </div>
@@ -494,7 +494,7 @@ const Index4 = () => {
               <div className="testimonial-inner-content">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/thumb-5.jpg"
+                    src="/assets/images/testimonial/thumb-5.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -516,7 +516,7 @@ const Index4 = () => {
               <div className="testimonial-inner-content">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/thumb-6.jpg"
+                    src="/assets/images/testimonial/thumb-6.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -538,7 +538,7 @@ const Index4 = () => {
               <div className="testimonial-inner-content">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/thumb-5.jpg"
+                    src="/assets/images/testimonial/thumb-5.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -560,7 +560,7 @@ const Index4 = () => {
               <div className="testimonial-inner-content">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/thumb-5.jpg"
+                    src="/assets/images/testimonial/thumb-5.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -582,7 +582,7 @@ const Index4 = () => {
               <div className="testimonial-inner-content">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/thumb-5.jpg"
+                    src="/assets/images/testimonial/thumb-5.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -650,7 +650,7 @@ const Index4 = () => {
             </div>
             <div className="col-lg-6">
               <div className="skill-img-box mb-50 text-lg-right text-md-center p-r z-1 wow fadeInRight">
-                <img src="assets/images/gallery/skill-2.png" alt="" />
+                <img src="/assets/images/gallery/skill-2.png" alt="" />
                 <div className="circle-border">
                   <span />
                   <span />
@@ -666,11 +666,11 @@ const Index4 = () => {
         <div className="container">
           <div className="newsletter-wrapper-two pt-80 pb-80 wow fadeInLeft">
             <div className="shape-svg">
-              <img src="assets/images/shape/shape-10.png" alt="Shape" />
+              <img src="/assets/images/shape/shape-10.png" alt="Shape" />
             </div>
             <div className="newsletter-image-box">
               <img
-                src="assets/images/gallery/newsletter-1.jpg"
+                src="/assets/images/gallery/newsletter-1.jpg"
                 className="newsletter-image-one"
                 alt=""
               />

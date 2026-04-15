@@ -94,7 +94,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-1.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-1.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -131,7 +131,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-2.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-2.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -168,7 +168,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-3.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-3.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -205,7 +205,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-4.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-4.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -242,7 +242,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-5.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-5.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -279,7 +279,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-6.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-6.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -316,7 +316,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-7.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-7.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -353,7 +353,7 @@ const Career = () => {
               {/*=== Single Job Item ===*/}
               <div className="single-job-item d-flex mb-30 wow fadeInUp">
                 <div className="job-thumb">
-                  <img src="assets/images/career/job-8.png" alt="Job Author" />
+                  <img src="/assets/images/career/job-8.png" alt="Job Author" />
                 </div>
                 <div className="job-main-content d-flex">
                   <div className="job-content">
@@ -397,7 +397,7 @@ const Career = () => {
             <div className="col-lg-6">
               {/*=== Who Image Box ===*/}
               <div className="who-one_img-box mb-50 wow fadeInLeft">
-                <img src="assets/images/gallery/we-1.jpg" alt="who image" />
+                <img src="/assets/images/gallery/we-1.jpg" alt="who image" />
               </div>
             </div>
             <div className="col-lg-6">

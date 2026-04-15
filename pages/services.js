@@ -145,7 +145,7 @@ const Services = () => {
               {/*=== Faq Image Box ===*/}
               <div className="faq-one_image-box ml-lg-70 p-r mb-50 wow fadeInRight">
                 <div className="image-overlay" />
-                <img src="assets/images/gallery/faq-1.jpg" alt="Support IT et Solutions Technologiques" />
+                <img src="/assets/images/gallery/faq-1.jpg" alt="Support IT et Solutions Technologiques" />
               </div>
             </div>
           </div>
