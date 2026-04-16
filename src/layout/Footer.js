@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { getFooterContent } from "../locales/footerPage";
+
 const Footer = ({ footer }) => {
   switch (footer) {
     case 1:
@@ -330,119 +333,120 @@ const Footer2 = () => (
   </footer>
 );
 
-const Footer3 = () => (
-  <footer className="footer-three text-white p-r z-1">
-    <div className="container">
-      {/*=== Footer Widget ===*/}
-      <div className="footer-widget-wrapper pt-80 pb-35">
-        <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className="footer-widget about-company-widget-two mb-40 wow fadeInUp">
-              <div className="footer-content">
-                <div className="footer-logo">
-                  <Link legacyBehavior href="/">
-                    <a>
-                      <img
-                        src="/assets/images/logo/vtp-logo.png"
-                        alt="VTP - Visionary Tech Partners"
-                      />
-                    </a>
-                  </Link>
+const Footer3 = () => {
+  const router = useRouter();
+  const t = getFooterContent(router.locale);
+
+  const resolveHref = (href) => {
+    if (href.startsWith("/#")) {
+      const frag = href.slice(2);
+      return router.locale === "en" ? `/en#${frag}` : href;
+    }
+    return href;
+  };
+
+  return (
+    <footer className="footer-three text-white p-r z-1">
+      <div className="container">
+        {/*=== Footer Widget ===*/}
+        <div className="footer-widget-wrapper pt-80 pb-35">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="footer-widget about-company-widget-two mb-40 wow fadeInUp">
+                <div className="footer-content">
+                  <div className="footer-logo">
+                    <Link legacyBehavior href="/" locale={router.locale}>
+                      <a>
+                        <img
+                          src="/assets/images/logo/vtp-logo.png"
+                          alt={t.logoAlt}
+                        />
+                      </a>
+                    </Link>
+                  </div>
+                  <p>{t.tagline}</p>
                 </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                <h4 className="widget-title">{t.servicesTitle}</h4>
+                <div className="footer-content">
+                  <ul className="widget-nav">
+                    {t.servicesLinks.map((item) => (
+                      <li key={item.label}>
+                        {item.isNext ? (
+                          <Link
+                            legacyBehavior
+                            href={item.href}
+                            locale={router.locale}
+                          >
+                            <a>{item.label}</a>
+                          </Link>
+                        ) : (
+                          <a href={resolveHref(item.href)}>{item.label}</a>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                <h4 className="widget-title">{t.resourcesTitle}</h4>
+                <div className="footer-content">
+                  <ul className="widget-nav">
+                    {t.resourcesLinks.map((item) => (
+                      <li key={item.label}>
+                        <Link
+                          legacyBehavior
+                          href={item.href}
+                          locale={router.locale}
+                        >
+                          <a>{item.label}</a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="footer-widget contact-info-widget-two mb-40 wow fadeInUp">
+                <h4 className="widget-title">{t.contactTitle}</h4>
+                <div className="footer-content">
+                  <div className="contact-info-box d-flex mb-10">
+                    <div className="icon">
+                      <i className="far fa-envelope" />
+                    </div>
+                    <div className="text">
+                      <p>
+                        <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*=== Footer Copyright ===*/}
+        <div className="footer-copyright border-top-white-op-1">
+          <div className="row align-items-center">
+            <div className="col-12">
+              <div className="footer-text text-center text-lg-start">
                 <p>
-                  Solutions IT innovantes pour transformer votre infrastructure technologique et optimiser vos processus métier.
+                  © {new Date().getFullYear()} {t.copyright}
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
-              <h4 className="widget-title">Services</h4>
-              <div className="footer-content">
-                <ul className="widget-nav">
-                  <li>
-                    <Link legacyBehavior href="/services">
-                      <a>Nos Services</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <a href="#features">Solutions IT</a>
-                  </li>
-                  <li>
-                    <a href="#cloud">Infrastructure Cloud</a>
-                  </li>
-                  <li>
-                    <a href="#security">Cybersécurité</a>
-                  </li>
-                  <li>
-                    <a href="#ai">IA & MLOps</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
-              <h4 className="widget-title">Ressources</h4>
-              <div className="footer-content">
-                <ul className="widget-nav">
-                  <li>
-                    <Link legacyBehavior href="/about">
-                      <a>À propos</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/faqs">
-                      <a>FAQ</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <a href="#contact">
-                      Contact <span className="status">New</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#blog">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#support">Support</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className="footer-widget contact-info-widget-two mb-40 wow fadeInUp">
-              <h4 className="widget-title">Contact</h4>
-              <div className="footer-content">
-                <div className="contact-info-box d-flex mb-10">
-                  <div className="icon">
-                    <i className="far fa-envelope" />
-                  </div>
-                  <div className="text">
-                    <p>
-                      <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      {/*=== Footer Copyright ===*/}
-      <div className="footer-copyright border-top-white-op-1">
-        <div className="row align-items-center">
-          <div className="col-12">
-            <div className="footer-text text-center text-lg-start">
-              <p>© {new Date().getFullYear()} Tous droits réservés</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 const Footer4 = () => (
   <footer className="footer-three p-r z-1">

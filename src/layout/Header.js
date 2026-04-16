@@ -3,7 +3,7 @@ import { Fragment, useEffect } from "react";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import useWindowSize from "../useWindowSize";
 import { stickyNav } from "../utils";
-import MobileMenu from "./MobileMenu";
+import MainNavLinks from "../components/MainNavLinks";
 
 const Header = ({ header, singleMenus }) => {
   useEffect(() => {
@@ -140,8 +140,8 @@ const DefaultHeader = ({ singleMenus }) => (
                 <SingleMenu menus={singleMenus} />
               ) : (
                 <Fragment>
-                  <Menus />
-                  <MobileMenu />
+                  <MainNavLinks variant="desktop" />
+                  <MainNavLinks variant="mobile" />
                 </Fragment>
               )}
 
@@ -262,8 +262,8 @@ const Header2 = ({ singleMenus }) => (
                 <SingleMenu menus={singleMenus} />
               ) : (
                 <Fragment>
-                  <Menus />
-                  <MobileMenu />
+                  <MainNavLinks variant="desktop" />
+                  <MainNavLinks variant="mobile" />
                 </Fragment>
               )}
               <div className="menu-button pt-30">
@@ -323,8 +323,8 @@ const Header3 = ({ singleMenus }) => (
                 <SingleMenu menus={singleMenus} />
               ) : (
                 <Fragment>
-                  <Menus />
-                  <MobileMenu />
+                  <MainNavLinks variant="desktop" />
+                  <MainNavLinks variant="mobile" />
                 </Fragment>
               )}
             </div>
@@ -375,8 +375,8 @@ const Header4 = ({ singleMenus }) => (
               <SingleMenu menus={singleMenus} />
             ) : (
               <Fragment>
-                <Menus />
-                <MobileMenu />
+                <MainNavLinks variant="desktop" />
+                <MainNavLinks variant="mobile" />
               </Fragment>
             )}
           </div>
@@ -436,8 +436,8 @@ const Header5 = ({ singleMenus }) => (
                 <SingleMenu menus={singleMenus} />
               ) : (
                 <Fragment>
-                  <Menus />
-                  <MobileMenu />
+                  <MainNavLinks variant="desktop" />
+                  <MainNavLinks variant="mobile" />
                 </Fragment>
               )}
             </div>
@@ -459,35 +459,6 @@ const Header5 = ({ singleMenus }) => (
       </div>
     </div>
   </header>
-);
-
-const Menus = () => (
-  <Fragment>
-    <nav className="main-menu d-none d-xl-block">
-      <ul>
-        <li className="menu-item">
-          <Link legacyBehavior href="/">
-            <a className="active">Home</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/services">
-            <a>Services</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/contact">
-            <a>Contact</a>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  </Fragment>
 );
 
 const SingleMenu = ({ menus }) => {

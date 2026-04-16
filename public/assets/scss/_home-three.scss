@@ -112,6 +112,24 @@
             height: auto;
             object-fit: contain;
         }
+        & .primary-menu{
+            @media #{$lm}{
+                min-width: 0;
+                & .site-branding{
+                    flex: 0 1 auto;
+                    min-width: 0;
+                    max-width: 260px;
+                    @media #{$xss}{
+                        max-width: 200px;
+                    }
+                }
+                & .nav-inner-menu{
+                    flex: 1 1 auto;
+                    min-width: 0;
+                    justify-content: flex-end;
+                }
+            }
+        }
     }
     .sign-in-button{
         & .btn-link{
@@ -228,6 +246,51 @@
             }
             & .hero-img{
                 height: 300px;
+            }
+        }
+        // Tablette / mobile : ne pas figer la colonne image (évite tout le bloc à gauche / overflow)
+        @media #{$lm}{
+            & .row > .col-lg-7{
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                min-height: 0;
+                margin-top: 0;
+            }
+            & .row{
+                justify-content: center;
+            }
+            & .hero-content{
+                text-align: center;
+                & h1{
+                    padding-right: 0;
+                }
+                & p{
+                    padding-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 36rem;
+                }
+                & .hero-button{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    & a:not(:first-child){
+                        margin-left: 0;
+                    }
+                }
+            }
+            & .hero-img-box.hero-img-box-bg{
+                height: clamp(260px, 55vw, 440px);
+                background-position: center top;
+            }
+        }
+        @media #{$xs}{
+            padding: 130px 0 75px;
+            & .hero-img-box.hero-img-box-bg{
+                height: clamp(220px, 58vw, 360px);
             }
         }
     }
@@ -440,11 +503,11 @@
             }
         }
     }
-    // Section « What We Offer » : fond clair (blanc sale → blanc)
+    // Section « What we offer » / valeurs : fond clair — ne pas utiliser `text-white`
+    // (Bootstrap : .text-white { color: #fff !important } sur la section rend le h2 illisible).
     & .features-section{
         background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 100%);
-        // Le texte doit être noir sur ce fond clair
-        &.text-white{
+        &.features-section--surface-light{
             padding-top: 130px;
             & .section-title{
                 & .sub-title{
@@ -453,7 +516,7 @@
                     display: inline-block;
                 }
                 & h2{
-                    color: rgba(5, 5, 5, 1);
+                    color: #1a1a1a;
                     margin-top: 10px;
                 }
             }
@@ -933,6 +996,13 @@
     }
     // Section « Amazing Business Services » (fond clair) : titres lisibles + accent bleu
     & .service-section-three{
+        overflow-x: hidden;
+        & .service-slider-one{
+            @media #{$xm}{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
         & .section-title{
             & .sub-title{
                 color: $blue-dark;
@@ -1007,6 +1077,53 @@
                     color: $blue-dark;
                 }
             }
+        }
+    }
+    // --- Responsive global VTP : titres et cartes lisibles, pas collés à gauche ---
+    @media #{$xm}{
+        & .section-title.section-title-left{
+            text-align: center;
+        }
+        & .ml-lg-40,
+        & .ml-lg-70{
+            margin-left: 0 !important;
+        }
+        & .pl-lg-70{
+            padding-left: 0 !important;
+        }
+        & .faq-one_image-box.ml-lg-70{
+            margin-left: 0 !important;
+        }
+        & .features-section .features-item-two.d-flex{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            & .text{
+                width: 100%;
+            }
+        }
+    }
+    @media #{$xs}{
+        & .fact-section .single-counter-item-two .text{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            & h2.number{
+                flex: 0 0 auto;
+                max-width: none;
+                margin-bottom: 8px;
+            }
+        }
+        & .cta-section .team-button.float-lg-right{
+            float: none;
+            text-align: center;
+        }
+        & .cta-section .section-title{
+            text-align: center;
+        }
+        & .about-section-three .about-button{
+            text-align: center;
         }
     }
 }

@@ -177,6 +177,7 @@
 
 .banner-three{
     padding: 170px 0 110px;
+    overflow-x: hidden;
     & .shape{
         position: absolute;
         z-index: -1;

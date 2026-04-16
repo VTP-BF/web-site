@@ -1,34 +1,42 @@
+import { useRouter } from "next/router";
 import PageBanner from "../src/components/PageBanner";
+import { getContactContent } from "../src/locales/contactPage";
 import Layout from "../src/layout/Layout";
+
 const Contact = () => {
+  const router = useRouter();
+  const c = getContactContent(router.locale);
+
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
-      <PageBanner pageName={"Contact"} />
+      <PageBanner
+        pageKey="contact"
+        pageTitle={c.bannerTitle}
+        breadcrumbLabel={c.bannerBreadcrumb}
+      />
       <section className="contact-information-section pt-130 pb-80">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              {/*=== Information Image Box ===*/}
               <div className="information-one_img-box mb-50 wow fadeInLeft">
                 <img
                   src="/assets/images/contact/img-1.jpg"
-                  alt="Contact - Visionary Tech Partners"
+                  alt={c.infoImageAlt}
                 />
               </div>
             </div>
             <div className="col-lg-6">
-              {/*=== Information Content Box ===*/}
               <div className="information-one_content-box ml-lg-40">
                 <div className="section-title section-title-left mb-50 wow fadeInDown">
-                  <span className="sub-title">Nous contacter</span>
-                  <h2>Prêts à travailler ensemble ? Contactez VTP</h2>
+                  <span className="sub-title">{c.infoSub}</span>
+                  <h2>{c.infoTitle}</h2>
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
                   <div className="icon">
-                    <img src="/assets/images/icon/icon-2.png" alt="Icon" />
+                    <img src="/assets/images/icon/icon-2.png" alt="" />
                   </div>
                   <div className="info">
-                    <h3 className="title">E-mail</h3>
+                    <h3 className="title">{c.emailLabel}</h3>
                     <p>
                       <a href="mailto:info@vtpglobal.com">
                         info@vtpglobal.com
@@ -38,10 +46,10 @@ const Contact = () => {
                 </div>
                 <div className="single-info-item animate-hover-icon d-flex mb-20 wow fadeInUp">
                   <div className="icon">
-                    <img src="/assets/images/icon/icon-3.png" alt="Icon" />
+                    <img src="/assets/images/icon/icon-3.png" alt="" />
                   </div>
                   <div className="info">
-                    <h3 className="title">Téléphone</h3>
+                    <h3 className="title">{c.phoneLabel}</h3>
                     <p>
                       <a href="tel:+33123456789">+33 1 23 45 67 89</a>
                     </p>
@@ -52,29 +60,21 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/*====== End Contact Information Section ======*/}
-      {/*====== Start Contact Section ======*/}
       <section className="contact-section pt-120 pb-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              {/*=== Contact Content Box ===*/}
               <div className="contact-one_content-box mb-50 wow fadeInLeft">
                 <div className="section-title section-title-left">
-                  <span className="sub-title">Contact</span>
-                  <h2>Une question ? Écrivez-nous</h2>
+                  <span className="sub-title">{c.formSub}</span>
+                  <h2>{c.formTitle}</h2>
                 </div>
-                <p>
-                  Vous avez un projet IT, une question sur nos services ou souhaitez
-                  échanger sur votre transformation digitale ? Remplissez le formulaire
-                  ou contactez-nous directement par e-mail.
-                </p>
+                <p>{c.formIntro}</p>
               </div>
             </div>
             <div className="col-lg-7">
-              {/*=== Contact Form Box ===*/}
               <div className="contact-one_form-box ml-lg-40 mb-50 wow fadeInRight">
-                <h3 className="form-title text-white mb-30">Envoyez-nous un message</h3>
+                <h3 className="form-title text-white mb-30">{c.formHeading}</h3>
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   className="contact-form"
@@ -82,12 +82,14 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <label htmlFor="contact-name" className="sr-only">Nom complet</label>
+                        <label htmlFor="contact-name" className="sr-only">
+                          {c.labelName}
+                        </label>
                         <input
                           id="contact-name"
                           type="text"
                           className="form_control"
-                          placeholder="Nom complet"
+                          placeholder={c.placeholderName}
                           name="name"
                           required=""
                         />
@@ -96,12 +98,14 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <label htmlFor="contact-email" className="sr-only">Adresse e-mail</label>
+                        <label htmlFor="contact-email" className="sr-only">
+                          {c.labelEmail}
+                        </label>
                         <input
                           id="contact-email"
                           type="email"
                           className="form_control"
-                          placeholder="Adresse e-mail"
+                          placeholder={c.placeholderEmail}
                           name="email"
                           required=""
                         />
@@ -110,12 +114,14 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <label htmlFor="contact-phone" className="sr-only">Téléphone</label>
+                        <label htmlFor="contact-phone" className="sr-only">
+                          {c.labelPhone}
+                        </label>
                         <input
                           id="contact-phone"
                           type="text"
                           className="form_control"
-                          placeholder="Téléphone"
+                          placeholder={c.placeholderPhone}
                           name="phone"
                           required=""
                         />
@@ -124,24 +130,30 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <label htmlFor="contact-subject" className="sr-only">Sujet</label>
+                        <label htmlFor="contact-subject" className="sr-only">
+                          {c.labelSubject}
+                        </label>
                         <select id="contact-subject" className="wide" name="subject">
-                          <option value="" data-display="Choisir un sujet">Choisir un sujet</option>
-                          <option value="info">Demande d&apos;information</option>
-                          <option value="support">Support technique</option>
-                          <option value="project">Proposition de projet</option>
+                          <option value="" data-display={c.subjectPlaceholder}>
+                            {c.subjectPlaceholder}
+                          </option>
+                          <option value="info">{c.subjectInfo}</option>
+                          <option value="support">{c.subjectSupport}</option>
+                          <option value="project">{c.subjectProject}</option>
                         </select>
                         <i className="far fa-question" />
                       </div>
                     </div>
                     <div className="col-lg-12">
                       <div className="form_group">
-                        <label htmlFor="contact-message" className="sr-only">Message</label>
+                        <label htmlFor="contact-message" className="sr-only">
+                          {c.labelMessage}
+                        </label>
                         <textarea
                           id="contact-message"
                           className="form_control"
                           name="message"
-                          placeholder="Votre message"
+                          placeholder={c.placeholderMessage}
                           rows={5}
                           defaultValue={""}
                         />
@@ -152,16 +164,14 @@ const Contact = () => {
                       <div className="form_checkbox">
                         <input type="checkbox" name="checkbox" id="check1" />
                         <label htmlFor="check1">
-                          <span>
-                            J&apos;accepte que mes données soient collectées et traitées.
-                          </span>
+                          <span>{c.consent}</span>
                         </label>
                       </div>
                     </div>
                     <div className="col-lg-12">
                       <div className="form_group">
                         <button type="submit" className="main-btn btn-blue">
-                          Envoyer le message
+                          {c.submit}
                         </button>
                       </div>
                     </div>
@@ -172,7 +182,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/*====== End Contact Section ======*/}
     </Layout>
   );
 };

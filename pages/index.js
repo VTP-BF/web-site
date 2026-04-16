@@ -1,9 +1,16 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Slider from "react-slick";
 import Counter from "../src/components/Counter";
+import { getHomePageContent } from "../src/locales/homePage";
+import { SERVICE_SLUGS } from "../src/locales/servicesCatalog";
 import Layout from "../src/layout/Layout";
 import { testimonialSliderThree } from "../src/sliderProps";
+
 const Index = () => {
+  const router = useRouter();
+  const c = getHomePageContent(router.locale);
+
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
       <section className="banner-three p-r z-1">
@@ -40,18 +47,19 @@ const Index = () => {
             <div className="col-lg-5">
               <div className="hero-content">
                 <h1 className="wow fadeInUp" data-wow-delay=".5s">
-                  Solutions IT pour votre entreprise
+                  {c.hero.h1}
                 </h1>
                 <p className="wow fadeInDown" data-wow-delay=".7s">
-                  Nous offrons des services IT de pointe incluant l&apos;IA, la cybersécurité,
-                  le cloud et l&apos;automatisation pour propulser votre business vers l&apos;avenir
+                  {c.hero.p}
                 </p>
                 <div className="hero-button wow fadeInUp" data-wow-delay=".9s">
                   <a href="#services" className="main-btn btn-blue">
-                    Découvrir nos Services
+                    {c.hero.ctaServices}
                   </a>
                   <Link legacyBehavior href="/contact">
-                    <a className="main-btn filled-btn filled-white">Nous Contacter</a>
+                    <a className="main-btn filled-btn filled-white">
+                      {c.hero.ctaContact}
+                    </a>
                   </Link>
                 </div>
               </div>
@@ -60,9 +68,12 @@ const Index = () => {
               <div
                 className="hero-img-box hero-img-box-wide hero-img-box-bg wow fadeInRight"
                 data-wow-delay=".10s"
-                style={{ backgroundImage: "url(/assets/images/home/home-hero-software-innovation.png)" }}
+                style={{
+                  backgroundImage:
+                    "url(/assets/images/home/home-hero-software-innovation.png)",
+                }}
                 role="img"
-                aria-label="Solutions IT - Software Innovation - Visionary Tech Partners"
+                aria-label={c.hero.aria}
               />
             </div>
           </div>
@@ -77,7 +88,7 @@ const Index = () => {
               <div className="author-rating-box-two mb-40 wow fadeInUp">
                 <ul className="rating">
                   <li>
-                    <span>Expertise</span>
+                    <span>{c.fact.expertise}</span>
                   </li>
                   <li>
                     <i className="fas fa-star" />
@@ -95,7 +106,7 @@ const Index = () => {
                     <i className="fas fa-star" />
                   </li>
                 </ul>
-                <h5>Votre partenaire tech pour la transformation digitale</h5>
+                <h5>{c.fact.partnerLine}</h5>
                 <div className="author-thumb-title d-flex align-items-center">
                   <div className="author-thumb">
                     <img
@@ -118,7 +129,7 @@ const Index = () => {
                         <h2 className="number">
                           <Counter end={7} />+
                         </h2>
-                        <h5>Services IT</h5>
+                        <h5>{c.fact.counterServices}</h5>
                       </div>
                     </div>
                   </div>
@@ -128,7 +139,7 @@ const Index = () => {
                         <h2 className="number">
                           <Counter end={1} />+
                         </h2>
-                        <h5>An d&apos;activité</h5>
+                        <h5>{c.fact.counterYears}</h5>
                       </div>
                     </div>
                   </div>
@@ -138,7 +149,7 @@ const Index = () => {
                         <h2 className="number">
                           <Counter end={100} />%
                         </h2>
-                        <h5>Engagement</h5>
+                        <h5>{c.fact.counterCommitment}</h5>
                       </div>
                     </div>
                   </div>
@@ -173,16 +184,11 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="about-content-box content-box-gap mb-50 wow fadeInRight">
                 <div className="section-title text-white wow fadeInDown">
-                  <h2>Transformez votre infrastructure IT pour la moderniser</h2>
+                  <h2>{c.about.h2}</h2>
                 </div>
-                <p>
-                  Nous vous accompagnons dans la transformation digitale de votre entreprise
-                  avec des solutions IT innovantes, sécurisées et adaptées à vos besoins.
-                  De l&apos;automatisation des processus à l&apos;intelligence artificielle,
-                  nous mettons la technologie au service de votre croissance.
-                </p>
+                <p>{c.about.p}</p>
                 <Link legacyBehavior href="/about">
-                  <a className="main-btn btn-blue">En savoir plus</a>
+                  <a className="main-btn btn-blue">{c.about.cta}</a>
                 </Link>
               </div>
             </div>
@@ -197,20 +203,17 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="features-content-box content-box-gap mb-50 wow fadeInLeft">
                 <div className="section-title text-white wow fadeInDown">
-                  <h2>Services IT de confiance pour votre transformation digitale</h2>
+                  <h2>{c.featuresTrust.h2}</h2>
                 </div>
-                <p>
-                  Nous proposons une gamme complète de services IT allant du développement
-                  logiciel sur mesure à l&apos;ingénierie cloud, en passant par la cybersécurité
-                  et l&apos;analyse de données. Nos solutions sont conçues pour répondre
-                  aux défis technologiques modernes.
-                </p>
+                <p>{c.featuresTrust.p}</p>
                 <ul className="check-style-one">
-                  <li>Solutions sur mesure adaptées à vos besoins</li>
-                  <li>Expertise en cybersécurité et protection des données</li>
+                  <li>{c.featuresTrust.li1}</li>
+                  <li>{c.featuresTrust.li2}</li>
                 </ul>
                 <Link legacyBehavior href="/about">
-                  <a className="main-btn filled-btn filled-white">En savoir plus</a>
+                  <a className="main-btn filled-btn filled-white">
+                    {c.featuresTrust.cta}
+                  </a>
                 </Link>
               </div>
             </div>
@@ -219,7 +222,10 @@ const Index = () => {
                 <div className="shape shape-one">
                   <span />
                 </div>
-                <img src="/assets/images/home/home-services-trust.jpg" alt="Services IT de confiance - Équipe VTP, transformation digitale" />
+                <img
+                  src="/assets/images/home/home-services-trust.jpg"
+                  alt={c.featuresTrust.imgAlt}
+                />
               </div>
             </div>
           </div>
@@ -232,138 +238,62 @@ const Index = () => {
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-12">
               <div className="section-title text-white text-center mb-110 wow fadeInDown">
-                <span className="sub-title">Nos Services</span>
-                <h2>Services IT exceptionnels pour votre transformation digitale</h2>
+                <span className="sub-title">{c.services.sub}</span>
+                <h2>{c.services.h2}</h2>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-pie-chart" />
+            {c.services.items.map((item, i) => {
+              const wowClass =
+                i % 2 === 0 ? "wow fadeInUp" : "wow fadeInDown";
+              const colClass =
+                i === 6
+                  ? "col-lg-4 col-md-6 col-sm-12 offset-lg-4"
+                  : "col-lg-4 col-md-6 col-sm-12";
+              return (
+                <div key={item.title} className={colClass}>
+                  <div
+                    className={`service-item-three animate-hover-icon text-center mb-80 ${wowClass}`}
+                  >
+                    <div className="icon">
+                      <i
+                        className={
+                          [
+                            "flaticon-pie-chart",
+                            "flaticon-idea-1",
+                            "flaticon-competitive",
+                            "flaticon-database",
+                            "flaticon-folder-management",
+                            "flaticon-user",
+                            "flaticon-planning",
+                          ][i]
+                        }
+                      />
+                    </div>
+                    <div className="text">
+                      <h3 className="title">
+                        <Link
+                          legacyBehavior
+                          href={`/service-details/${SERVICE_SLUGS[i]}`}
+                          locale={router.locale}
+                        >
+                          <a>{item.title}</a>
+                        </Link>
+                      </h3>
+                      <p>{item.desc}</p>
+                      <Link
+                        legacyBehavior
+                        href={`/service-details/${SERVICE_SLUGS[i]}`}
+                        locale={router.locale}
+                      >
+                        <a className="btn-link">{c.services.learnMore}</a>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Analyse de Données &amp; Big Data</a>
-                    </Link>
-                  </h3>
-                  <p>Analyse de données massives et ingénierie d&apos;insights pour transformer vos données en avantage concurrentiel.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
-                <div className="icon">
-                  <i className="flaticon-idea-1" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Ingénierie IA &amp; MLOps</a>
-                    </Link>
-                  </h3>
-                  <p>Frameworks d&apos;intelligence artificielle et d&apos;opérations ML pour entreprises modernes.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-competitive" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Cybersécurité &amp; Gestion des Menaces</a>
-                    </Link>
-                  </h3>
-                  <p>Sécurité de bout en bout et atténuation des menaces pour protéger vos actifs numériques.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
-                <div className="icon">
-                  <i className="flaticon-database" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Ingénierie Cloud &amp; DevOps/DevSecOps</a>
-                    </Link>
-                  </h3>
-                  <p>Infrastructure cloud et ingénierie DevSecOps pour un déploiement sécurisé et rapide.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-folder-management" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Développement Logiciel &amp; Automatisation</a>
-                    </Link>
-                  </h3>
-                  <p>Solutions sur mesure et automatisation de processus pour optimiser vos opérations.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInDown">
-                <div className="icon">
-                  <i className="flaticon-user" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Plateformes d&apos;Identité Numérique &amp; Authentification</a>
-                    </Link>
-                  </h3>
-                  <p>Solutions d&apos;identité numérique et d&apos;authentification pour sécuriser l&apos;accès à vos systèmes.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12 offset-lg-4">
-              <div className="service-item-three animate-hover-icon text-center mb-80 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-planning" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/services">
-                      <a>Conseil IT, Modernisation &amp; Automatisation</a>
-                    </Link>
-                  </h3>
-                  <p>Stratégie IT et modernisation de l&apos;infrastructure pour aligner la technologie sur vos objectifs.</p>
-                  <Link legacyBehavior href="/services">
-                    <a className="btn-link">En savoir plus</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -380,23 +310,16 @@ const Index = () => {
                   </div>
                   <img
                     src="/assets/images/home/home-features-cost-it.jpg"
-                    alt="Optimisation et stratégie IT - équipe VTP"
+                    alt={c.featuresCost.imgAlt}
                   />
                 </div>
               </div>
               <div className="col-lg-7">
                 <div className="features-content-box content-box-gap mb-20">
                   <div className="section-title text-white wow fadeInDown">
-                    <h2>
-                      Optimisez vos coûts IT et structurez votre avenir technologique
-                    </h2>
+                    <h2>{c.featuresCost.h2}</h2>
                   </div>
-                  <p>
-                    Notre approche stratégique vous permet de réduire les coûts opérationnels
-                    tout en modernisant votre infrastructure IT. Nous définissons avec vous
-                    les priorités technologiques pour maximiser le retour sur investissement
-                    et garantir la pérennité de vos systèmes.
-                  </p>
+                  <p>{c.featuresCost.p}</p>
                   <div className="row">
                     <div className="col-xl-6 col-lg-12 col-md-6">
                       <div className="features-item-left-box text-white mb-30 wow fadeInUp">
@@ -404,11 +327,8 @@ const Index = () => {
                           <i className="flaticon-data" />
                         </div>
                         <div className="text">
-                          <h4 className="title">Infrastructure Cloud</h4>
-                          <p>
-                            Migration et gestion de votre infrastructure cloud pour
-                            une agilité et une scalabilité maximales
-                          </p>
+                          <h4 className="title">{c.featuresCost.cloudTitle}</h4>
+                          <p>{c.featuresCost.cloudDesc}</p>
                         </div>
                       </div>
                     </div>
@@ -418,11 +338,8 @@ const Index = () => {
                           <i className="flaticon-competitive" />
                         </div>
                         <div className="text">
-                          <h4 className="title">Sécurité 24/7</h4>
-                          <p>
-                            Surveillance continue et protection proactive contre
-                            les menaces cybernétiques en temps réel
-                          </p>
+                          <h4 className="title">{c.featuresCost.secTitle}</h4>
+                          <p>{c.featuresCost.secDesc}</p>
                         </div>
                       </div>
                     </div>
@@ -441,141 +358,53 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="testimonial-wrapper-three mr-lg-70 mb-50 wow fadeInLeft">
                 <div className="section-title text-white">
-                  <h2>Nos engagements</h2>
+                  <h2>{c.testimonials.title}</h2>
                 </div>
                 <Slider
                   {...testimonialSliderThree}
                   className="testimonial-slider-three mb-60"
                 >
-                  <div className="testimonial-item-three">
-                    <div className="testimonial-content">
-                      <p>
-                        Nous nous engageons à respecter les délais convenus et à
-                        vous tenir informé à chaque étape. Réactivité, transparence
-                        et livraison dans les temps sont au cœur de notre façon de travailler.
-                      </p>
-                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
-                        <div className="author-thumb-title d-flex align-items-center">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/images/logo/vtp-logo.png"
-                              alt="VTP"
-                            />
+                  {c.testimonials.slides.map((slide) => (
+                    <div key={slide.authorTitle} className="testimonial-item-three">
+                      <div className="testimonial-content">
+                        <p>{slide.quote}</p>
+                        <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
+                          <div className="author-thumb-title d-flex align-items-center">
+                            <div className="author-thumb">
+                              <img
+                                src="/assets/images/logo/vtp-logo.png"
+                                alt="VTP"
+                              />
+                            </div>
+                            <div className="author-title">
+                              <h4>{slide.authorTitle}</h4>
+                              <p className="position">{slide.authorRole}</p>
+                            </div>
                           </div>
-                          <div className="author-title">
-                            <h4>Réactivité &amp; délais</h4>
-                            <p className="position">Respect des engagements et transparence</p>
+                          <div className="author-rating">
+                            <h6>{c.testimonials.priority}</h6>
+                            <ul className="rating">
+                              <li>
+                                <i className="fas fa-star" />
+                              </li>
+                              <li>
+                                <i className="fas fa-star" />
+                              </li>
+                              <li>
+                                <i className="fas fa-star" />
+                              </li>
+                              <li>
+                                <i className="fas fa-star" />
+                              </li>
+                              <li>
+                                <i className="fas fa-star" />
+                              </li>
+                            </ul>
                           </div>
-                        </div>
-                        <div className="author-rating">
-                          <h6>Priorité</h6>
-                          <ul className="rating">
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="testimonial-item-three">
-                    <div className="testimonial-content">
-                      <p>
-                        Nous nous appuyons sur des bonnes pratiques et des technologies
-                        éprouvées. Qualité du code, sécurité et évolutivité des solutions
-                        font partie intégrante de notre offre.
-                      </p>
-                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
-                        <div className="author-thumb-title d-flex align-items-center">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/images/logo/vtp-logo.png"
-                              alt="VTP"
-                            />
-                          </div>
-                          <div className="author-title">
-                            <h4>Expertise &amp; qualité</h4>
-                            <p className="position">Bonnes pratiques et solutions pérennes</p>
-                          </div>
-                        </div>
-                        <div className="author-rating">
-                          <h6>Priorité</h6>
-                          <ul className="rating">
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item-three">
-                    <div className="testimonial-content">
-                      <p>
-                        Nous nous engageons à comprendre vos enjeux et à vous accompagner
-                        comme un partenaire. Écoute, conseil et solutions sur mesure
-                        pour répondre au plus près à vos besoins.
-                      </p>
-                      <div className="author-rating-box d-flex align-items-center justify-content-between flex-wrap">
-                        <div className="author-thumb-title d-flex align-items-center">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/images/logo/vtp-logo.png"
-                              alt="VTP"
-                            />
-                          </div>
-                          <div className="author-title">
-                            <h4>Partenariat &amp; proximité</h4>
-                            <p className="position">Écoute et accompagnement personnalisé</p>
-                          </div>
-                        </div>
-                        <div className="author-rating">
-                          <h6>Priorité</h6>
-                          <ul className="rating">
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                            <li>
-                              <i className="fas fa-star" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </Slider>
                 <div className="testimonial-dots" />
               </div>
@@ -598,4 +427,5 @@ const Index = () => {
     </Layout>
   );
 };
+
 export default Index;
