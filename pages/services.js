@@ -20,17 +20,12 @@ const Services = () => {
 
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
-      <PageBanner
-        pageKey="services"
-        pageTitle={s.bannerTitle}
-        breadcrumbLabel={s.bannerBreadcrumb}
-      />
+      <PageBanner pageKey="services" pageTitle={s.bannerTitle} />
       <section className="features-section features-section--surface-light pt-130 pb-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">{s.heroSub}</span>
                 <h2>{s.heroTitle}</h2>
               </div>
             </div>
@@ -208,7 +203,12 @@ const Services = () => {
         </div>
       </section>
       <section className="feedback-section p-r z-2 pb-130">
-        <FeedbackSectionChart />
+        <FeedbackSectionChart
+          imageBanner={{
+            src: s.feedbackBannerSrc,
+            alt: s.feedbackBannerAlt,
+          }}
+        />
       </section>
     </Layout>
   );

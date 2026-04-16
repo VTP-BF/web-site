@@ -4,11 +4,20 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/assets/images/logo/vtp-favicon.png"
+          type="image/png"
+          sizes="any"
+        />
         <link
           rel="shortcut icon"
-          href="/favicon.ico"
-          type="image/x-icon"
+          href="/assets/images/logo/vtp-favicon.png"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/images/logo/vtp-favicon.png"
         />
         <link
           rel="stylesheet"

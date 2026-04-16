@@ -25,11 +25,7 @@ const ServiceDetailSlug = ({ data }) => {
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark">
       <div className="vtp-service-details">
-      <PageBanner
-        pageTitle={data.title}
-        bgImage={data.heroImage}
-        omitActiveBreadcrumb
-      />
+      <PageBanner pageTitle={data.title} bgImage={data.heroImage} />
       <section className="solution-section pt-120 pb-90">
         <div className="container">
           <div className="row">

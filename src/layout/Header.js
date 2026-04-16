@@ -304,7 +304,7 @@ const Header3 = ({ singleMenus }) => (
           <div className="site-branding">
             <Link legacyBehavior href="/">
               <a className="brand-logo">
-                <img src="/assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
+                <img src="/assets/images/logo/vtp-logo.png" alt="Visionary Tech Partners" />
               </a>
             </Link>
           </div>
@@ -315,7 +315,7 @@ const Header3 = ({ singleMenus }) => (
               <div className="mobile-logo mb-30 d-block d-xl-none text-center">
                 <Link legacyBehavior href="/">
                   <a className="brand-logo">
-                    <img src="/assets/images/logo/vtp-header-logo.png" alt="Visionary Tech Partners" />
+                    <img src="/assets/images/logo/vtp-logo.png" alt="Visionary Tech Partners" />
                   </a>
                 </Link>
               </div>

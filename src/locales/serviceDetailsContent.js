@@ -2,7 +2,6 @@ import { getServiceRowBySlug } from "./servicesCatalog";
 
 const ui = {
   fr: {
-    servicesBreadcrumb: "Nos services",
     readMore: "En savoir plus",
     contactCta: "Nous contacter",
     otherOffers: "Autres offres",
@@ -12,7 +11,6 @@ const ui = {
     mgmtBtn: "En savoir plus sur VTP",
   },
   en: {
-    servicesBreadcrumb: "Our services",
     readMore: "Learn more",
     contactCta: "Contact us",
     otherOffers: "Other offerings",

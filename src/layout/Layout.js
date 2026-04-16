@@ -1,8 +1,9 @@
 import { Fragment, useEffect } from "react";
-import niceSelect from "react-nice-select";
+import niceSelect from "../utils/niceSelectVtp";
 import VideoPopup from "../components/VideoPopup";
 import Footer from "./Footer";
 import Header from "./Header";
+import { stripNiceSelectWidgets } from "../utils/niceSelectInit";
 import { animation } from "../utils";
 
 const Layout = ({ children, header, footer, extraBodyCls, singleMenus }) => {
@@ -14,8 +15,14 @@ const Layout = ({ children, header, footer, extraBodyCls, singleMenus }) => {
     // Initialiser WOW.js pour les animations au scroll
     animation();
 
-    return () => {
+    const id = requestAnimationFrame(() => {
+      stripNiceSelectWidgets();
       niceSelect({ withoutwide: true });
+    });
+
+    return () => {
+      cancelAnimationFrame(id);
+      stripNiceSelectWidgets();
     };
   }, []);
 

@@ -1,3 +1,4 @@
+import { SERVICES_FEEDBACK_BANNER_SRC } from "../constants/pageBannerImages";
 import { getServicesCatalog } from "./servicesCatalog";
 
 const featureIcons = [
@@ -24,8 +25,6 @@ export function getServicesPageContent(locale) {
   const en = locale === "en";
   return {
     bannerTitle: en ? "Our Services" : "Nos Services",
-    bannerBreadcrumb: en ? "Our Services" : "Nos Services",
-    heroSub: en ? "What we offer" : "Ce Que Nous Proposons",
     heroTitle: en
       ? "IT solutions for your digital transformation"
       : "Solutions IT Pour Votre Transformation Digitale",
@@ -34,6 +33,10 @@ export function getServicesPageContent(locale) {
     faqImageAlt: en
       ? "IT support and technology solutions"
       : "Support IT et Solutions Technologiques",
+    feedbackBannerSrc: SERVICES_FEEDBACK_BANNER_SRC,
+    feedbackBannerAlt: en
+      ? "Visionary Tech Partners — IT services and digital transformation"
+      : "Visionary Tech Partners — services IT et transformation digitale",
     sliderSub: en ? "Our services" : "Nos Services",
     sliderTitle: en ? "Outstanding business solutions" : "Solutions Business Exceptionnelles",
     ctaSub: en ? "Custom quote" : "Devis Personnalisé",

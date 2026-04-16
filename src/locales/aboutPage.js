@@ -20,21 +20,47 @@ export function getAboutContent(locale) {
         ],
     ctaContact: en ? "Contact us" : "Contactez-Nous",
     mainImageAlt: en
-      ? "Visionary Tech Partners — consulting and digital transformation"
-      : "Visionary Tech Partners - Conseil et transformation digitale",
+      ? "Visionary Tech Partners — IT solutions, consulting, and digital transformation"
+      : "Visionary Tech Partners — solutions IT, conseil et transformation digitale",
     quote: en
       ? "Accelerate global digital maturity through intelligent technology solutions."
       : "Accélérer la maturité numérique mondiale grâce à des solutions technologiques intelligentes.",
     stats: en
       ? [
-          { end: 358, label: "Projects completed in the last 5 years" },
-          { end: 536, label: "Happy customers who trusted us" },
-          { end: 963, label: "Awards for successful projects" },
+          {
+            end: 35,
+            label:
+              "Years of combined professional experience we bring through our team and senior network (portfolio)",
+          },
+          {
+            end: 7,
+            label:
+              "Expertise pillars covered by our VTP service catalogue — from data & AI to cloud, security, and consulting",
+          },
+          {
+            end: 3,
+            omitPlus: true,
+            label:
+              "Operating principles: technical rigor, transparency with clients, and knowledge transfer from day one",
+          },
         ]
       : [
-          { end: 358, label: "Projets réalisés sur les 5 dernières années" },
-          { end: 536, label: "Clients satisfaits qui nous ont fait confiance" },
-          { end: 963, label: "Récompenses pour des projets réussis" },
+          {
+            end: 35,
+            label:
+              "Années d’expérience professionnelle cumulée portée par l’équipe et notre réseau de séniors (portefeuille)",
+          },
+          {
+            end: 7,
+            label:
+              "Piliers d’expertise couverts par notre catalogue d’offres VTP — données & IA, cloud, cybersécurité, conseil…",
+          },
+          {
+            end: 3,
+            omitPlus: true,
+            label:
+              "Engagements porteurs : exigence technique, transparence avec nos interlocuteurs, transmission des savoirs",
+          },
         ],
     missionVisionTitle: en ? "Mission & vision" : "Mission & Vision",
     tabMission: en ? "Our mission" : "Notre Mission",
@@ -51,7 +77,6 @@ export function getAboutContent(locale) {
     missionImgAlt: en ? "Our mission — VTP team" : "Notre mission - Équipe VTP",
     visionImgAlt: en ? "Our vision — VTP team" : "Notre vision - Équipe VTP",
     logoAlt: "Visionary Tech Partners",
-    valuesSub: en ? "Our values" : "Nos Valeurs",
     valuesTitle: en ? "Core values" : "Valeurs Fondamentales",
     values: en
       ? [
@@ -118,9 +143,7 @@ export function getAboutContent(locale) {
             text: "Nous nous engageons à construire une technologie qui favorise la croissance économique, l'inclusion financière et des écosystèmes numériques plus forts à travers les frontières.",
           },
         ],
-    servicesSub: en ? "Our services" : "Nos Services",
     servicesTitle: en ? "Our services" : "Nos Services",
-    strategicSub: en ? "Strategic focus" : "Focus Stratégique",
     strategicTitle: en ? "Strategic focus" : "Focus Stratégique",
     strategicLead: en
       ? "VTP is uniquely positioned at the intersection of U.S. enterprise standards and Africa’s emerging digital economies. We focus on building resilient systems that support financial inclusion, government modernization, and cross-border digital trust."
@@ -129,7 +152,6 @@ export function getAboutContent(locale) {
       ? "Your tech partner for transformation. Let’s talk."
       : "Votre partenaire tech pour la transformation. Parlons-en maintenant.",
     ctaButton: en ? "Contact us" : "Contactez-nous",
-    historySub: en ? "Our journey" : "Notre Parcours",
     historyTitle: en
       ? "Visionary Tech Partners timeline"
       : "Historique Visionary Tech Partners",
@@ -175,9 +197,7 @@ export function getAboutContent(locale) {
           },
         ],
     contactSub: en ? "Contact" : "Contact",
-    contactTitle: en ? "Contact information" : "Informations de Contact",
     emailLabel: en ? "Email" : "Email",
-    phoneLabel: en ? "Phone" : "Téléphone",
     webLabel: en ? "Website" : "Site Web",
   };
 }

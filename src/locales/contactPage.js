@@ -2,7 +2,6 @@ export function getContactContent(locale) {
   const en = locale === "en";
   return {
     bannerTitle: en ? "Contact" : "Contact",
-    bannerBreadcrumb: en ? "Contact" : "Contact",
     infoImageAlt: en
       ? "Contact — Visionary Tech Partners"
       : "Contact — Visionary Tech Partners",
@@ -10,10 +9,13 @@ export function getContactContent(locale) {
     infoTitle: en
       ? "Ready to work together? Contact VTP"
       : "Prêts à travailler ensemble ? Contactez VTP",
+    addressHeading: en ? "Addresses" : "Adresses",
+    addressLines: en
+      ? ["Ouagadougou, Burkina Faso", "Washington, D.C., United States"]
+      : ["Ouagadougou, Burkina Faso", "Washington, D.C., États-Unis"],
     emailLabel: en ? "Email" : "E-mail",
-    phoneLabel: en ? "Phone" : "Téléphone",
-    formSub: en ? "Contact" : "Contact",
     formTitle: en ? "Have a question? Write to us" : "Une question ? Écrivez-nous",
+    optionalMark: en ? "optional" : "facultatif",
     formIntro: en
       ? "Do you have an IT project, a question about our services, or want to discuss your digital transformation? Fill in the form or reach us directly by email."
       : "Vous avez un projet IT, une question sur nos services ou souhaitez échanger sur votre transformation digitale ? Remplissez le formulaire ou contactez-nous directement par e-mail.",

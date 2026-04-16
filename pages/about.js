@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Counter from "../src/components/Counter";
 import PageBanner from "../src/components/PageBanner";
@@ -12,14 +13,15 @@ const About = () => {
   const router = useRouter();
   const t = getAboutContent(router.locale);
   const serviceTiles = getServicesCatalog(router.locale);
+  const [missionVisionTab, setMissionVisionTab] = useState("mission");
 
   return (
-    <Layout header={3} footer={3} extraBodyCls="home-three-dark">
-      <PageBanner
-        pageKey="about"
-        pageTitle={t.bannerTitle}
-        omitActiveBreadcrumb
-      />
+    <Layout
+      header={3}
+      footer={3}
+      extraBodyCls="home-three-dark page-about-no-newsletter"
+    >
+      <PageBanner pageKey="about" pageTitle={t.bannerTitle} />
       <section className="about-section-three pt-130 pb-80">
         <div className="container">
           <div className="row">
@@ -46,7 +48,10 @@ const About = () => {
               <div className="about-two_image-box pl-lg-70 mb-50 wow fadeInRight">
                 <div className="about-one-img">
                   <div className="image-overlay" />
-                  <img src="/assets/images/about/about-vtp.jpg" alt={t.mainImageAlt} />
+                  <img
+                    src="/assets/images/bg/page-banner-about.jpg"
+                    alt={t.mainImageAlt}
+                  />
                 </div>
                 <div className="quote-box-four text-white">
                   <h3>{t.quote}</h3>
@@ -67,7 +72,8 @@ const About = () => {
                     data-wow-delay={STAT_WOW[i]}
                   >
                     <h2 className="number">
-                      <Counter end={stat.end} />+
+                      <Counter end={stat.end} />
+                      {stat.omitPlus ? "" : "+"}
                     </h2>
                     <h5>{stat.label}</h5>
                   </div>
@@ -116,30 +122,46 @@ const About = () => {
                   <h2>{t.missionVisionTitle}</h2>
                 </div>
                 <div className="tab-content-box wow fadeInUp">
-                  <ul className="nav nav-tabs mb-20">
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active"
-                        data-toggle="tab"
-                        href="#mission"
+                  <ul className="nav nav-tabs mb-20" role="tablist">
+                    <li className="nav-item" role="presentation">
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={missionVisionTab === "mission"}
+                        className={`nav-link${missionVisionTab === "mission" ? " active" : ""}`}
+                        onClick={() => setMissionVisionTab("mission")}
                       >
                         {t.tabMission}
-                      </a>
+                      </button>
                     </li>
-                    <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#vision">
+                    <li className="nav-item" role="presentation">
+                      <button
+                        type="button"
+                        role="tab"
+                        aria-selected={missionVisionTab === "vision"}
+                        className={`nav-link${missionVisionTab === "vision" ? " active" : ""}`}
+                        onClick={() => setMissionVisionTab("vision")}
+                      >
                         {t.tabVision}
-                      </a>
+                      </button>
                     </li>
                   </ul>
                   <div className="tab-content mb-30">
-                    <div className="tab-pane fade show active" id="mission">
+                    <div
+                      role="tabpanel"
+                      className={`tab-pane fade${missionVisionTab === "mission" ? " show active" : ""}`}
+                      hidden={missionVisionTab !== "mission"}
+                    >
                       <div className="content-box">
                         <p>{t.missionP1}</p>
                         <p className="mt-20">{t.missionP2}</p>
                       </div>
                     </div>
-                    <div className="tab-pane fade" id="vision">
+                    <div
+                      role="tabpanel"
+                      className={`tab-pane fade${missionVisionTab === "vision" ? " show active" : ""}`}
+                      hidden={missionVisionTab !== "vision"}
+                    >
                       <div className="content-box">
                         <p>{t.visionP1}</p>
                       </div>
@@ -156,7 +178,6 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">{t.valuesSub}</span>
                 <h2>{t.valuesTitle}</h2>
               </div>
             </div>
@@ -183,7 +204,6 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">{t.servicesSub}</span>
                 <h2>{t.servicesTitle}</h2>
               </div>
             </div>
@@ -212,7 +232,6 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">{t.strategicSub}</span>
                 <h2>{t.strategicTitle}</h2>
               </div>
             </div>
@@ -252,7 +271,6 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">{t.historySub}</span>
                 <h2>{t.historyTitle}</h2>
               </div>
             </div>
@@ -291,21 +309,22 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="contact-info-section pt-125 pb-100 text-white">
+      <section className="contact-info-section contact-info-section--about-bar pt-125 pb-100 text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInDown">
-                <span className="sub-title">{t.contactSub}</span>
-                <h2>{t.contactTitle}</h2>
+                <h2 className="about-contact-headline">
+                  <span className="about-contact-headline__line">{t.contactSub}</span>
+                </h2>
               </div>
             </div>
           </div>
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="contact-info-box text-center mb-50 wow fadeInUp">
-                <div className="row">
-                  <div className="col-md-4 mb-30">
+                <div className="row justify-content-center">
+                  <div className="col-md-6 mb-30">
                     <div className="icon">
                       <i className="flaticon-email" />
                     </div>
@@ -316,26 +335,19 @@ const About = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-4 mb-30">
-                    <div className="icon">
-                      <i className="flaticon-phone-call" />
-                    </div>
-                    <div className="text">
-                      <h4>{t.phoneLabel}</h4>
-                      <p>
-                        <a href="tel:+0000000000">(000) 000-0000</a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-30">
+                  <div className="col-md-6 mb-30">
                     <div className="icon">
                       <i className="flaticon-website" />
                     </div>
                     <div className="text">
                       <h4>{t.webLabel}</h4>
                       <p>
-                        <a href="https://www.vtpg.com" target="_blank" rel="noopener noreferrer">
-                          www.vtpg.com
+                        <a
+                          href="https://www.vtpglobal.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          www.vtpglobal.com
                         </a>
                       </p>
                     </div>

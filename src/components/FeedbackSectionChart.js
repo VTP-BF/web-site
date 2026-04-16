@@ -2,7 +2,11 @@ import Slider from "react-slick";
 import { testimonialSliderOne } from "../sliderProps";
 import ProgressBar from "./ProgressBar";
 
-const FeedbackSectionChart = () => {
+/**
+ * @param {{ hideVideo?: boolean; imageBanner?: { src: string; alt: string } }} props
+ * — `imageBanner` : bandeau image statique (sans vidéo), ex. page Services.
+ */
+const FeedbackSectionChart = ({ hideVideo = false, imageBanner }) => {
   return (
     <div className="container">
       <div className="row">
@@ -171,36 +175,66 @@ const FeedbackSectionChart = () => {
           </div>
         </div>
       </div>
-      {/*=== Video Wrapper ===*/}
-      <div
-        className="video-wrapper-one bg_cover pt-220 pb-220 p-r z-1 wow fadeInUp"
-        style={{ backgroundImage: "url(/assets/images/bg/video-bg-1.jpg)" }}
-      >
-        <svg
-          className="shape shape-one"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="565px"
-          height="210px"
-        >
-          <path
-            fillRule="evenodd"
-            d="M0.015,210.000 L214.218,32.644 L412.208,131.393 L565.000,0.219 L565.000,210.000 L0.015,210.000 Z"
-          />
-        </svg>
-        <div className="row align-items-center justify-content-lg-end">
-          <div className="col-xl-7 col-lg-6">
-            <div className="play-content text-center">
-              <a
-                href="https://www.youtube.com/watch?v=TboWOSW7qCI"
-                className="video-popup"
-              >
-                <i className="fas fa-play" />
-              </a>
-            </div>
+      {imageBanner ? (
+        <>
+          {/* Même bloc / emplacement que la vidéo : video-wrapper-one + bg_cover + forme SVG */}
+          <div
+            className="video-wrapper-one bg_cover pt-220 pb-220 p-r z-1 wow fadeInUp"
+            style={{ backgroundImage: `url(${imageBanner.src})` }}
+            role="img"
+            aria-label={imageBanner.alt}
+          >
+            <svg
+              className="shape shape-one"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              width="565px"
+              height="210px"
+              aria-hidden="true"
+            >
+              <path
+                fillRule="evenodd"
+                d="M0.015,210.000 L214.218,32.644 L412.208,131.393 L565.000,0.219 L565.000,210.000 L0.015,210.000 Z"
+              />
+            </svg>
           </div>
-        </div>
-      </div>
+        </>
+      ) : (
+        !hideVideo && (
+          <>
+            {/*=== Video Wrapper ===*/}
+            <div
+              className="video-wrapper-one bg_cover pt-220 pb-220 p-r z-1 wow fadeInUp"
+              style={{ backgroundImage: "url(/assets/images/bg/video-bg-1.jpg)" }}
+            >
+              <svg
+                className="shape shape-one"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="565px"
+                height="210px"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M0.015,210.000 L214.218,32.644 L412.208,131.393 L565.000,0.219 L565.000,210.000 L0.015,210.000 Z"
+                />
+              </svg>
+              <div className="row align-items-center justify-content-lg-end">
+                <div className="col-xl-7 col-lg-6">
+                  <div className="play-content text-center">
+                    <a
+                      href="https://www.youtube.com/watch?v=TboWOSW7qCI"
+                      className="video-popup"
+                    >
+                      <i className="fas fa-play" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )
+      )}
     </div>
   );
 };
