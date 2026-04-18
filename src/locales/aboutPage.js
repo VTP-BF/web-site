@@ -196,8 +196,6 @@ export function getAboutContent(locale) {
             imgAlt: "Perspectives",
           },
         ],
-    contactSub: en ? "Contact" : "Contact",
-    emailLabel: en ? "Email" : "Email",
-    webLabel: en ? "Website" : "Site Web",
+
   };
 }

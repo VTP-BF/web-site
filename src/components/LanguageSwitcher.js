@@ -13,32 +13,32 @@ const LanguageSwitcher = ({ className = "" }) => {
       role="navigation"
       aria-label={ariaNav}
     >
+      <span className="lang-switch__icon-prefix" aria-hidden="true">
+        <i className="fas fa-globe"></i>
+      </span>
       <Link href={href} locale="fr" legacyBehavior>
         <a
-          className={`lang-switch__btn lang-switch__btn--icon ${
+          className={`lang-switch__btn ${
             router.locale === "fr" ? "is-active" : ""
           }`}
           hrefLang="fr"
           aria-label="Français"
           title="Français"
         >
-          <span className="lang-switch__icon" aria-hidden="true">
-            🇫🇷
-          </span>
+          fr
         </a>
       </Link>
+      <span className="lang-switch__separator" aria-hidden="true">|</span>
       <Link href={href} locale="en" legacyBehavior>
         <a
-          className={`lang-switch__btn lang-switch__btn--icon ${
+          className={`lang-switch__btn ${
             router.locale === "en" ? "is-active" : ""
           }`}
           hrefLang="en"
           aria-label="English"
           title="English"
         >
-          <span className="lang-switch__icon" aria-hidden="true">
-            🇬🇧
-          </span>
+          en
         </a>
       </Link>
     </div>

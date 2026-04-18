@@ -2,9 +2,11 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .nice-select {
   width: 100%;
 }
+
 .recent-product-slider .slick-slide,
 .testimonial-slider-two .slick-slide {
   padding-left: 15px;
@@ -40,6 +42,7 @@ body.page-about-no-newsletter .newsletter-section {
   padding-top: 200px;
   padding-bottom: 110px;
 }
+
 .home-three-dark .page-banner.page-banner--plain::after {
   display: none;
 }
@@ -62,6 +65,7 @@ body.page-contact-minimal .newsletter-section {
   color: #fff;
   margin-bottom: 0;
 }
+
 .contact-info-section--about-bar .about-contact-headline__line {
   display: block;
   color: inherit;
@@ -69,6 +73,7 @@ body.page-contact-minimal .newsletter-section {
   font-weight: 700;
   line-height: 1.25;
 }
+
 .contact-info-section--about-bar .about-contact-headline__line:first-child {
   margin-bottom: 0.35rem;
 }
@@ -79,6 +84,7 @@ body.page-contact-minimal .newsletter-section {
   margin-right: 0.75rem;
   flex-wrap: wrap;
 }
+
 .lang-switch__btn {
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
@@ -88,6 +94,7 @@ body.page-contact-minimal .newsletter-section {
   text-decoration: none;
   transition: color 0.2s, background 0.2s;
 }
+
 .lang-switch__btn--icon {
   display: inline-flex;
   align-items: center;
@@ -97,38 +104,64 @@ body.page-contact-minimal .newsletter-section {
   padding: 0.35rem 0.45rem;
   line-height: 1;
 }
+
 .lang-switch__icon {
   font-size: 1.35rem;
   line-height: 1;
   user-select: none;
 }
+
 .lang-switch__btn:hover {
   color: #fff;
   text-decoration: none;
 }
+
 .lang-switch__btn.is-active {
   color: #fff;
   background: rgba(255, 255, 255, 0.12);
 }
 
+.lang-switch__separator {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  user-select: none;
+}
+
+.lang-switch__icon-prefix {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-switch__icon-prefix i {
+  line-height: 1;
+}
+
 /* Header VTP (desktop ≥1200px) : liens clairs sur fond sombre / sticky — pas sur le tiroir mobile (fond blanc) */
 @media (min-width: 1200px) {
-  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul > li > a {
+  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul>li>a {
     color: rgba(255, 255, 255, 0.92);
   }
-  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul > li > a:hover {
+
+  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul>li>a:hover {
     color: #6eb8ff;
   }
-  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul > li > a.active {
+
+  .home-three-dark .header-navigation.navigation-white.navigation-two .main-menu ul>li>a.active {
     color: #007eff;
   }
-  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul > li > a {
+
+  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul>li>a {
     color: rgba(255, 255, 255, 0.92);
   }
-  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul > li > a:hover {
+
+  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul>li>a:hover {
     color: #6eb8ff;
   }
-  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul > li > a.active {
+
+  .home-three-dark .navigation-two.sticky.navigation-white .main-menu ul>li>a.active {
     color: #007eff;
   }
 }
@@ -155,10 +188,12 @@ body.page-contact-minimal .newsletter-section {
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.35);
   text-decoration: none;
 }
+
 .about-three_image-box .big-logo-vtp .big-logo-vtp__frame:hover {
   text-decoration: none;
   filter: brightness(1.05);
 }
+
 .about-three_image-box .big-logo-vtp img {
   max-width: 100%;
   max-height: 100%;
@@ -182,9 +217,11 @@ body.page-contact-minimal .newsletter-section {
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 4px 16px rgba(0, 126, 255, 0.28);
 }
+
 .home-three-dark .vtp-service-details .management-section .vtp-management-cta.main-btn.btn-blue:hover {
   box-shadow: 0 6px 22px rgba(0, 126, 255, 0.4);
 }
+
 .home-three-dark .vtp-service-details .management-section .vtp-management-cta:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.85);
   outline-offset: 3px;
@@ -195,9 +232,11 @@ body.page-contact-minimal .newsletter-section {
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 4px 16px rgba(0, 126, 255, 0.28);
 }
+
 .home-three-dark .vtp-service-details .optimization-section .vtp-optimization-cta.main-btn.btn-blue:hover {
   box-shadow: 0 6px 22px rgba(0, 126, 255, 0.4);
 }
+
 .home-three-dark .vtp-service-details .optimization-section .vtp-optimization-cta:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.85);
   outline-offset: 3px;
@@ -241,12 +280,15 @@ body.page-contact-minimal .newsletter-section {
   background-color: #ffffff;
   border-color: rgba(26, 26, 26, 0.12);
 }
+
 .home-three-dark .faq-section:not(.light-gray-bg) .faq-accordion-two .accordion-card .card-header h5 {
   color: #151b22;
 }
+
 .home-three-dark .faq-section:not(.light-gray-bg) .faq-accordion-two .accordion-card .card-body p {
   color: rgba(26, 26, 26, 0.86);
 }
+
 .home-three-dark .faq-section:not(.light-gray-bg) .faq-accordion-two .accordion-card.accordion-active {
   border-color: rgba(0, 126, 255, 0.4);
   box-shadow: 0 10px 40px rgba(0, 126, 255, 0.12);
@@ -257,16 +299,20 @@ body.page-contact-minimal .newsletter-section {
   background-color: #ffffff;
   border-color: rgba(26, 26, 26, 0.1);
 }
+
 .home-three-dark .faq-section.light-gray-bg .faq-accordion-two .accordion-card .card-header h5 {
   color: #151b22;
 }
+
 .home-three-dark .faq-section.light-gray-bg .faq-accordion-two .accordion-card .card-body p {
   color: rgba(26, 26, 26, 0.86);
 }
+
 .home-three-dark .faq-section.light-gray-bg .faq-accordion-two .accordion-card.accordion-active {
   border-color: rgba(0, 126, 255, 0.35);
   box-shadow: 0 10px 40px rgba(0, 126, 255, 0.1);
 }
+
 .home-three-dark .faq-section.light-gray-bg .section-title h2 {
   color: #1a1a1a;
 }
@@ -281,6 +327,7 @@ body.page-contact-minimal .newsletter-section {
 .home-three-dark .vtp-other-offers .section-title .sub-title {
   color: #007eff;
 }
+
 .home-three-dark .vtp-other-offers .section-title h2 {
   color: #0f172a;
 }
@@ -290,6 +337,7 @@ body.page-contact-minimal .newsletter-section {
   border-radius: 12px;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp:hover {
   border-color: rgba(0, 126, 255, 0.35);
   box-shadow: 0 12px 36px rgba(0, 126, 255, 0.12);
@@ -299,6 +347,7 @@ body.page-contact-minimal .newsletter-section {
   background-color: rgba(0, 126, 255, 0.1);
   color: #007eff;
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp .icon i {
   color: #007eff;
 }
@@ -307,6 +356,7 @@ body.page-contact-minimal .newsletter-section {
   color: #151b22;
   text-decoration: none;
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp .text h3.title:hover,
 .home-three-dark .vtp-other-offers .service-item-two--vtp .text h3.title:hover a,
 .home-three-dark .vtp-other-offers .service-item-two--vtp .text h3.title a:hover {
@@ -321,12 +371,15 @@ body.page-contact-minimal .newsletter-section {
   color: #007eff;
   text-decoration-color: rgba(0, 126, 255, 0.45);
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp .btn-link:hover {
   color: #0056b3;
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp .btn-link:after {
   color: #007eff;
 }
+
 .home-three-dark .vtp-other-offers .service-item-two--vtp .btn-link:hover:after {
   color: #0056b3;
 }
@@ -438,7 +491,7 @@ body.page-contact-minimal .newsletter-section {
 }
 
 .home-three-dark .contact-section--vtp .vtp-contact-card .contact-form .vtp-contact-form__icon,
-.home-three-dark .contact-section--vtp .vtp-contact-card .contact-form .vtp-contact-form__input-wrap > i {
+.home-three-dark .contact-section--vtp .vtp-contact-card .contact-form .vtp-contact-form__input-wrap>i {
   position: absolute;
   left: 1rem;
   top: 50%;
@@ -450,19 +503,8 @@ body.page-contact-minimal .newsletter-section {
   z-index: 1;
 }
 
-.home-three-dark
-  .contact-section--vtp
-  .vtp-contact-card
-  .contact-form
-  .vtp-contact-form__field--textarea
-  .vtp-contact-form__icon,
-.home-three-dark
-  .contact-section--vtp
-  .vtp-contact-card
-  .contact-form
-  .vtp-contact-form__field--textarea
-  .vtp-contact-form__input-wrap
-  > i {
+.home-three-dark .contact-section--vtp .vtp-contact-card .contact-form .vtp-contact-form__field--textarea .vtp-contact-form__icon,
+.home-three-dark .contact-section--vtp .vtp-contact-card .contact-form .vtp-contact-form__field--textarea .vtp-contact-form__input-wrap>i {
   top: 1.05rem;
   transform: none;
 }

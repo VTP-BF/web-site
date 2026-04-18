@@ -309,55 +309,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="contact-info-section contact-info-section--about-bar pt-125 pb-100 text-white">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-              <div className="section-title text-center mb-60 wow fadeInDown">
-                <h2 className="about-contact-headline">
-                  <span className="about-contact-headline__line">{t.contactSub}</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="contact-info-box text-center mb-50 wow fadeInUp">
-                <div className="row justify-content-center">
-                  <div className="col-md-6 mb-30">
-                    <div className="icon">
-                      <i className="flaticon-email" />
-                    </div>
-                    <div className="text">
-                      <h4>{t.emailLabel}</h4>
-                      <p>
-                        <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-md-6 mb-30">
-                    <div className="icon">
-                      <i className="flaticon-website" />
-                    </div>
-                    <div className="text">
-                      <h4>{t.webLabel}</h4>
-                      <p>
-                        <a
-                          href="https://www.vtpglobal.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          www.vtpglobal.com
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </Layout>
   );
 };

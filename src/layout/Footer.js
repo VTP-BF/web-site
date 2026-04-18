@@ -422,7 +422,7 @@ const Footer3 = () => {
                     </div>
                     <div className="text">
                       <p>
-                        <a href="mailto:info@vtpglobal.com">info@vtpglobal.com</a>
+                        <a href="mailto:vtp.usa@gmail.com ">vtp.usa@gmail.com </a>
                       </p>
                     </div>
                   </div>
