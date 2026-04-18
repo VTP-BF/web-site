@@ -74,8 +74,8 @@ const Contact = () => {
                   <div className="info">
                     <h3 className="title">{c.emailLabel}</h3>
                     <p>
-                      <a href="mailto:vtp.usa@gmail.com ">
-                        vtp.usa@gmail.com 
+                      <a href="mailto:info@visionarygroup.io">
+                        info@visionarygroup.io
                       </a>
                     </p>
                   </div>
