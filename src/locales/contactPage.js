@@ -29,7 +29,6 @@ export function getContactContent(locale) {
     labelSubject: en ? "Subject" : "Sujet",
     subjectPlaceholder: en ? "Choose a topic" : "Choisir un sujet",
     subjectInfo: en ? "Information request" : "Demande d'information",
-    subjectSupport: en ? "Technical support" : "Support technique",
     subjectProject: en ? "Project proposal" : "Proposition de projet",
     labelMessage: en ? "Message" : "Message",
     placeholderMessage: en ? "Your message" : "Votre message",
@@ -37,5 +36,15 @@ export function getContactContent(locale) {
       ? "I agree that my data may be collected and processed."
       : "J'accepte que mes données soient collectées et traitées.",
     submit: en ? "Send message" : "Envoyer le message",
+    submitSending: en ? "Sending..." : "Envoi en cours...",
+    successMessage: en
+      ? "Thank you! Your message has been sent successfully."
+      : "Merci ! Votre message a été envoyé avec succès.",
+    errorDefault: en
+      ? "Failed to send message. Please try again."
+      : "Impossible d'envoyer le message. Veuillez réessayer.",
+    errorGeneral: en
+      ? "An error occurred while sending your message. Please try again."
+      : "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
   };
 }

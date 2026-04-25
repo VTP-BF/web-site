@@ -33,7 +33,7 @@ const Services = () => {
           <div className="row">
             {features.map((item, i) => (
               <div
-                key={item.title}
+                key={item.slug}
                 className={`col-xl-6 col-lg-12${i === features.length - 1 ? " offset-xl-3" : ""}`}
               >
                 <div
@@ -184,7 +184,7 @@ const Services = () => {
           </div>
           <div className="row justify-content-center">
             {s.steps.map((step, i) => (
-              <div key={step.title} className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+              <div key={`step-${i}`} className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div
                   className="features-item animate-hover-icon mb-40 wow fadeInUp"
                   data-wow-delay={APPROACH_WOW_DELAYS[i]}

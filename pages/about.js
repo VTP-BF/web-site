@@ -33,8 +33,8 @@ const About = () => {
                 </div>
                 <p>{t.introLead}</p>
                 <ul className="check-style-one mb-30">
-                  {t.introBullets.map((line) => (
-                    <li key={line}>{line}</li>
+                  {t.introBullets.map((line, i) => (
+                    <li key={`bullet-${i}`}>{line}</li>
                   ))}
                 </ul>
                 <div className="about-button">
@@ -65,7 +65,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             {t.stats.map((stat, i) => (
-              <div key={stat.label} className="col-lg-4 col-md-6 col-sm-12">
+              <div key={`stat-${i}`} className="col-lg-4 col-md-6 col-sm-12">
                 <div className="single-counter-item-two mb-40">
                   <div
                     className="text d-flex align-items-center wow fadeInUp"
@@ -183,8 +183,8 @@ const About = () => {
             </div>
           </div>
           <div className="row">
-            {t.values.map((v) => (
-              <div key={v.title} className="col-lg-4 col-md-6 col-sm-12 mb-30">
+            {t.values.map((v, i) => (
+              <div key={`value-${i}`} className="col-lg-4 col-md-6 col-sm-12 mb-30">
                 <div className="features-item-two text-center wow fadeInUp">
                   <div className="icon">
                     <i className={v.icon} />
@@ -210,7 +210,7 @@ const About = () => {
           </div>
           <div className="row">
             {serviceTiles.map((svc) => (
-              <div key={svc.title} className="col-lg-4 col-md-6 col-sm-12 mb-30">
+              <div key={svc.slug} className="col-lg-4 col-md-6 col-sm-12 mb-30">
                 <div
                   className="service-item-three bg_cover p-r z-1 text-center wow fadeInUp"
                   style={{ backgroundImage: `url(${svc.img})` }}
@@ -280,7 +280,7 @@ const About = () => {
               <div className="history-timeline">
                 {t.history.map((h, i) => (
                   <div
-                    key={h.title}
+                    key={`history-${i}`}
                     className="single-history-item mb-80 wow fadeInUp"
                     data-wow-delay={`.${2 + i}s`}
                   >

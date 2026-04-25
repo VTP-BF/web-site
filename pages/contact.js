@@ -1,7 +1,8 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 import { useRouter } from "next/router";
 import PageBanner from "../src/components/PageBanner";
 import { getContactContent } from "../src/locales/contactPage";
+import { getServicesCatalog } from "../src/locales/servicesCatalog";
 import Layout from "../src/layout/Layout";
 
 function stripNiceSelectAfterSubjectSelect() {
@@ -20,6 +21,21 @@ function stripNiceSelectAfterSubjectSelect() {
 const Contact = () => {
   const router = useRouter();
   const c = getContactContent(router.locale);
+  const services = getServicesCatalog(router.locale);
+
+  // Form state
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  // UI state — `status.kind` drives which locale-keyed message renders,
+  // so the banner re-translates when the user switches language.
+  const [isLoading, setIsLoading] = useState(false);
+  const [status, setStatus] = useState({ kind: "idle", text: "" });
 
   useLayoutEffect(() => {
     stripNiceSelectAfterSubjectSelect();
@@ -30,6 +46,61 @@ const Contact = () => {
       window.clearTimeout(t1);
     };
   }, [router.pathname, router.locale]);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    setStatus({ kind: "idle", text: "" });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setStatus({ kind: "idle", text: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...formData, locale: router.locale }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus({ kind: "success", text: "" });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        setTimeout(() => setStatus({ kind: "idle", text: "" }), 5000);
+      } else {
+        setStatus({ kind: "error", text: data.error || "" });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus({ kind: "error", text: "general" });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const errorText =
+    status.kind === "error"
+      ? status.text === "general"
+        ? c.errorGeneral
+        : status.text || c.errorDefault
+      : "";
 
   return (
     <Layout header={3} footer={3} extraBodyCls="home-three-dark page-contact-minimal">
@@ -99,8 +170,38 @@ const Contact = () => {
             <div className="col-lg-7">
               <div className="contact-one_form-box vtp-contact-card ml-lg-40 mb-50 wow fadeInRight">
                 <h3 className="vtp-contact-card__title">{c.formHeading}</h3>
+                {status.kind === "success" && (
+                  <div
+                    className="vtp-contact-form__message vtp-contact-form__message--success"
+                    style={{
+                      padding: "12px 16px",
+                      marginBottom: "20px",
+                      borderRadius: "4px",
+                      backgroundColor: "#d4edda",
+                      color: "#155724",
+                      border: "1px solid #c3e6cb",
+                    }}
+                  >
+                    ✓ {c.successMessage}
+                  </div>
+                )}
+                {status.kind === "error" && (
+                  <div
+                    className="vtp-contact-form__message vtp-contact-form__message--error"
+                    style={{
+                      padding: "12px 16px",
+                      marginBottom: "20px",
+                      borderRadius: "4px",
+                      backgroundColor: "#f8d7da",
+                      color: "#721c24",
+                      border: "1px solid #f5c6cb",
+                    }}
+                  >
+                    ✕ {errorText}
+                  </div>
+                )}
                 <form
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={handleSubmit}
                   className="contact-form vtp-contact-form"
                 >
                   <div className="row">
@@ -116,6 +217,8 @@ const Contact = () => {
                             className="form_control"
                             placeholder={c.placeholderName}
                             name="name"
+                            value={formData.name}
+                            onChange={handleChange}
                             required
                             autoComplete="name"
                           />
@@ -135,6 +238,8 @@ const Contact = () => {
                             className="form_control"
                             placeholder={c.placeholderEmail}
                             name="email"
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                             autoComplete="email"
                           />
@@ -157,6 +262,8 @@ const Contact = () => {
                             className="form_control"
                             placeholder={c.placeholderPhone}
                             name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
                             autoComplete="tel"
                           />
                           <i className="far fa-phone vtp-contact-form__icon" aria-hidden />
@@ -174,15 +281,20 @@ const Contact = () => {
                             name="subject"
                             className="form_control vtp-contact-form__select-native"
                             data-vtp-native="true"
-                            defaultValue=""
+                            value={formData.subject}
+                            onChange={handleChange}
                             required
                           >
                             <option value="" disabled hidden>
                               {c.subjectPlaceholder}
                             </option>
                             <option value="info">{c.subjectInfo}</option>
-                            <option value="support">{c.subjectSupport}</option>
                             <option value="project">{c.subjectProject}</option>
+                            {services.map((s) => (
+                              <option key={s.slug} value={`service:${s.slug}`}>
+                                {s.title}
+                              </option>
+                            ))}
                           </select>
                           <i className="far fa-question vtp-contact-form__icon" aria-hidden />
                         </div>
@@ -200,8 +312,9 @@ const Contact = () => {
                             name="message"
                             placeholder={c.placeholderMessage}
                             rows={5}
+                            value={formData.message}
+                            onChange={handleChange}
                             required
-                            defaultValue=""
                           />
                           <i className="far fa-pencil vtp-contact-form__icon" aria-hidden />
                         </div>
@@ -217,8 +330,16 @@ const Contact = () => {
                     </div>
                     <div className="col-12">
                       <div className="form_group mb-0">
-                        <button type="submit" className="main-btn btn-blue vtp-contact-form__submit">
-                          {c.submit}
+                        <button
+                          type="submit"
+                          className="main-btn btn-blue vtp-contact-form__submit"
+                          disabled={isLoading}
+                          style={{
+                            opacity: isLoading ? 0.6 : 1,
+                            cursor: isLoading ? "not-allowed" : "pointer",
+                          }}
+                        >
+                          {isLoading ? c.submitSending : c.submit}
                         </button>
                       </div>
                     </div>
